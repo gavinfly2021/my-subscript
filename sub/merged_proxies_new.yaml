@@ -51,7 +51,7 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: Taiwan_Taoyuan District_tuic_21
+- name: Taiwan_Daan_tuic_21
   server: www2.dtku48.xyz
   port: 33993
   type: tuic
@@ -63,7 +63,7 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: Taiwan_Taoyuan District_tuic_31
+- name: Taiwan_Daan_tuic_31
   server: www2.dtku48.xyz
   port: 33993
   type: tuic
@@ -496,8 +496,8 @@ proxy-groups:
   - DIRECT
   - France_Paris_tuic_01
   - France_Paris_tuic_11
-  - Taiwan_Taoyuan District_tuic_21
-  - Taiwan_Taoyuan District_tuic_31
+  - Taiwan_Daan_tuic_21
+  - Taiwan_Daan_tuic_31
   - United States_Los Angeles_hysteria_41
   - United States_Los Angeles_hysteria_51
   - United States_Kansas City_ss_61
@@ -538,8 +538,8 @@ proxy-groups:
   proxies:
   - France_Paris_tuic_01
   - France_Paris_tuic_11
-  - Taiwan_Taoyuan District_tuic_21
-  - Taiwan_Taoyuan District_tuic_31
+  - Taiwan_Daan_tuic_21
+  - Taiwan_Daan_tuic_31
   - United States_Los Angeles_hysteria_41
   - United States_Los Angeles_hysteria_51
   - United States_Kansas City_ss_61
@@ -580,8 +580,8 @@ proxy-groups:
   proxies:
   - France_Paris_tuic_01
   - France_Paris_tuic_11
-  - Taiwan_Taoyuan District_tuic_21
-  - Taiwan_Taoyuan District_tuic_31
+  - Taiwan_Daan_tuic_21
+  - Taiwan_Daan_tuic_31
   - United States_Los Angeles_hysteria_41
   - United States_Los Angeles_hysteria_51
   - United States_Kansas City_ss_61
