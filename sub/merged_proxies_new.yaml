@@ -51,7 +51,19 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: Taiwan_Xindian District_tuic_21
+- name: United States_Seattle_tuic_21
+  server: 64.42.176.182
+  port: 61123
+  type: tuic
+  uuid: de954fbf-b042-4043-98f1-3cad99dbbf0b
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: Taiwan_Xindian District_tuic_22
   server: www2.dtku48.xyz
   port: 33993
   type: tuic
@@ -152,7 +164,7 @@ proxies:
     path: 01c3345a-aadb-4e07-a920-947c20d83096-vm
     headers:
       host: emily-citizen-oxford-gba.trycloudflare.com
-- name: United States_None_vmess_82
+- name: The Netherlands_Amsterdam_vmess_82
   type: vmess
   server: yh9.dtku41.xyz
   port: 8080
@@ -638,14 +650,15 @@ proxy-groups:
   - DIRECT
   - France_Paris_tuic_01
   - France_Paris_tuic_11
-  - Taiwan_Xindian District_tuic_21
+  - United States_Seattle_tuic_21
+  - Taiwan_Xindian District_tuic_22
   - Taiwan_Xindian District_tuic_31
   - United States_Los Angeles_hysteria_41
   - United States_Los Angeles_hysteria_51
   - United States_Kansas City_ss_61
   - United States_Kansas City_ss_71
   - None_None_vmess_81
-  - United States_None_vmess_82
+  - The Netherlands_Amsterdam_vmess_82
   - None_None_vmess_83
   - None_None_vmess_84
   - None_None_vmess_85
@@ -688,14 +701,15 @@ proxy-groups:
   proxies:
   - France_Paris_tuic_01
   - France_Paris_tuic_11
-  - Taiwan_Xindian District_tuic_21
+  - United States_Seattle_tuic_21
+  - Taiwan_Xindian District_tuic_22
   - Taiwan_Xindian District_tuic_31
   - United States_Los Angeles_hysteria_41
   - United States_Los Angeles_hysteria_51
   - United States_Kansas City_ss_61
   - United States_Kansas City_ss_71
   - None_None_vmess_81
-  - United States_None_vmess_82
+  - The Netherlands_Amsterdam_vmess_82
   - None_None_vmess_83
   - None_None_vmess_84
   - None_None_vmess_85
@@ -738,14 +752,15 @@ proxy-groups:
   proxies:
   - France_Paris_tuic_01
   - France_Paris_tuic_11
-  - Taiwan_Xindian District_tuic_21
+  - United States_Seattle_tuic_21
+  - Taiwan_Xindian District_tuic_22
   - Taiwan_Xindian District_tuic_31
   - United States_Los Angeles_hysteria_41
   - United States_Los Angeles_hysteria_51
   - United States_Kansas City_ss_61
   - United States_Kansas City_ss_71
   - None_None_vmess_81
-  - United States_None_vmess_82
+  - The Netherlands_Amsterdam_vmess_82
   - None_None_vmess_83
   - None_None_vmess_84
   - None_None_vmess_85
