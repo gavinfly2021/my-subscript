@@ -13,8 +13,8 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   default-nameserver:
-  - 223.6.6.6
-  - 8.8.8.8
+  - 1.0.0.1
+  - 8.8.4.4
   nameserver:
   - https://dns.alidns.com/dns-query
   - https://doh.pub/dns-query
@@ -658,7 +658,7 @@ proxy-groups:
   type: select
   proxies:
   - ⚡ 低延迟
-  - 🔮 负载均衡
+  - ⚖️ 负载均衡
   - DIRECT
   - France_Paris_tuic_01
   - France_Paris_tuic_11
@@ -758,7 +758,7 @@ proxy-groups:
   - France_Paris_hy2_5
   - France_None_hy2_6
   - France_None_hy2_7
-- name: 🔮 负载均衡
+- name: ⚖️ 负载均衡
   type: load-balance
   strategy: consistent-hashing
   url: http://www.gstatic.com/generate_204
