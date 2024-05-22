@@ -27,7 +27,7 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: France_Paris_tuic_11
+- name: France_tuic_11
   server: 51.159.199.102
   port: 33008
   type: tuic
@@ -39,7 +39,7 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: United States_Seattle_tuic_31
+- name: United States_tuic_31
   server: 64.42.176.182
   port: 61123
   type: tuic
@@ -51,7 +51,7 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: Taiwan_Taipei_tuic_32
+- name: Taiwan_tuic_32
   server: www2.dtku48.xyz
   port: 33993
   type: tuic
@@ -63,7 +63,7 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: United States_Los Angeles_hysteria_51
+- name: United States_hysteria_51
   type: hysteria
   server: 108.181.5.21
   port: 44550
@@ -76,7 +76,7 @@ proxies:
   up: 11
   down: 55
   hop_interval: 10
-- name: United States_Kansas City_ss_71
+- name: United States_ss_71
   type: ss
   server: 109.104.152.186
   port: 11223
@@ -94,7 +94,7 @@ proxies:
       enabled: true
       up: 11
       down: 55
-- name: None_None_vmess_91
+- name: None_vmess_91
   type: vmess
   server: 104.26.9.16
   port: 8080
@@ -109,7 +109,7 @@ proxies:
     path: /argox-vm?ed=2048
     headers:
       host: playstation-january-rt-semiconductor.trycloudflare.com
-- name: None_None_vmess_92
+- name: None_vmess_92
   type: vmess
   server: 104.19.21.44
   port: 8080
@@ -124,7 +124,7 @@ proxies:
     path: /argox-vm?ed=2048
     headers:
       host: playstation-january-rt-semiconductor.trycloudflare.com
-- name: None_None_vmess_93
+- name: None_vmess_93
   type: vmess
   server: 104.26.9.51
   port: 8080
@@ -139,7 +139,7 @@ proxies:
     path: /argox-vm?ed=2048
     headers:
       host: playstation-january-rt-semiconductor.trycloudflare.com
-- name: None_None_vmess_94
+- name: None_vmess_94
   type: vmess
   server: 104.19.38.128
   port: 8080
@@ -154,7 +154,7 @@ proxies:
     path: /argox-vm?ed=2048
     headers:
       host: playstation-january-rt-semiconductor.trycloudflare.com
-- name: None_None_vmess_95
+- name: None_vmess_95
   type: vmess
   server: yh4.dtku41.xyz
   port: 8080
@@ -169,7 +169,7 @@ proxies:
     path: /argox-vm?ed=2048
     headers:
       host: playstation-january-rt-semiconductor.trycloudflare.com
-- name: Taiwan_Taipei_tuic_111
+- name: Taiwan_tuic_111
   server: www.dtku40.xyz
   port: 33098
   type: tuic
@@ -181,7 +181,7 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: United States_Kansas City_hysteria2_131
+- name: United States_hysteria2_131
   type: hysteria2
   server: 109.104.152.89
   port: 22441
@@ -192,7 +192,7 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: United States_Kansas City_vless_151
+- name: United States_vless_151
   type: vless
   server: 109.104.152.101
   port: 13982
@@ -216,7 +216,7 @@ proxies:
       enabled: true
       up: 11
       down: 55
-- name: United States_Kansas City_ss_171
+- name: United States_ss_171
   type: ss
   server: 109.104.152.186
   port: 11223
@@ -234,7 +234,7 @@ proxies:
       enabled: true
       up: 11
       down: 55
-- name: United States_Kansas City_ss_191
+- name: United States_ss_191
   type: ss
   server: 109.104.152.186
   port: 11223
@@ -252,7 +252,7 @@ proxies:
       enabled: true
       up: 11
       down: 55
-- name: United States_Los Angeles_hy_1
+- name: United States_hy_1
   type: hysteria
   server: 173.234.25.51
   port: 48919
@@ -266,7 +266,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: United States_Seattle_hy_3
+- name: United States_hy_3
   type: hysteria
   server: 64.42.176.179
   port: 50991
@@ -280,7 +280,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: France_Paris_hy_5
+- name: France_hy_5
   type: hysteria
   server: 51.159.79.103
   port: 55396
@@ -294,7 +294,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: Taiwan_Taipei_hy_7
+- name: Taiwan_hy_7
   type: hysteria
   server: www.dtku40.xyz
   port: 18091
@@ -308,7 +308,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: United States_Los Angeles_hy2_1
+- name: United States_hy2_1
   type: hysteria2
   server: 64.110.25.11
   port: 37021
@@ -316,7 +316,7 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: United States_Seattle_hy2_3
+- name: United States_hy2_3
   type: hysteria2
   server: 64.42.176.178
   port: 50690
@@ -324,7 +324,7 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: France_Paris_hy2_5
+- name: France_hy2_5
   type: hysteria2
   server: 51.159.77.198
   port: 20261
@@ -332,7 +332,7 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: France_None_hy2_7
+- name: France_hy2_7
   type: hysteria2
   server: 62.210.103.0
   port: 22483
@@ -347,87 +347,87 @@ proxy-groups:
   - ⚡ 低延迟
   - ⚖️ 负载均衡
   - DIRECT
-  - France_Paris_tuic_11
-  - United States_Seattle_tuic_31
-  - Taiwan_Taipei_tuic_32
-  - United States_Los Angeles_hysteria_51
-  - United States_Kansas City_ss_71
-  - None_None_vmess_91
-  - None_None_vmess_92
-  - None_None_vmess_93
-  - None_None_vmess_94
-  - None_None_vmess_95
-  - Taiwan_Taipei_tuic_111
-  - United States_Kansas City_hysteria2_131
-  - United States_Kansas City_vless_151
-  - United States_Kansas City_ss_171
-  - United States_Kansas City_ss_191
-  - United States_Los Angeles_hy_1
-  - United States_Seattle_hy_3
-  - France_Paris_hy_5
-  - Taiwan_Taipei_hy_7
-  - United States_Los Angeles_hy2_1
-  - United States_Seattle_hy2_3
-  - France_Paris_hy2_5
-  - France_None_hy2_7
+  - France_tuic_11
+  - United States_tuic_31
+  - Taiwan_tuic_32
+  - United States_hysteria_51
+  - United States_ss_71
+  - None_vmess_91
+  - None_vmess_92
+  - None_vmess_93
+  - None_vmess_94
+  - None_vmess_95
+  - Taiwan_tuic_111
+  - United States_hysteria2_131
+  - United States_vless_151
+  - United States_ss_171
+  - United States_ss_191
+  - United States_hy_1
+  - United States_hy_3
+  - France_hy_5
+  - Taiwan_hy_7
+  - United States_hy2_1
+  - United States_hy2_3
+  - France_hy2_5
+  - France_hy2_7
 - name: ⚡ 低延迟
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - France_Paris_tuic_11
-  - United States_Seattle_tuic_31
-  - Taiwan_Taipei_tuic_32
-  - United States_Los Angeles_hysteria_51
-  - United States_Kansas City_ss_71
-  - None_None_vmess_91
-  - None_None_vmess_92
-  - None_None_vmess_93
-  - None_None_vmess_94
-  - None_None_vmess_95
-  - Taiwan_Taipei_tuic_111
-  - United States_Kansas City_hysteria2_131
-  - United States_Kansas City_vless_151
-  - United States_Kansas City_ss_171
-  - United States_Kansas City_ss_191
-  - United States_Los Angeles_hy_1
-  - United States_Seattle_hy_3
-  - France_Paris_hy_5
-  - Taiwan_Taipei_hy_7
-  - United States_Los Angeles_hy2_1
-  - United States_Seattle_hy2_3
-  - France_Paris_hy2_5
-  - France_None_hy2_7
+  - France_tuic_11
+  - United States_tuic_31
+  - Taiwan_tuic_32
+  - United States_hysteria_51
+  - United States_ss_71
+  - None_vmess_91
+  - None_vmess_92
+  - None_vmess_93
+  - None_vmess_94
+  - None_vmess_95
+  - Taiwan_tuic_111
+  - United States_hysteria2_131
+  - United States_vless_151
+  - United States_ss_171
+  - United States_ss_191
+  - United States_hy_1
+  - United States_hy_3
+  - France_hy_5
+  - Taiwan_hy_7
+  - United States_hy2_1
+  - United States_hy2_3
+  - France_hy2_5
+  - France_hy2_7
 - name: ⚖️ 负载均衡
   type: load-balance
   strategy: consistent-hashing
   url: http://www.gstatic.com/generate_204
   interval: 180
   proxies:
-  - France_Paris_tuic_11
-  - United States_Seattle_tuic_31
-  - Taiwan_Taipei_tuic_32
-  - United States_Los Angeles_hysteria_51
-  - United States_Kansas City_ss_71
-  - None_None_vmess_91
-  - None_None_vmess_92
-  - None_None_vmess_93
-  - None_None_vmess_94
-  - None_None_vmess_95
-  - Taiwan_Taipei_tuic_111
-  - United States_Kansas City_hysteria2_131
-  - United States_Kansas City_vless_151
-  - United States_Kansas City_ss_171
-  - United States_Kansas City_ss_191
-  - United States_Los Angeles_hy_1
-  - United States_Seattle_hy_3
-  - France_Paris_hy_5
-  - Taiwan_Taipei_hy_7
-  - United States_Los Angeles_hy2_1
-  - United States_Seattle_hy2_3
-  - France_Paris_hy2_5
-  - France_None_hy2_7
+  - France_tuic_11
+  - United States_tuic_31
+  - Taiwan_tuic_32
+  - United States_hysteria_51
+  - United States_ss_71
+  - None_vmess_91
+  - None_vmess_92
+  - None_vmess_93
+  - None_vmess_94
+  - None_vmess_95
+  - Taiwan_tuic_111
+  - United States_hysteria2_131
+  - United States_vless_151
+  - United States_ss_171
+  - United States_ss_191
+  - United States_hy_1
+  - United States_hy_3
+  - France_hy_5
+  - Taiwan_hy_7
+  - United States_hy2_1
+  - United States_hy2_3
+  - France_hy2_5
+  - France_hy2_7
 rules:
 - DOMAIN-KEYWORD,youtube,✈️ 出境游
 - DOMAIN,youtubei.googleapis.com,✈️ 出境游
