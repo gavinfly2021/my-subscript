@@ -258,7 +258,7 @@ def update_proxy_groups(config_data, merged_proxies):
             if "proxies" not in group or not group["proxies"]:
                 group["proxies"] = [proxy["name"] for proxy in merged_proxies]
             else:
-                group["proxies"].extend(proxy["name"] for proxy in merged_proxies]
+                group["proxies"].extend([proxy["name"] for proxy in merged_proxies])  # 修复括号
 
 def update_warp_proxy_groups(config_warp_data, merged_proxies):
     for group in config_warp_data["proxy-groups"]:
@@ -266,8 +266,7 @@ def update_warp_proxy_groups(config_warp_data, merged_proxies):
             if "proxies" not in group or not group["proxies"]:
                 group["proxies"] = [proxy["name"] for proxy in merged_proxies]
             else:
-                group["proxies"].extend(proxy["name"] for proxy in merged_proxies]
-
+                group["proxies"].extend([proxy["name"] for proxy in merged_proxies])  # 修复括号
 # 包含hysteria2
 merged_proxies = []
 
