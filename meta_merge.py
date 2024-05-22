@@ -6,7 +6,6 @@ import geoip2.database
 import socket
 import re
 
-
 # 提取节点
 def process_urls(url_file, processor):
     try:
@@ -23,7 +22,6 @@ def process_urls(url_file, processor):
     except Exception as e:
         logging.error(f"Error reading file {url_file}: {e}")
 
-
 # 提取clash节点
 def process_clash(data, index):
     content = yaml.safe_load(data)
@@ -32,7 +30,6 @@ def process_clash(data, index):
         location = get_physical_location(proxy["server"])
         proxy["name"] = f"{location}_{proxy['type']}_{index}{i+1}"
     merged_proxies.extend(proxies)
-
 
 def get_physical_location(address):
     address = re.sub(":.*", "", address)  # 用正则表达式去除端口部分
@@ -43,17 +40,14 @@ def get_physical_location(address):
 
     try:
         reader = geoip2.database.Reader(
-            "GeoLite2-City.mmdb"
-        )  # 这里的路径需要指向你自己的数据库文件
-        response = reader.city(ip_address)
+            "GeoLite2-Country.mmdb"  # 这里的路径需要指向你自己的数据库文件
+        )
+        response = reader.country(ip_address)
         country = response.country.name
-        city = response.city.name
-        return f"{country}_{city}"
-        # return f"油管绵阿羊_{country}"
+        return f"{country}"
     except geoip2.errors.AddressNotFoundError as e:
         print(f"Error: {e}")
         return "Unknown"
-
 
 # 处理sb，待办
 def process_sb(data, index):
@@ -93,7 +87,6 @@ def process_sb(data, index):
 
     except Exception as e:
         logging.error(f"Error processing shadowtls data for index {index}: {e}")
-
 
 def process_hysteria(data, index):
     try:
@@ -143,7 +136,6 @@ def process_hysteria(data, index):
     except Exception as e:
         logging.error(f"Error processing hysteria data for index {index}: {e}")
 
-
 # 处理hysteria2
 def process_hysteria2(data, index):
     try:
@@ -181,7 +173,6 @@ def process_hysteria2(data, index):
 
     except Exception as e:
         logging.error(f"Error processing hysteria2 data for index {index}: {e}")
-
 
 # 处理xray
 def process_xray(data, index):
@@ -261,15 +252,13 @@ def process_xray(data, index):
     except Exception as e:
         logging.error(f"Error processing xray data for index {index}: {e}")
 
-
 def update_proxy_groups(config_data, merged_proxies):
     for group in config_data["proxy-groups"]:
         if group["name"] in ["⚡ 低延迟", "✈️ 出境游", "⚖️ 负载均衡"]:
             if "proxies" not in group or not group["proxies"]:
                 group["proxies"] = [proxy["name"] for proxy in merged_proxies]
             else:
-                group["proxies"].extend(proxy["name"] for proxy in merged_proxies)
-
+                group["proxies"].extend(proxy["name"] for proxy in merged_proxies]
 
 def update_warp_proxy_groups(config_warp_data, merged_proxies):
     for group in config_warp_data["proxy-groups"]:
@@ -277,8 +266,7 @@ def update_warp_proxy_groups(config_warp_data, merged_proxies):
             if "proxies" not in group or not group["proxies"]:
                 group["proxies"] = [proxy["name"] for proxy in merged_proxies]
             else:
-                group["proxies"].extend(proxy["name"] for proxy in merged_proxies)
-
+                group["proxies"].extend(proxy["name"] for proxy in merged_proxies]
 
 # 包含hysteria2
 merged_proxies = []
@@ -307,7 +295,6 @@ if "proxies" not in config_data or not config_data["proxies"]:
     config_data["proxies"] = merged_proxies
 else:
     config_data["proxies"].extend(merged_proxies)
-
 
 # 更新自动选择和节点选择的proxies的name部分
 update_proxy_groups(config_data, merged_proxies)
