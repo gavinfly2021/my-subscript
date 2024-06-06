@@ -27,30 +27,32 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: France_tuic_01
-  server: 51.159.199.102
-  port: 33008
-  type: tuic
-  uuid: df19a216-8317-4890-829c-a8b7717d53d6
-  password: dongtaiwang.com
+- name: United States_hysteria_01
+  type: hysteria
+  server: 64.42.176.181
+  port: 41604
+  sni: bing.com
+  skip-cert-verify: true
   alpn:
   - h3
-  disable-sni: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: France_tuic_11
-  server: 51.159.199.102
-  port: 33008
-  type: tuic
-  uuid: df19a216-8317-4890-829c-a8b7717d53d6
-  password: dongtaiwang.com
+  protocol: udp
+  auth_str: dongtaiwang.com
+  up: 11
+  down: 55
+  hop_interval: 10
+- name: United States_hysteria_11
+  type: hysteria
+  server: 64.42.176.181
+  port: 41604
+  sni: bing.com
+  skip-cert-verify: true
   alpn:
   - h3
-  disable-sni: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
+  protocol: udp
+  auth_str: dongtaiwang.com
+  up: 11
+  down: 55
+  hop_interval: 10
 - name: United States_tuic_21
   server: 64.42.176.182
   port: 61123
@@ -507,29 +509,29 @@ proxies:
   - h3
 - name: United States_hy_2
   type: hysteria
-  server: 64.42.176.179
-  port: 50991
-  ports: 50991
+  server: 64.42.176.181
+  port: 41604
+  ports: 41604
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
   fast-open: true
   protocol: udp
-  sni: google.com
+  sni: bing.com
   skip-cert-verify: true
   alpn:
   - h3
 - name: United States_hy_3
   type: hysteria
-  server: 64.42.176.179
-  port: 50991
-  ports: 50991
+  server: 64.42.176.181
+  port: 41604
+  ports: 41604
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
   fast-open: true
   protocol: udp
-  sni: google.com
+  sni: bing.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -660,8 +662,8 @@ proxy-groups:
   - ⚡ 低延迟
   - ⚖️ 负载均衡
   - DIRECT
-  - France_tuic_01
-  - France_tuic_11
+  - United States_hysteria_01
+  - United States_hysteria_11
   - United States_tuic_21
   - Taiwan_tuic_22
   - United States_tuic_31
@@ -712,8 +714,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - France_tuic_01
-  - France_tuic_11
+  - United States_hysteria_01
+  - United States_hysteria_11
   - United States_tuic_21
   - Taiwan_tuic_22
   - United States_tuic_31
@@ -764,8 +766,8 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 180
   proxies:
-  - France_tuic_01
-  - France_tuic_11
+  - United States_hysteria_01
+  - United States_hysteria_11
   - United States_tuic_21
   - Taiwan_tuic_22
   - United States_tuic_31
