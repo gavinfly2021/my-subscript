@@ -161,19 +161,66 @@ proxies:
     path: /WNh8bXQv/
     headers:
       Host: ip5.dtku47.xyz
-- name: United States_hysteria_51
-  type: hysteria
-  server: 108.181.5.21
-  port: 44550
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  auth_str: dongtaiwang.com
-  up: 11
-  down: 55
-  hop_interval: 10
+- name: None_vmess_51
+  type: vmess
+  server: 172.64.202.194
+  port: 2095
+  uuid: e9555d84-a146-4e36-9c23-eac28387be48
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5.dtku47.xyz
+  ws-opts:
+    path: /WNh8bXQv/
+    headers:
+      Host: ip5.dtku47.xyz
+- name: None_vmess_52
+  type: vmess
+  server: 162.159.136.208
+  port: 2095
+  uuid: e9555d84-a146-4e36-9c23-eac28387be48
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5.dtku47.xyz
+  ws-opts:
+    path: /WNh8bXQv/
+    headers:
+      Host: ip5.dtku47.xyz
+- name: None_vmess_53
+  type: vmess
+  server: 141.101.122.100
+  port: 2095
+  uuid: e9555d84-a146-4e36-9c23-eac28387be48
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5.dtku47.xyz
+  ws-opts:
+    path: /WNh8bXQv/
+    headers:
+      Host: ip5.dtku47.xyz
+- name: None_vmess_54
+  type: vmess
+  server: 104.19.38.88
+  port: 2095
+  uuid: e9555d84-a146-4e36-9c23-eac28387be48
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5.dtku47.xyz
+  ws-opts:
+    path: /WNh8bXQv/
+    headers:
+      Host: ip5.dtku47.xyz
 - name: United States_ss_61
   type: ss
   server: 109.104.152.186
@@ -222,81 +269,18 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: None_vmess_91
-  type: vmess
-  server: 104.26.9.16
-  port: 8080
-  cipher: auto
-  uuid: 4dd80463-21bf-4b95-8cd5-37f1f38cc494
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: playstation-january-rt-semiconductor.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: /argox-vm?ed=2048
-    headers:
-      host: playstation-january-rt-semiconductor.trycloudflare.com
-- name: None_vmess_92
-  type: vmess
-  server: 104.19.21.44
-  port: 8080
-  cipher: auto
-  uuid: 4dd80463-21bf-4b95-8cd5-37f1f38cc494
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: playstation-january-rt-semiconductor.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: /argox-vm?ed=2048
-    headers:
-      host: playstation-january-rt-semiconductor.trycloudflare.com
-- name: None_vmess_93
-  type: vmess
-  server: 104.26.9.51
-  port: 8080
-  cipher: auto
-  uuid: 4dd80463-21bf-4b95-8cd5-37f1f38cc494
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: playstation-january-rt-semiconductor.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: /argox-vm?ed=2048
-    headers:
-      host: playstation-january-rt-semiconductor.trycloudflare.com
-- name: None_vmess_94
-  type: vmess
-  server: 104.19.38.128
-  port: 8080
-  cipher: auto
-  uuid: 4dd80463-21bf-4b95-8cd5-37f1f38cc494
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: playstation-january-rt-semiconductor.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: /argox-vm?ed=2048
-    headers:
-      host: playstation-january-rt-semiconductor.trycloudflare.com
-- name: None_vmess_95
-  type: vmess
-  server: yh4.dtku41.xyz
-  port: 8080
-  cipher: auto
-  uuid: 4dd80463-21bf-4b95-8cd5-37f1f38cc494
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: playstation-january-rt-semiconductor.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: /argox-vm?ed=2048
-    headers:
-      host: playstation-january-rt-semiconductor.trycloudflare.com
+- name: Taiwan_tuic_91
+  server: www.dtku40.xyz
+  port: 33098
+  type: tuic
+  uuid: fef3d3c2-ab3e-4134-a2f3-0c2d83e0a76d
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: Taiwan_tuic_101
   server: www.dtku40.xyz
   port: 33098
@@ -381,17 +365,66 @@ proxies:
     path: /WNh8bXQv/
     headers:
       Host: ip5.dtku47.xyz
-- name: United States_hysteria2_131
-  type: hysteria2
-  server: 109.104.152.89
-  port: 22441
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  sni: www.bing.com
-  skip-cert-verify: true
-  up: 11 Mbps
-  down: 55 Mbps
+- name: None_vmess_131
+  type: vmess
+  server: 162.159.129.111
+  port: 2095
+  uuid: e9555d84-a146-4e36-9c23-eac28387be48
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5.dtku47.xyz
+  ws-opts:
+    path: /WNh8bXQv/
+    headers:
+      Host: ip5.dtku47.xyz
+- name: None_vmess_132
+  type: vmess
+  server: 162.159.136.208
+  port: 2095
+  uuid: e9555d84-a146-4e36-9c23-eac28387be48
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5.dtku47.xyz
+  ws-opts:
+    path: /WNh8bXQv/
+    headers:
+      Host: ip5.dtku47.xyz
+- name: None_vmess_133
+  type: vmess
+  server: 172.64.144.66
+  port: 2095
+  uuid: e9555d84-a146-4e36-9c23-eac28387be48
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5.dtku47.xyz
+  ws-opts:
+    path: /WNh8bXQv/
+    headers:
+      Host: ip5.dtku47.xyz
+- name: None_vmess_134
+  type: vmess
+  server: 104.19.38.88
+  port: 2095
+  uuid: e9555d84-a146-4e36-9c23-eac28387be48
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5.dtku47.xyz
+  ws-opts:
+    path: /WNh8bXQv/
+    headers:
+      Host: ip5.dtku47.xyz
 - name: United States_vless_141
   type: vless
   server: 109.104.152.101
@@ -479,9 +512,14 @@ proxies:
 - name: United States_ss_181
   type: ss
   server: 109.104.152.186
-  port: 11223
+  port: 443
   cipher: 2022-blake3-chacha20-poly1305
-  password: 7/bb9x3TJQ4Y5SRA/Al3OdwxIk4uf3Jg8N9wDQg+Uto=
+  password: 2mLw+aTguEUrvK/Jamxr4CY/RbLCL/MmfWJQ7c6bXe8=
+  plugin: shadow-tls
+  plugin-opts:
+    host: nijigen-works.jp
+    password: UcMMbVQBzIUAcdC12ju6lV9j3rjK3cAQiZoYCDk1h/g=
+    version: 3
   smux:
     enabled: true
     protocol: smux
@@ -497,9 +535,14 @@ proxies:
 - name: United States_ss_191
   type: ss
   server: 109.104.152.186
-  port: 11223
+  port: 443
   cipher: 2022-blake3-chacha20-poly1305
-  password: 7/bb9x3TJQ4Y5SRA/Al3OdwxIk4uf3Jg8N9wDQg+Uto=
+  password: 2mLw+aTguEUrvK/Jamxr4CY/RbLCL/MmfWJQ7c6bXe8=
+  plugin: shadow-tls
+  plugin-opts:
+    host: nijigen-works.jp
+    password: UcMMbVQBzIUAcdC12ju6lV9j3rjK3cAQiZoYCDk1h/g=
+    version: 3
   smux:
     enabled: true
     protocol: smux
@@ -705,22 +748,24 @@ proxy-groups:
   - None_vmess_42
   - None_vmess_43
   - None_vmess_44
-  - United States_hysteria_51
+  - None_vmess_51
+  - None_vmess_52
+  - None_vmess_53
+  - None_vmess_54
   - United States_ss_61
   - United States_ss_71
   - Taiwan_tuic_81
-  - None_vmess_91
-  - None_vmess_92
-  - None_vmess_93
-  - None_vmess_94
-  - None_vmess_95
+  - Taiwan_tuic_91
   - Taiwan_tuic_101
   - Taiwan_tuic_111
   - None_vmess_121
   - None_vmess_122
   - None_vmess_123
   - None_vmess_124
-  - United States_hysteria2_131
+  - None_vmess_131
+  - None_vmess_132
+  - None_vmess_133
+  - None_vmess_134
   - United States_vless_141
   - United States_vless_151
   - United States_ss_161
@@ -759,22 +804,24 @@ proxy-groups:
   - None_vmess_42
   - None_vmess_43
   - None_vmess_44
-  - United States_hysteria_51
+  - None_vmess_51
+  - None_vmess_52
+  - None_vmess_53
+  - None_vmess_54
   - United States_ss_61
   - United States_ss_71
   - Taiwan_tuic_81
-  - None_vmess_91
-  - None_vmess_92
-  - None_vmess_93
-  - None_vmess_94
-  - None_vmess_95
+  - Taiwan_tuic_91
   - Taiwan_tuic_101
   - Taiwan_tuic_111
   - None_vmess_121
   - None_vmess_122
   - None_vmess_123
   - None_vmess_124
-  - United States_hysteria2_131
+  - None_vmess_131
+  - None_vmess_132
+  - None_vmess_133
+  - None_vmess_134
   - United States_vless_141
   - United States_vless_151
   - United States_ss_161
@@ -813,22 +860,24 @@ proxy-groups:
   - None_vmess_42
   - None_vmess_43
   - None_vmess_44
-  - United States_hysteria_51
+  - None_vmess_51
+  - None_vmess_52
+  - None_vmess_53
+  - None_vmess_54
   - United States_ss_61
   - United States_ss_71
   - Taiwan_tuic_81
-  - None_vmess_91
-  - None_vmess_92
-  - None_vmess_93
-  - None_vmess_94
-  - None_vmess_95
+  - Taiwan_tuic_91
   - Taiwan_tuic_101
   - Taiwan_tuic_111
   - None_vmess_121
   - None_vmess_122
   - None_vmess_123
   - None_vmess_124
-  - United States_hysteria2_131
+  - None_vmess_131
+  - None_vmess_132
+  - None_vmess_133
+  - None_vmess_134
   - United States_vless_141
   - United States_vless_151
   - United States_ss_161
