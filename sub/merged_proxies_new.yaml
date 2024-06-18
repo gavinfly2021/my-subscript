@@ -103,7 +103,7 @@ proxies:
   congestion-controller: bbr
 - name: None_vmess_41
   type: vmess
-  server: 172.64.202.194
+  server: fbi.gov
   port: 2095
   uuid: e9555d84-a146-4e36-9c23-eac28387be48
   alterId: 0
@@ -116,9 +116,9 @@ proxies:
     path: /WNh8bXQv/
     headers:
       Host: ip5.dtku47.xyz
-- name: None_vmess_42
+- name: Canada_vmess_42
   type: vmess
-  server: 162.159.136.208
+  server: 23.227.38.9
   port: 2095
   uuid: e9555d84-a146-4e36-9c23-eac28387be48
   alterId: 0
@@ -133,7 +133,7 @@ proxies:
       Host: ip5.dtku47.xyz
 - name: None_vmess_43
   type: vmess
-  server: 141.101.122.100
+  server: 104.16.149.111
   port: 2095
   uuid: e9555d84-a146-4e36-9c23-eac28387be48
   alterId: 0
@@ -163,7 +163,7 @@ proxies:
       Host: ip5.dtku47.xyz
 - name: None_vmess_51
   type: vmess
-  server: 172.64.202.194
+  server: fbi.gov
   port: 2095
   uuid: e9555d84-a146-4e36-9c23-eac28387be48
   alterId: 0
@@ -176,9 +176,9 @@ proxies:
     path: /WNh8bXQv/
     headers:
       Host: ip5.dtku47.xyz
-- name: None_vmess_52
+- name: Canada_vmess_52
   type: vmess
-  server: 162.159.136.208
+  server: 23.227.38.9
   port: 2095
   uuid: e9555d84-a146-4e36-9c23-eac28387be48
   alterId: 0
@@ -193,7 +193,7 @@ proxies:
       Host: ip5.dtku47.xyz
 - name: None_vmess_53
   type: vmess
-  server: 141.101.122.100
+  server: 104.16.149.111
   port: 2095
   uuid: e9555d84-a146-4e36-9c23-eac28387be48
   alterId: 0
@@ -295,7 +295,7 @@ proxies:
   congestion-controller: bbr
 - name: None_vmess_121
   type: vmess
-  server: 162.159.129.111
+  server: 104.16.149.222
   port: 2095
   uuid: e9555d84-a146-4e36-9c23-eac28387be48
   alterId: 0
@@ -308,9 +308,9 @@ proxies:
     path: /WNh8bXQv/
     headers:
       Host: ip5.freegradely.xyz
-- name: None_vmess_122
+- name: Canada_vmess_122
   type: vmess
-  server: 162.159.136.208
+  server: 23.227.38.8
   port: 2095
   uuid: e9555d84-a146-4e36-9c23-eac28387be48
   alterId: 0
@@ -355,7 +355,7 @@ proxies:
       Host: ip5.freegradely.xyz
 - name: None_vmess_131
   type: vmess
-  server: 162.159.129.111
+  server: 104.16.149.222
   port: 2095
   uuid: e9555d84-a146-4e36-9c23-eac28387be48
   alterId: 0
@@ -368,9 +368,9 @@ proxies:
     path: /WNh8bXQv/
     headers:
       Host: ip5.freegradely.xyz
-- name: None_vmess_132
+- name: Canada_vmess_132
   type: vmess
-  server: 162.159.136.208
+  server: 23.227.38.8
   port: 2095
   uuid: e9555d84-a146-4e36-9c23-eac28387be48
   alterId: 0
@@ -733,11 +733,11 @@ proxy-groups:
   - United States_tuic_31
   - Taiwan_tuic_32
   - None_vmess_41
-  - None_vmess_42
+  - Canada_vmess_42
   - None_vmess_43
   - None_vmess_44
   - None_vmess_51
-  - None_vmess_52
+  - Canada_vmess_52
   - None_vmess_53
   - None_vmess_54
   - France_tuic_61
@@ -747,11 +747,11 @@ proxy-groups:
   - Taiwan_tuic_101
   - Taiwan_tuic_111
   - None_vmess_121
-  - None_vmess_122
+  - Canada_vmess_122
   - None_vmess_123
   - None_vmess_124
   - None_vmess_131
-  - None_vmess_132
+  - Canada_vmess_132
   - None_vmess_133
   - None_vmess_134
   - United States_vless_141
@@ -789,11 +789,11 @@ proxy-groups:
   - United States_tuic_31
   - Taiwan_tuic_32
   - None_vmess_41
-  - None_vmess_42
+  - Canada_vmess_42
   - None_vmess_43
   - None_vmess_44
   - None_vmess_51
-  - None_vmess_52
+  - Canada_vmess_52
   - None_vmess_53
   - None_vmess_54
   - France_tuic_61
@@ -803,11 +803,11 @@ proxy-groups:
   - Taiwan_tuic_101
   - Taiwan_tuic_111
   - None_vmess_121
-  - None_vmess_122
+  - Canada_vmess_122
   - None_vmess_123
   - None_vmess_124
   - None_vmess_131
-  - None_vmess_132
+  - Canada_vmess_132
   - None_vmess_133
   - None_vmess_134
   - United States_vless_141
@@ -845,11 +845,11 @@ proxy-groups:
   - United States_tuic_31
   - Taiwan_tuic_32
   - None_vmess_41
-  - None_vmess_42
+  - Canada_vmess_42
   - None_vmess_43
   - None_vmess_44
   - None_vmess_51
-  - None_vmess_52
+  - Canada_vmess_52
   - None_vmess_53
   - None_vmess_54
   - France_tuic_61
@@ -859,11 +859,11 @@ proxy-groups:
   - Taiwan_tuic_101
   - Taiwan_tuic_111
   - None_vmess_121
-  - None_vmess_122
+  - Canada_vmess_122
   - None_vmess_123
   - None_vmess_124
   - None_vmess_131
-  - None_vmess_132
+  - Canada_vmess_132
   - None_vmess_133
   - None_vmess_134
   - United States_vless_141
