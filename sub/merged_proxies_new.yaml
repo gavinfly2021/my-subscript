@@ -53,6 +53,19 @@ proxies:
   up: 11
   down: 55
   hop_interval: 10
+- name: United States_hysteria_12
+  type: hysteria
+  server: 62.204.54.81
+  port: 34555
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  auth_str: dongtaiwang.com
+  up: 11
+  down: 55
+  hop_interval: 10
 - name: United States_tuic_21
   server: 64.42.176.182
   port: 61123
@@ -111,11 +124,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5-6.freegradely.xyz
+  servername: ip5-9.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip5-6.freegradely.xyz
+      Host: ip5-9.freegradely.xyz
 - name: Canada_vmess_42
   type: vmess
   server: 23.227.38.8
@@ -126,11 +139,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5-6.freegradely.xyz
+  servername: ip5-9.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip5-6.freegradely.xyz
+      Host: ip5-9.freegradely.xyz
 - name: None_vmess_43
   type: vmess
   server: 104.26.0.46
@@ -141,11 +154,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5-6.freegradely.xyz
+  servername: ip5-9.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip5-6.freegradely.xyz
+      Host: ip5-9.freegradely.xyz
 - name: None_vmess_44
   type: vmess
   server: 104.19.38.88
@@ -156,11 +169,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5-6.freegradely.xyz
+  servername: ip5-9.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip5-6.freegradely.xyz
+      Host: ip5-9.freegradely.xyz
 - name: None_vmess_51
   type: vmess
   server: 104.19.32.88
@@ -171,11 +184,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5-6.freegradely.xyz
+  servername: ip5-9.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip5-6.freegradely.xyz
+      Host: ip5-9.freegradely.xyz
 - name: Canada_vmess_52
   type: vmess
   server: 23.227.38.8
@@ -186,11 +199,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5-6.freegradely.xyz
+  servername: ip5-9.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip5-6.freegradely.xyz
+      Host: ip5-9.freegradely.xyz
 - name: None_vmess_53
   type: vmess
   server: 104.26.0.46
@@ -201,11 +214,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5-6.freegradely.xyz
+  servername: ip5-9.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip5-6.freegradely.xyz
+      Host: ip5-9.freegradely.xyz
 - name: None_vmess_54
   type: vmess
   server: 104.19.38.88
@@ -216,11 +229,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5-6.freegradely.xyz
+  servername: ip5-9.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip5-6.freegradely.xyz
+      Host: ip5-9.freegradely.xyz
 - name: France_tuic_61
   server: 51.159.77.153
   port: 44559
@@ -347,11 +360,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5-7.freegradely.xyz
+  servername: ip5-10.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip5-7.freegradely.xyz
+      Host: ip5-10.freegradely.xyz
 - name: Canada_vmess_122
   type: vmess
   server: 23.227.38.8
@@ -362,11 +375,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5-7.freegradely.xyz
+  servername: ip5-10.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip5-7.freegradely.xyz
+      Host: ip5-10.freegradely.xyz
 - name: None_vmess_123
   type: vmess
   server: 104.26.0.50
@@ -377,11 +390,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5-7.freegradely.xyz
+  servername: ip5-10.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip5-7.freegradely.xyz
+      Host: ip5-10.freegradely.xyz
 - name: None_vmess_124
   type: vmess
   server: 104.19.38.88
@@ -392,11 +405,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5-7.freegradely.xyz
+  servername: ip5-10.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip5-7.freegradely.xyz
+      Host: ip5-10.freegradely.xyz
 - name: None_vmess_131
   type: vmess
   server: 104.19.32.88
@@ -407,11 +420,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5-7.freegradely.xyz
+  servername: ip5-10.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip5-7.freegradely.xyz
+      Host: ip5-10.freegradely.xyz
 - name: Canada_vmess_132
   type: vmess
   server: 23.227.38.8
@@ -422,11 +435,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5-7.freegradely.xyz
+  servername: ip5-10.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip5-7.freegradely.xyz
+      Host: ip5-10.freegradely.xyz
 - name: None_vmess_133
   type: vmess
   server: 104.26.0.50
@@ -437,11 +450,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5-7.freegradely.xyz
+  servername: ip5-10.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip5-7.freegradely.xyz
+      Host: ip5-10.freegradely.xyz
 - name: None_vmess_134
   type: vmess
   server: 104.19.38.88
@@ -452,11 +465,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5-7.freegradely.xyz
+  servername: ip5-10.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip5-7.freegradely.xyz
+      Host: ip5-10.freegradely.xyz
 - name: United States_ss_141
   type: ss
   server: 23.170.40.77
@@ -712,6 +725,7 @@ proxy-groups:
   - DIRECT
   - United States_hysteria_01
   - United States_hysteria_11
+  - United States_hysteria_12
   - United States_tuic_21
   - Taiwan_tuic_22
   - United States_tuic_31
@@ -772,6 +786,7 @@ proxy-groups:
   proxies:
   - United States_hysteria_01
   - United States_hysteria_11
+  - United States_hysteria_12
   - United States_tuic_21
   - Taiwan_tuic_22
   - United States_tuic_31
@@ -832,6 +847,7 @@ proxy-groups:
   proxies:
   - United States_hysteria_01
   - United States_hysteria_11
+  - United States_hysteria_12
   - United States_tuic_21
   - Taiwan_tuic_22
   - United States_tuic_31
