@@ -78,35 +78,11 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: Taiwan_tuic_22
-  server: www2.dtku48.xyz
-  port: 33993
-  type: tuic
-  uuid: ebff50f5-dc0e-4bff-bcdb-3c7d2638e817
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  disable-sni: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
 - name: United States_tuic_31
   server: 64.42.176.182
   port: 61123
   type: tuic
   uuid: de954fbf-b042-4043-98f1-3cad99dbbf0b
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  disable-sni: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: Taiwan_tuic_32
-  server: www2.dtku48.xyz
-  port: 33993
-  type: tuic
-  uuid: ebff50f5-dc0e-4bff-bcdb-3c7d2638e817
   password: dongtaiwang.com
   alpn:
   - h3
@@ -727,9 +703,7 @@ proxy-groups:
   - United States_hysteria_11
   - United States_hysteria_12
   - United States_tuic_21
-  - Taiwan_tuic_22
   - United States_tuic_31
-  - Taiwan_tuic_32
   - None_vmess_41
   - Canada_vmess_42
   - None_vmess_43
@@ -788,9 +762,7 @@ proxy-groups:
   - United States_hysteria_11
   - United States_hysteria_12
   - United States_tuic_21
-  - Taiwan_tuic_22
   - United States_tuic_31
-  - Taiwan_tuic_32
   - None_vmess_41
   - Canada_vmess_42
   - None_vmess_43
@@ -849,9 +821,7 @@ proxy-groups:
   - United States_hysteria_11
   - United States_hysteria_12
   - United States_tuic_21
-  - Taiwan_tuic_22
   - United States_tuic_31
-  - Taiwan_tuic_32
   - None_vmess_41
   - Canada_vmess_42
   - None_vmess_43
