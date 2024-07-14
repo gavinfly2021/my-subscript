@@ -243,17 +243,18 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: United States_ss_151
-  type: ss
-  server: 23.170.40.77
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: CmUP/cj9LY2W4bsBUV7mG8ujmMcCOzt+b4un9xnLuro=
-  plugin: shadow-tls
-  plugin-opts:
-    host: nijigen-works.jp
-    password: K+NtA/8R8MTQ9vyZAd0kzUYJkwQmQBkUIQmwa2Po8cM=
-    version: 3
+- name: Taiwan_tuic_151
+  server: www2.dtku44.xyz
+  port: 11224
+  type: tuic
+  uuid: 285524a5-18ae-4bf4-8e89-473dfdc3a212
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: United States_hysteria_171
   type: hysteria
   server: 23.170.40.77
@@ -389,7 +390,7 @@ proxy-groups:
   - Canada_vmess_132
   - None_vmess_133
   - None_vmess_134
-  - United States_ss_151
+  - Taiwan_tuic_151
   - United States_hysteria_171
   - United States_ss_191
   - United States_hy_1
@@ -422,7 +423,7 @@ proxy-groups:
   - Canada_vmess_132
   - None_vmess_133
   - None_vmess_134
-  - United States_ss_151
+  - Taiwan_tuic_151
   - United States_hysteria_171
   - United States_ss_191
   - United States_hy_1
@@ -455,7 +456,7 @@ proxy-groups:
   - Canada_vmess_132
   - None_vmess_133
   - None_vmess_134
-  - United States_ss_151
+  - Taiwan_tuic_151
   - United States_hysteria_171
   - United States_ss_191
   - United States_hy_1
