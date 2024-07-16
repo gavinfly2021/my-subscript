@@ -29,7 +29,7 @@ dns:
 proxies:
 - name: United States_hysteria_11
   type: hysteria
-  server: 64.42.176.181
+  server: 64.42.176.182
   port: 41604
   sni: bing.com
   skip-cert-verify: true
@@ -40,24 +40,11 @@ proxies:
   up: 11
   down: 55
   hop_interval: 10
-- name: United States_hysteria_12
-  type: hysteria
-  server: 62.204.54.81
-  port: 34555
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  auth_str: dongtaiwang.com
-  up: 11
-  down: 55
-  hop_interval: 10
-- name: United States_tuic_31
-  server: 64.42.176.182
-  port: 61123
+- name: Taiwan_tuic_31
+  server: www.dtku40.xyz
+  port: 33098
   type: tuic
-  uuid: de954fbf-b042-4043-98f1-3cad99dbbf0b
+  uuid: fef3d3c2-ab3e-4134-a2f3-0c2d83e0a76d
   password: dongtaiwang.com
   alpn:
   - h3
@@ -125,18 +112,17 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-9.freegradely.xyz
-- name: France_tuic_71
+- name: France_ss_71
+  type: ss
   server: 51.159.77.153
-  port: 44559
-  type: tuic
-  uuid: 2f8f3873-9edf-4c4e-9888-b8a8b2d9d809
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  disable-sni: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
+  port: 33550
+  cipher: 2022-blake3-chacha20-poly1305
+  password: /R1rG+tOLo4OUqL80BBO/KIDfjr3vY67HvGxw26r62Q=
+  plugin: shadow-tls
+  plugin-opts:
+    host: nijigen-works.jp
+    password: 77x594cU+vQKvymvOzuJqJHEMGKHnhtYR1m9mwFCEIQ=
+    version: 3
 - name: Taiwan_tuic_91
   server: www.dtku40.xyz
   port: 33098
@@ -255,19 +241,17 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: United States_hysteria_171
-  type: hysteria
-  server: 23.170.40.77
-  port: 30009
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  auth_str: dongtaiwang.com
-  up: 11
-  down: 55
-  hop_interval: 10
+- name: France_ss_171
+  type: ss
+  server: 51.159.2.179
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: EJhF7SAs95JSRDFE54wyjr79GvKPEm7w0qLpMh6T0aM=
+  plugin: shadow-tls
+  plugin-opts:
+    host: nijigen-works.jp
+    password: QuLaE7p3W+ZSOvK/q5G5zRV0UEBEefflZENLW6MZPFI=
+    version: 3
 - name: United States_ss_191
   type: ss
   server: 23.170.40.77
@@ -281,9 +265,9 @@ proxies:
     version: 3
 - name: United States_hy_1
   type: hysteria
-  server: 173.234.25.51
-  port: 48919
-  ports: 48919
+  server: 104.192.224.138
+  port: 60155
+  ports: 60155
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -295,9 +279,9 @@ proxies:
   - h3
 - name: United States_hy_3
   type: hysteria
-  server: 64.42.176.181
-  port: 41604
-  ports: 41604
+  server: 104.192.224.138
+  port: 60155
+  ports: 60155
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -307,17 +291,17 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: France_hy_5
+- name: United States_hy_5
   type: hysteria
-  server: 51.159.79.103
-  port: 55396
-  ports: 55396
+  server: 104.192.224.138
+  port: 60155
+  ports: 60155
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
   fast-open: true
   protocol: udp
-  sni: youku.com
+  sni: bing.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -337,8 +321,8 @@ proxies:
   - h3
 - name: United States_hy2_1
   type: hysteria2
-  server: 64.110.25.11
-  port: 37021
+  server: 64.110.25.12
+  port: 20141
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -351,18 +335,18 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: France_hy2_5
+- name: United States_hy2_5
   type: hysteria2
-  server: 51.159.77.198
-  port: 20261
+  server: 64.110.25.12
+  port: 20141
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: Russia_hy2_7
+- name: United States_hy2_7
   type: hysteria2
-  server: 46.29.163.85
-  port: 50381
+  server: 64.110.25.12
+  port: 20141
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -375,13 +359,12 @@ proxy-groups:
   - ⚖️ 负载均衡
   - DIRECT
   - United States_hysteria_11
-  - United States_hysteria_12
-  - United States_tuic_31
+  - Taiwan_tuic_31
   - None_vmess_51
   - Canada_vmess_52
   - None_vmess_53
   - None_vmess_54
-  - France_tuic_71
+  - France_ss_71
   - Taiwan_tuic_91
   - United States_hysteria_92
   - Taiwan_tuic_111
@@ -391,16 +374,16 @@ proxy-groups:
   - None_vmess_133
   - None_vmess_134
   - Taiwan_tuic_151
-  - United States_hysteria_171
+  - France_ss_171
   - United States_ss_191
   - United States_hy_1
   - United States_hy_3
-  - France_hy_5
+  - United States_hy_5
   - Taiwan_hy_7
   - United States_hy2_1
   - United States_hy2_3
-  - France_hy2_5
-  - Russia_hy2_7
+  - United States_hy2_5
+  - United States_hy2_7
 - name: ⚡ 低延迟
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -408,13 +391,12 @@ proxy-groups:
   tolerance: 50
   proxies:
   - United States_hysteria_11
-  - United States_hysteria_12
-  - United States_tuic_31
+  - Taiwan_tuic_31
   - None_vmess_51
   - Canada_vmess_52
   - None_vmess_53
   - None_vmess_54
-  - France_tuic_71
+  - France_ss_71
   - Taiwan_tuic_91
   - United States_hysteria_92
   - Taiwan_tuic_111
@@ -424,16 +406,16 @@ proxy-groups:
   - None_vmess_133
   - None_vmess_134
   - Taiwan_tuic_151
-  - United States_hysteria_171
+  - France_ss_171
   - United States_ss_191
   - United States_hy_1
   - United States_hy_3
-  - France_hy_5
+  - United States_hy_5
   - Taiwan_hy_7
   - United States_hy2_1
   - United States_hy2_3
-  - France_hy2_5
-  - Russia_hy2_7
+  - United States_hy2_5
+  - United States_hy2_7
 - name: ⚖️ 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -441,13 +423,12 @@ proxy-groups:
   interval: 180
   proxies:
   - United States_hysteria_11
-  - United States_hysteria_12
-  - United States_tuic_31
+  - Taiwan_tuic_31
   - None_vmess_51
   - Canada_vmess_52
   - None_vmess_53
   - None_vmess_54
-  - France_tuic_71
+  - France_ss_71
   - Taiwan_tuic_91
   - United States_hysteria_92
   - Taiwan_tuic_111
@@ -457,16 +438,16 @@ proxy-groups:
   - None_vmess_133
   - None_vmess_134
   - Taiwan_tuic_151
-  - United States_hysteria_171
+  - France_ss_171
   - United States_ss_191
   - United States_hy_1
   - United States_hy_3
-  - France_hy_5
+  - United States_hy_5
   - Taiwan_hy_7
   - United States_hy2_1
   - United States_hy2_3
-  - France_hy2_5
-  - Russia_hy2_7
+  - United States_hy2_5
+  - United States_hy2_7
 rules:
 - DOMAIN-KEYWORD,youtube,✈️ 出境游
 - DOMAIN,youtubei.googleapis.com,✈️ 出境游
