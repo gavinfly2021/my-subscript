@@ -656,7 +656,7 @@ proxies:
       Host: ip1.2413762.xyz
 - name: None_vmess_342
   type: vmess
-  server: 104.19.46.17
+  server: 104.26.5.56
   port: 2086
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
@@ -671,7 +671,7 @@ proxies:
       Host: ip1.2413762.xyz
 - name: None_vmess_343
   type: vmess
-  server: 104.19.46.22
+  server: 104.26.5.66
   port: 2086
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
@@ -686,7 +686,7 @@ proxies:
       Host: ip1.2413762.xyz
 - name: None_vmess_344
   type: vmess
-  server: 104.19.46.27
+  server: 104.26.5.67
   port: 2086
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
@@ -701,7 +701,7 @@ proxies:
       Host: ip1.2413762.xyz
 - name: None_vmess_345
   type: vmess
-  server: 104.19.46.33
+  server: 104.26.5.88
   port: 2086
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
@@ -716,7 +716,7 @@ proxies:
       Host: ip1.2413762.xyz
 - name: None_vmess_346
   type: vmess
-  server: 104.19.46.36
+  server: 104.26.5.90
   port: 2086
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
@@ -731,7 +731,7 @@ proxies:
       Host: ip1.2413762.xyz
 - name: None_vmess_347
   type: vmess
-  server: 104.19.46.39
+  server: 104.26.5.103
   port: 2086
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
@@ -746,7 +746,7 @@ proxies:
       Host: ip1.2413762.xyz
 - name: None_vmess_348
   type: vmess
-  server: 104.19.46.42
+  server: 104.26.5.112
   port: 2086
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
@@ -761,7 +761,7 @@ proxies:
       Host: ip1.2413762.xyz
 - name: None_vmess_349
   type: vmess
-  server: 104.19.46.56
+  server: 104.26.5.113
   port: 2086
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
@@ -776,7 +776,7 @@ proxies:
       Host: ip1.2413762.xyz
 - name: None_vmess_350
   type: vmess
-  server: 104.19.46.59
+  server: 104.26.5.123
   port: 2086
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
@@ -791,7 +791,7 @@ proxies:
       Host: ip1.2413762.xyz
 - name: None_vmess_351
   type: vmess
-  server: 104.19.46.63
+  server: 104.26.5.145
   port: 2086
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
@@ -806,7 +806,7 @@ proxies:
       Host: ip1.2413762.xyz
 - name: None_vmess_352
   type: vmess
-  server: 104.19.47.22
+  server: 162.159.140.19
   port: 2086
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
@@ -821,7 +821,7 @@ proxies:
       Host: ip1.2413762.xyz
 - name: None_vmess_353
   type: vmess
-  server: 104.19.47.27
+  server: 162.159.140.33
   port: 2086
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
@@ -836,7 +836,7 @@ proxies:
       Host: ip1.2413762.xyz
 - name: None_vmess_354
   type: vmess
-  server: 104.19.47.32
+  server: 162.159.140.39
   port: 2086
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
@@ -851,7 +851,7 @@ proxies:
       Host: ip1.2413762.xyz
 - name: None_vmess_355
   type: vmess
-  server: 104.19.47.36
+  server: 162.159.140.45
   port: 2086
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
@@ -866,7 +866,7 @@ proxies:
       Host: ip1.2413762.xyz
 - name: None_vmess_356
   type: vmess
-  server: 104.19.47.45
+  server: 162.159.140.56
   port: 2086
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
@@ -881,7 +881,7 @@ proxies:
       Host: ip1.2413762.xyz
 - name: None_vmess_357
   type: vmess
-  server: 104.19.47.77
+  server: 162.159.140.66
   port: 2086
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
@@ -896,7 +896,7 @@ proxies:
       Host: ip1.2413762.xyz
 - name: None_vmess_358
   type: vmess
-  server: 104.19.47.79
+  server: 162.159.140.77
   port: 2086
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
@@ -911,7 +911,7 @@ proxies:
       Host: ip1.2413762.xyz
 - name: None_vmess_359
   type: vmess
-  server: 104.19.47.88
+  server: 162.159.140.89
   port: 2086
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
@@ -926,7 +926,7 @@ proxies:
       Host: ip1.2413762.xyz
 - name: None_vmess_360
   type: vmess
-  server: 104.19.47.80
+  server: 162.159.140.91
   port: 2086
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
@@ -941,7 +941,7 @@ proxies:
       Host: ip1.2413762.xyz
 - name: None_vmess_361
   type: vmess
-  server: 104.19.47.122
+  server: 162.159.140.93
   port: 2086
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
@@ -1625,18 +1625,17 @@ proxies:
     host: nijigen-works.jp
     password: oF1DMhFO6YuXAnEuq0qTaORV9y0Yy+MSf7GqelSXy3E=
     version: 3
-- name: France_hysteria2_91
-  type: hysteria2
-  server: 51.159.34.216
-  port: 7571
-  ports: 20000-30000
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  sni: www.bing.com
-  skip-cert-verify: true
-  up: 11 Mbps
-  down: 55 Mbps
+- name: France_ss_91
+  type: ss
+  server: 51.159.77.153
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: CuNN8dpAplS3SzR/LtmNqAPwfjeFwnun4SWMuh98ANo=
+  plugin: shadow-tls
+  plugin-opts:
+    host: nijigen-works.jp
+    password: oF1DMhFO6YuXAnEuq0qTaORV9y0Yy+MSf7GqelSXy3E=
+    version: 3
 - name: France_vless_111
   type: vless
   server: 62.210.100.235
@@ -1914,10 +1913,10 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: France_hy2_5
+- name: United States_hy2_5
   type: hysteria2
-  server: 51.159.34.216
-  port: 7571
+  server: 208.87.243.187
+  port: 29620
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -2044,7 +2043,7 @@ proxy-groups:
   - None_vmess_53
   - None_vmess_54
   - France_ss_71
-  - France_hysteria2_91
+  - France_ss_91
   - France_vless_111
   - None_vmess_131
   - Canada_vmess_132
@@ -2065,7 +2064,7 @@ proxy-groups:
   - United States_hy_7
   - United States_hy2_1
   - United States_hy2_3
-  - France_hy2_5
+  - United States_hy2_5
   - Taiwan_hy2_7
 - name: ⚡ 低延迟
   type: url-test
@@ -2180,7 +2179,7 @@ proxy-groups:
   - None_vmess_53
   - None_vmess_54
   - France_ss_71
-  - France_hysteria2_91
+  - France_ss_91
   - France_vless_111
   - None_vmess_131
   - Canada_vmess_132
@@ -2201,7 +2200,7 @@ proxy-groups:
   - United States_hy_7
   - United States_hy2_1
   - United States_hy2_3
-  - France_hy2_5
+  - United States_hy2_5
   - Taiwan_hy2_7
 - name: ⚖️ 负载均衡
   type: load-balance
@@ -2316,7 +2315,7 @@ proxy-groups:
   - None_vmess_53
   - None_vmess_54
   - France_ss_71
-  - France_hysteria2_91
+  - France_ss_91
   - France_vless_111
   - None_vmess_131
   - Canada_vmess_132
@@ -2337,7 +2336,7 @@ proxy-groups:
   - United States_hy_7
   - United States_hy2_1
   - United States_hy2_3
-  - France_hy2_5
+  - United States_hy2_5
   - Taiwan_hy2_7
 rules:
 - DOMAIN-KEYWORD,youtube,✈️ 出境游
