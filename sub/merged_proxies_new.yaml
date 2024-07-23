@@ -1855,11 +1855,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: France_hy_3
+- name: United States_hy_3
   type: hysteria
-  server: 51.159.199.102
-  port: 47708
-  ports: 20000-30000
+  server: 38.114.103.250
+  port: 29900
+  ports: 29900
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -1869,11 +1869,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: France_hy_5
+- name: Russia_hy_5
   type: hysteria
-  server: 51.159.79.103
-  port: 15966
-  ports: 20000-30000
+  server: 46.29.163.85
+  port: 22456
+  ports: 22456
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -1907,11 +1907,11 @@ proxies:
   skip-cert-verify: true
 - name: United States_hy2_3
   type: hysteria2
-  server: 208.87.243.187
-  port: 29620
+  server: 91.149.239.189
+  port: 55678
   password: dongtaiwang.com
   fast-open: true
-  sni: www.bing.com
+  sni: bing.com
   skip-cert-verify: true
 - name: United States_hy2_5
   type: hysteria2
@@ -2059,8 +2059,8 @@ proxy-groups:
   - None_vmess_193
   - None_vmess_194
   - United States_hy_1
-  - France_hy_3
-  - France_hy_5
+  - United States_hy_3
+  - Russia_hy_5
   - United States_hy_7
   - United States_hy2_1
   - United States_hy2_3
@@ -2195,8 +2195,8 @@ proxy-groups:
   - None_vmess_193
   - None_vmess_194
   - United States_hy_1
-  - France_hy_3
-  - France_hy_5
+  - United States_hy_3
+  - Russia_hy_5
   - United States_hy_7
   - United States_hy2_1
   - United States_hy2_3
@@ -2331,8 +2331,8 @@ proxy-groups:
   - None_vmess_193
   - None_vmess_194
   - United States_hy_1
-  - France_hy_3
-  - France_hy_5
+  - United States_hy_3
+  - Russia_hy_5
   - United States_hy_7
   - United States_hy2_1
   - United States_hy2_3
