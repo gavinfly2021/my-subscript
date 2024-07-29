@@ -1568,40 +1568,73 @@ proxies:
   down: 55 Mbps
 - name: France_ss_71
   type: ss
-  server: 51.159.77.153
+  server: 51.159.199.102
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
-  password: CuNN8dpAplS3SzR/LtmNqAPwfjeFwnun4SWMuh98ANo=
+  password: ihkSP1UkZF/DC6cyVLXwCD2b5zwE161T7dGr49U3+ko=
   plugin: shadow-tls
   plugin-opts:
     host: nijigen-works.jp
-    password: oF1DMhFO6YuXAnEuq0qTaORV9y0Yy+MSf7GqelSXy3E=
+    password: dXm5EgOvRnUKWerZ+niljM83DxAtLu0coUX2BSIXWwY=
     version: 3
+  smux:
+    enabled: true
+    protocol: smux
+    max-connections: 1
+    min-streams: 4
+    statistic: false
+    only-tcp: false
+    padding: true
+    brutal-opts:
+      enabled: true
+      up: 11
+      down: 55
 - name: France_ss_91
   type: ss
-  server: 51.159.77.153
+  server: 51.159.199.102
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
-  password: CuNN8dpAplS3SzR/LtmNqAPwfjeFwnun4SWMuh98ANo=
+  password: ihkSP1UkZF/DC6cyVLXwCD2b5zwE161T7dGr49U3+ko=
   plugin: shadow-tls
   plugin-opts:
     host: nijigen-works.jp
-    password: oF1DMhFO6YuXAnEuq0qTaORV9y0Yy+MSf7GqelSXy3E=
+    password: dXm5EgOvRnUKWerZ+niljM83DxAtLu0coUX2BSIXWwY=
     version: 3
-- name: France_vless_111
-  type: vless
-  server: 62.210.100.235
-  port: 23357
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  network: tcp
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.yahoo.com
-  reality-opts:
-    public-key: U5hsLybYWhJrWAqqsTa052k-VeKt8bDFPxBh3CQk51M
-    short-id: 0b4badde
-  client-fingerprint: chrome
+  smux:
+    enabled: true
+    protocol: smux
+    max-connections: 1
+    min-streams: 4
+    statistic: false
+    only-tcp: false
+    padding: true
+    brutal-opts:
+      enabled: true
+      up: 11
+      down: 55
+- name: France_ss_111
+  type: ss
+  server: 51.159.199.102
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: ihkSP1UkZF/DC6cyVLXwCD2b5zwE161T7dGr49U3+ko=
+  plugin: shadow-tls
+  plugin-opts:
+    host: nijigen-works.jp
+    password: dXm5EgOvRnUKWerZ+niljM83DxAtLu0coUX2BSIXWwY=
+    version: 3
+  smux:
+    enabled: true
+    protocol: smux
+    max-connections: 1
+    min-streams: 4
+    statistic: false
+    only-tcp: false
+    padding: true
+    brutal-opts:
+      enabled: true
+      up: 11
+      down: 55
 - name: None_vmess_131
   type: vmess
   server: 104.19.32.88
@@ -1993,7 +2026,7 @@ proxy-groups:
   - Russia_hysteria_51
   - France_ss_71
   - France_ss_91
-  - France_vless_111
+  - France_ss_111
   - None_vmess_131
   - Canada_vmess_132
   - None_vmess_133
@@ -2126,7 +2159,7 @@ proxy-groups:
   - Russia_hysteria_51
   - France_ss_71
   - France_ss_91
-  - France_vless_111
+  - France_ss_111
   - None_vmess_131
   - Canada_vmess_132
   - None_vmess_133
@@ -2259,7 +2292,7 @@ proxy-groups:
   - Russia_hysteria_51
   - France_ss_71
   - France_ss_91
-  - France_vless_111
+  - France_ss_111
   - None_vmess_131
   - Canada_vmess_132
   - None_vmess_133
