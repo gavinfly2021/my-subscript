@@ -1557,33 +1557,34 @@ proxies:
 - name: Russia_hysteria_51
   type: hysteria
   server: 46.29.166.206
-  port: 33556
+  port: 20427
+  ports: 30000-40000
   auth_str: dongtaiwang.com
-  obfs: dongtaiwang.com
   alpn:
   - h3
   sni: bing.com
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: France_ss_71
-  type: ss
-  server: 51.159.199.102
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ihkSP1UkZF/DC6cyVLXwCD2b5zwE161T7dGr49U3+ko=
-  plugin: shadow-tls
-  plugin-opts:
-    host: nijigen-works.jp
-    password: dXm5EgOvRnUKWerZ+niljM83DxAtLu0coUX2BSIXWwY=
-    version: 3
+- name: Russia_vless_71
+  type: vless
+  server: 46.29.163.85
+  port: 18903
+  uuid: 95d7d4e7-6cf3-4eaf-ac48-c1e5e1ceb733
+  network: tcp
+  udp: true
+  tls: true
+  flow: null
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: eBUZp9nbJb2bEUuxTX1U3i1ITVR1mtlxfmxX43ehZUs
+    short-id: 9253ae7c164999fa
   smux:
     enabled: true
-    protocol: smux
+    protocol: h2mux
     max-connections: 1
     min-streams: 4
-    statistic: false
-    only-tcp: false
     padding: true
     brutal-opts:
       enabled: true
@@ -1843,8 +1844,8 @@ proxies:
 - name: United States_hy_3
   type: hysteria
   server: 38.114.103.250
-  port: 29900
-  ports: 29900
+  port: 17547
+  ports: 30000-40000
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -1854,11 +1855,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: Russia_hy_5
+- name: United States_hy_5
   type: hysteria
-  server: 46.29.163.85
-  port: 22456
-  ports: 22456
+  server: 104.192.224.138
+  port: 28850
+  ports: 20000-30000
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -1893,10 +1894,10 @@ proxies:
 - name: United States_hy2_3
   type: hysteria2
   server: 91.149.239.189
-  port: 55678
+  port: 35970
   password: dongtaiwang.com
   fast-open: true
-  sni: bing.com
+  sni: www.bing.com
   skip-cert-verify: true
 - name: United States_hy2_5
   type: hysteria2
@@ -2024,7 +2025,7 @@ proxy-groups:
   - None_vmess_3100
   - None_vmess_3101
   - Russia_hysteria_51
-  - France_ss_71
+  - Russia_vless_71
   - France_ss_91
   - France_ss_111
   - None_vmess_131
@@ -2042,7 +2043,7 @@ proxy-groups:
   - None_vmess_194
   - United States_hy_1
   - United States_hy_3
-  - Russia_hy_5
+  - United States_hy_5
   - United States_hy_7
   - United States_hy2_1
   - United States_hy2_3
@@ -2157,7 +2158,7 @@ proxy-groups:
   - None_vmess_3100
   - None_vmess_3101
   - Russia_hysteria_51
-  - France_ss_71
+  - Russia_vless_71
   - France_ss_91
   - France_ss_111
   - None_vmess_131
@@ -2175,7 +2176,7 @@ proxy-groups:
   - None_vmess_194
   - United States_hy_1
   - United States_hy_3
-  - Russia_hy_5
+  - United States_hy_5
   - United States_hy_7
   - United States_hy2_1
   - United States_hy2_3
@@ -2290,7 +2291,7 @@ proxy-groups:
   - None_vmess_3100
   - None_vmess_3101
   - Russia_hysteria_51
-  - France_ss_71
+  - Russia_vless_71
   - France_ss_91
   - France_ss_111
   - None_vmess_131
@@ -2308,7 +2309,7 @@ proxy-groups:
   - None_vmess_194
   - United States_hy_1
   - United States_hy_3
-  - Russia_hy_5
+  - United States_hy_5
   - United States_hy_7
   - United States_hy2_1
   - United States_hy2_3
