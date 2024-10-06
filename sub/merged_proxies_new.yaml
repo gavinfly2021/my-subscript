@@ -27,18 +27,21 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: United States_hysteria_11
-  type: hysteria
-  server: 64.42.176.179
-  port: 19513
-  ports: 20000-30000
-  auth_str: dongtaiwang.com
-  alpn:
-  - h3
-  sni: www.bing.com
-  skip-cert-verify: true
-  up: 11 Mbps
-  down: 55 Mbps
+- name: None_vmess_11
+  type: vmess
+  server: 104.21.238.201
+  port: 8880
+  uuid: 57d2d9f2-f1d3-490c-acc5-108e8a8e17ca
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip3.9375943.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip3.9375943.xyz
 - name: United States_hysteria_31
   type: hysteria
   server: 64.42.176.179
@@ -51,18 +54,21 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: Russia_hysteria_51
-  type: hysteria
-  server: 46.29.166.206
-  port: 20427
-  ports: 30000-40000
-  auth_str: dongtaiwang.com
-  alpn:
-  - h3
-  sni: bing.com
-  skip-cert-verify: true
-  up: 11 Mbps
-  down: 55 Mbps
+- name: None_vmess_51
+  type: vmess
+  server: 104.21.238.205
+  port: 2095
+  uuid: 8ce8196e-28fe-4154-b33d-76e237b1e1e8
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip3.9290254.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip3.9290254.xyz
 - name: None_vmess_71
   type: vmess
   server: 104.21.238.200
@@ -78,20 +84,21 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip3.9290254.xyz
-- name: Russia_vless_91
-  type: vless
-  server: 46.29.166.206
-  port: 54491
-  uuid: e5ea22f9-2e13-4aa4-a57a-73805c7dfe48
-  network: tcp
+- name: None_vmess_91
+  type: vmess
+  server: 104.21.238.203
+  port: 2095
+  uuid: 8ce8196e-28fe-4154-b33d-76e237b1e1e8
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.yahoo.com
-  reality-opts:
-    public-key: O57ybvboLKcwCRHHlv9UOu5nM9JI-pew2vcwG-7dAE4
-    short-id: 50662bd4
-  client-fingerprint: chrome
+  tls: false
+  network: ws
+  servername: ip3.9290254.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip3.9290254.xyz
 - name: None_vmess_111
   type: vmess
   server: 104.21.238.200
@@ -1632,11 +1639,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip3.8084726.xyz
+  servername: ip5.8084726.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip3.8084726.xyz
+      Host: ip5.8084726.xyz
 - name: None_vmess_152
   type: vmess
   server: 104.26.0.56
@@ -4662,11 +4669,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip3.8084726.xyz
+  servername: ip5.8084726.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip3.8084726.xyz
+      Host: ip5.8084726.xyz
 - name: None_vmess_192
   type: vmess
   server: 104.26.0.56
@@ -6169,9 +6176,9 @@ proxies:
       Host: ip3.8084726.xyz
 - name: United States_hy_1
   type: hysteria
-  server: 104.192.224.138
-  port: 28850
-  ports: 20000-30000
+  server: 108.181.24.77
+  port: 35862
+  ports: 40000-50000
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -6183,7 +6190,7 @@ proxies:
   - h3
 - name: United States_hy_3
   type: hysteria
-  server: 104.192.224.138
+  server: 104.192.224.139
   port: 28850
   ports: 20000-30000
   auth_str: dongtaiwang.com
@@ -6211,7 +6218,7 @@ proxies:
   - h3
 - name: United States_hy_7
   type: hysteria
-  server: 104.192.224.138
+  server: 104.192.224.139
   port: 28850
   ports: 20000-30000
   auth_str: dongtaiwang.com
@@ -6225,8 +6232,8 @@ proxies:
   - h3
 - name: United States_hy2_1
   type: hysteria2
-  server: 64.110.25.12
-  port: 50942
+  server: 208.87.243.187
+  port: 22222
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -6242,33 +6249,33 @@ proxies:
 - name: United States_hy2_5
   type: hysteria2
   server: 208.87.243.187
-  port: 29620
+  port: 22222
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
 - name: United States_hy2_7
   type: hysteria2
-  server: 64.110.25.12
-  port: 50942
+  server: 207.90.239.157
+  port: 3400
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
 - name: United States_reality_1
   type: vless
-  server: 166.1.221.22
-  port: 35933
-  uuid: f3d3f306-87e8-42ce-90b4-8b333fcfa1b2
+  server: 108.181.23.41
+  port: 57252
+  uuid: 25d1b318-87e8-4c1e-a784-69783be4b30a
   network: tcp
   tls: true
   udp: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  servername: addons.mozilla.org
+  servername: www.yahoo.com
   reality-opts:
-    public-key: dtLQotOntHw_ULRf7spOS8tdqvJn4kdLlJrywjubYFE
-    short-id: ''
+    public-key: OArr7bhbdqsdhd1RT_lm0-OSrtcgje4kEXiQ-QMHmm8
+    short-id: 5bfc684c
 - name: United States_reality_3
   type: vless
   server: 166.1.221.22
@@ -6283,6 +6290,20 @@ proxies:
   reality-opts:
     public-key: dtLQotOntHw_ULRf7spOS8tdqvJn4kdLlJrywjubYFE
     short-id: ''
+- name: United States_reality_5
+  type: vless
+  server: 108.181.23.41
+  port: 57252
+  uuid: 25d1b318-87e8-4c1e-a784-69783be4b30a
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: www.yahoo.com
+  reality-opts:
+    public-key: OArr7bhbdqsdhd1RT_lm0-OSrtcgje4kEXiQ-QMHmm8
+    short-id: 5bfc684c
 proxy-groups:
 - name: ✈️ 出境游
   type: select
@@ -6290,11 +6311,11 @@ proxy-groups:
   - ⚡ 低延迟
   - ⚖️ 负载均衡
   - DIRECT
-  - United States_hysteria_11
+  - None_vmess_11
   - United States_hysteria_31
-  - Russia_hysteria_51
+  - None_vmess_51
   - None_vmess_71
-  - Russia_vless_91
+  - None_vmess_91
   - None_vmess_111
   - None_vmess_131
   - None_vmess_132
@@ -6710,17 +6731,18 @@ proxy-groups:
   - United States_hy2_7
   - United States_reality_1
   - United States_reality_3
+  - United States_reality_5
 - name: ⚡ 低延迟
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - United States_hysteria_11
+  - None_vmess_11
   - United States_hysteria_31
-  - Russia_hysteria_51
+  - None_vmess_51
   - None_vmess_71
-  - Russia_vless_91
+  - None_vmess_91
   - None_vmess_111
   - None_vmess_131
   - None_vmess_132
@@ -7136,17 +7158,18 @@ proxy-groups:
   - United States_hy2_7
   - United States_reality_1
   - United States_reality_3
+  - United States_reality_5
 - name: ⚖️ 负载均衡
   type: load-balance
   strategy: consistent-hashing
   url: http://www.gstatic.com/generate_204
   interval: 180
   proxies:
-  - United States_hysteria_11
+  - None_vmess_11
   - United States_hysteria_31
-  - Russia_hysteria_51
+  - None_vmess_51
   - None_vmess_71
-  - Russia_vless_91
+  - None_vmess_91
   - None_vmess_111
   - None_vmess_131
   - None_vmess_132
@@ -7562,6 +7585,7 @@ proxy-groups:
   - United States_hy2_7
   - United States_reality_1
   - United States_reality_3
+  - United States_reality_5
 rules:
 - DOMAIN-KEYWORD,youtube,✈️ 出境游
 - DOMAIN,youtubei.googleapis.com,✈️ 出境游
