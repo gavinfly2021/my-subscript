@@ -291,11 +291,11 @@ proxies:
     public-key: bzpKT_Fgsm2k0oAe5SXJmbQN8OxK4AA4NR42yqM-hnI
     short-id: ''
   client-fingerprint: chrome
-- name: United States_hy_0
+- name: France_hy_0
   type: hysteria
-  server: 64.42.176.180
-  port: 12345
-  ports: 12345
+  server: 195.154.200.40
+  port: 2345
+  ports: 2345
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -305,11 +305,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: United States_hy_1
+- name: France_hy_1
   type: hysteria
-  server: 64.42.176.180
-  port: 12345
-  ports: 12345
+  server: 195.154.200.40
+  port: 2345
+  ports: 2345
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -403,18 +403,18 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: United States_hy2_0
+- name: France_hy2_0
   type: hysteria2
-  server: 173.234.25.51
-  port: 22222
+  server: 195.154.200.40
+  port: 42259
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: United States_hy2_1
+- name: France_hy2_1
   type: hysteria2
-  server: 173.234.25.51
-  port: 22222
+  server: 195.154.200.40
+  port: 42259
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -550,16 +550,16 @@ proxy-groups:
   - Russia_vless_171
   - Russia_vless_181
   - Russia_vless_191
-  - United States_hy_0
-  - United States_hy_1
+  - France_hy_0
+  - France_hy_1
   - United States_hy_2
   - United States_hy_3
   - United States_hy_4
   - United States_hy_5
   - United States_hy_6
   - United States_hy_7
-  - United States_hy2_0
-  - United States_hy2_1
+  - France_hy2_0
+  - France_hy2_1
   - United States_hy2_2
   - United States_hy2_3
   - United States_hy2_4
@@ -596,16 +596,16 @@ proxy-groups:
   - Russia_vless_171
   - Russia_vless_181
   - Russia_vless_191
-  - United States_hy_0
-  - United States_hy_1
+  - France_hy_0
+  - France_hy_1
   - United States_hy_2
   - United States_hy_3
   - United States_hy_4
   - United States_hy_5
   - United States_hy_6
   - United States_hy_7
-  - United States_hy2_0
-  - United States_hy2_1
+  - France_hy2_0
+  - France_hy2_1
   - United States_hy2_2
   - United States_hy2_3
   - United States_hy2_4
@@ -642,16 +642,16 @@ proxy-groups:
   - Russia_vless_171
   - Russia_vless_181
   - Russia_vless_191
-  - United States_hy_0
-  - United States_hy_1
+  - France_hy_0
+  - France_hy_1
   - United States_hy_2
   - United States_hy_3
   - United States_hy_4
   - United States_hy_5
   - United States_hy_6
   - United States_hy_7
-  - United States_hy2_0
-  - United States_hy2_1
+  - France_hy2_0
+  - France_hy2_1
   - United States_hy2_2
   - United States_hy2_3
   - United States_hy2_4
