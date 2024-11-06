@@ -29,8 +29,8 @@ dns:
 proxies:
 - name: United States_hysteria_01
   type: hysteria
-  server: 109.104.152.251
-  port: 22577
+  server: 64.42.176.180
+  port: 12345
   auth_str: dongtaiwang.com
   alpn:
   - h3
@@ -40,8 +40,8 @@ proxies:
   down: 55 Mbps
 - name: United States_hysteria_11
   type: hysteria
-  server: 109.104.152.251
-  port: 22577
+  server: 64.42.176.180
+  port: 12345
   auth_str: dongtaiwang.com
   alpn:
   - h3
