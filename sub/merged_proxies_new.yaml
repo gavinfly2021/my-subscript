@@ -27,33 +27,10 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: United States_hysteria_01
-  type: hysteria
-  server: 64.42.176.180
-  port: 12345
-  auth_str: dongtaiwang.com
-  alpn:
-  - h3
-  sni: www.bing.com
-  skip-cert-verify: true
-  up: 11 Mbps
-  down: 55 Mbps
 - name: United States_hysteria_11
   type: hysteria
   server: 64.42.176.180
   port: 12345
-  auth_str: dongtaiwang.com
-  alpn:
-  - h3
-  sni: www.bing.com
-  skip-cert-verify: true
-  up: 11 Mbps
-  down: 55 Mbps
-- name: France_hysteria_21
-  type: hysteria
-  server: 51.15.10.149
-  port: 36474
-  ports: 40000-50000
   auth_str: dongtaiwang.com
   alpn:
   - h3
@@ -73,34 +50,10 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: Taiwan_hysteria_41
-  type: hysteria
-  server: 2.0035961.xyz
-  port: 400
-  auth_str: dongtaiwang.com
-  obfs: dongtaiwang.com
-  alpn:
-  - h3
-  sni: www.bing.com
-  skip-cert-verify: true
-  up: 11 Mbps
-  down: 55 Mbps
 - name: Taiwan_hysteria_51
   type: hysteria
   server: 2.0035961.xyz
   port: 400
-  auth_str: dongtaiwang.com
-  obfs: dongtaiwang.com
-  alpn:
-  - h3
-  sni: www.bing.com
-  skip-cert-verify: true
-  up: 11 Mbps
-  down: 55 Mbps
-- name: United States_hysteria_61
-  type: hysteria
-  server: 154.21.193.246
-  port: 100
   auth_str: dongtaiwang.com
   obfs: dongtaiwang.com
   alpn:
@@ -121,24 +74,6 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: None_vmess_81
-  type: vmess
-  server: 104.21.238.100
-  port: 443
-  uuid: 2c15ec31-54f6-4cc7-aa9b-e906c6889bab
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: xray2.6016725.xyz
-  network: ws
-  ws-opts:
-    path: github.com/Alvin9999
-    headers:
-      Host: xray2.6016725.xyz
-    early-data-header-name: Sec-WebSocket-Protocol
-    v2ray-http-upgrade: true
-    v2ray-http-upgrade-fast-open: true
 - name: None_vmess_91
   type: vmess
   server: 104.21.238.100
@@ -157,17 +92,6 @@ proxies:
     early-data-header-name: Sec-WebSocket-Protocol
     v2ray-http-upgrade: true
     v2ray-http-upgrade-fast-open: true
-- name: Taiwan_hysteria_101
-  type: hysteria
-  server: 1.0035961.xyz
-  port: 100
-  auth_str: dongtaiwang.com
-  alpn:
-  - h3
-  sni: www.bing.com
-  skip-cert-verify: true
-  up: 11 Mbps
-  down: 55 Mbps
 - name: Taiwan_hysteria_111
   type: hysteria
   server: 1.0035961.xyz
@@ -179,35 +103,7 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: Russia_vless_121
-  type: vless
-  server: 46.29.166.206
-  port: 400
-  uuid: ff7b0d54-ecdf-4ff1-be04-f8fd11693ba2
-  network: tcp
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.paypal.com
-  reality-opts:
-    public-key: bzpKT_Fgsm2k0oAe5SXJmbQN8OxK4AA4NR42yqM-hnI
-    short-id: ''
-  client-fingerprint: chrome
 - name: Russia_vless_131
-  type: vless
-  server: 46.29.166.206
-  port: 400
-  uuid: ff7b0d54-ecdf-4ff1-be04-f8fd11693ba2
-  network: tcp
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.paypal.com
-  reality-opts:
-    public-key: bzpKT_Fgsm2k0oAe5SXJmbQN8OxK4AA4NR42yqM-hnI
-    short-id: ''
-  client-fingerprint: chrome
-- name: Russia_vless_141
   type: vless
   server: 46.29.166.206
   port: 400
@@ -235,35 +131,7 @@ proxies:
     public-key: bzpKT_Fgsm2k0oAe5SXJmbQN8OxK4AA4NR42yqM-hnI
     short-id: ''
   client-fingerprint: chrome
-- name: Russia_vless_161
-  type: vless
-  server: 46.29.166.206
-  port: 400
-  uuid: ff7b0d54-ecdf-4ff1-be04-f8fd11693ba2
-  network: tcp
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.paypal.com
-  reality-opts:
-    public-key: bzpKT_Fgsm2k0oAe5SXJmbQN8OxK4AA4NR42yqM-hnI
-    short-id: ''
-  client-fingerprint: chrome
 - name: Russia_vless_171
-  type: vless
-  server: 46.29.166.206
-  port: 400
-  uuid: ff7b0d54-ecdf-4ff1-be04-f8fd11693ba2
-  network: tcp
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.paypal.com
-  reality-opts:
-    public-key: bzpKT_Fgsm2k0oAe5SXJmbQN8OxK4AA4NR42yqM-hnI
-    short-id: ''
-  client-fingerprint: chrome
-- name: Russia_vless_181
   type: vless
   server: 46.29.166.206
   port: 400
@@ -291,39 +159,11 @@ proxies:
     public-key: bzpKT_Fgsm2k0oAe5SXJmbQN8OxK4AA4NR42yqM-hnI
     short-id: ''
   client-fingerprint: chrome
-- name: France_hy_0
-  type: hysteria
-  server: 195.154.200.40
-  port: 2345
-  ports: 2345
-  auth_str: dongtaiwang.com
-  up: 1000
-  down: 1000
-  fast-open: true
-  protocol: udp
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
 - name: France_hy_1
   type: hysteria
   server: 195.154.200.40
   port: 2345
   ports: 2345
-  auth_str: dongtaiwang.com
-  up: 1000
-  down: 1000
-  fast-open: true
-  protocol: udp
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: United States_hy_2
-  type: hysteria
-  server: 104.192.224.142
-  port: 333
-  ports: 333
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -347,39 +187,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: United States_hy_4
-  type: hysteria
-  server: 108.181.24.77
-  port: 35862
-  ports: 40000-50000
-  auth_str: dongtaiwang.com
-  up: 1000
-  down: 1000
-  fast-open: true
-  protocol: udp
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
 - name: United States_hy_5
   type: hysteria
   server: 104.192.224.138
   port: 28850
   ports: 20000-30000
-  auth_str: dongtaiwang.com
-  up: 1000
-  down: 1000
-  fast-open: true
-  protocol: udp
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: United States_hy_6
-  type: hysteria
-  server: 104.192.224.142
-  port: 333
-  ports: 333
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -403,14 +215,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: France_hy2_0
-  type: hysteria2
-  server: 195.154.200.40
-  port: 42259
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
 - name: France_hy2_1
   type: hysteria2
   server: 195.154.200.40
@@ -419,25 +223,9 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: United States_hy2_2
-  type: hysteria2
-  server: 173.234.25.51
-  port: 22222
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
 - name: United States_hy2_3
   type: hysteria2
   server: 173.234.25.51
-  port: 22222
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: United States_hy2_4
-  type: hysteria2
-  server: 208.87.243.187
   port: 22222
   password: dongtaiwang.com
   fast-open: true
@@ -451,14 +239,6 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: United States_hy2_6
-  type: hysteria2
-  server: 173.234.25.51
-  port: 22222
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
 - name: United States_hy2_7
   type: hysteria2
   server: 173.234.25.51
@@ -467,20 +247,6 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: United States_reality_0
-  type: vless
-  server: 108.181.3.67
-  port: 52562
-  uuid: 47b8b611-9e64-4d59-a1ef-b51b3ffc0cae
-  network: tcp
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  servername: www.amazon.com
-  reality-opts:
-    public-key: qvdphcXh7EkRcfJ7XXB5v0KH9e2RqZQhL2QNyLQdsm8
-    short-id: ''
 - name: United States_reality_1
   type: vless
   server: 108.181.3.67
@@ -494,20 +260,6 @@ proxies:
   servername: www.amazon.com
   reality-opts:
     public-key: qvdphcXh7EkRcfJ7XXB5v0KH9e2RqZQhL2QNyLQdsm8
-    short-id: ''
-- name: United States_reality_2
-  type: vless
-  server: 154.29.159.166
-  port: 400
-  uuid: ff7b0d54-ecdf-4ff1-be04-f8fd11693ba2
-  network: tcp
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  servername: www.paypal.com
-  reality-opts:
-    public-key: bzpKT_Fgsm2k0oAe5SXJmbQN8OxK4AA4NR42yqM-hnI
     short-id: ''
 - name: United States_reality_3
   type: vless
@@ -530,45 +282,25 @@ proxy-groups:
   - ⚡ 低延迟
   - ⚖️ 负载均衡
   - DIRECT
-  - United States_hysteria_01
   - United States_hysteria_11
-  - France_hysteria_21
   - France_hysteria_31
-  - Taiwan_hysteria_41
   - Taiwan_hysteria_51
-  - United States_hysteria_61
   - United States_hysteria_71
-  - None_vmess_81
   - None_vmess_91
-  - Taiwan_hysteria_101
   - Taiwan_hysteria_111
-  - Russia_vless_121
   - Russia_vless_131
-  - Russia_vless_141
   - Russia_vless_151
-  - Russia_vless_161
   - Russia_vless_171
-  - Russia_vless_181
   - Russia_vless_191
-  - France_hy_0
   - France_hy_1
-  - United States_hy_2
   - United States_hy_3
-  - United States_hy_4
   - United States_hy_5
-  - United States_hy_6
   - United States_hy_7
-  - France_hy2_0
   - France_hy2_1
-  - United States_hy2_2
   - United States_hy2_3
-  - United States_hy2_4
   - United States_hy2_5
-  - United States_hy2_6
   - United States_hy2_7
-  - United States_reality_0
   - United States_reality_1
-  - United States_reality_2
   - United States_reality_3
 - name: ⚡ 低延迟
   type: url-test
@@ -576,45 +308,25 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - United States_hysteria_01
   - United States_hysteria_11
-  - France_hysteria_21
   - France_hysteria_31
-  - Taiwan_hysteria_41
   - Taiwan_hysteria_51
-  - United States_hysteria_61
   - United States_hysteria_71
-  - None_vmess_81
   - None_vmess_91
-  - Taiwan_hysteria_101
   - Taiwan_hysteria_111
-  - Russia_vless_121
   - Russia_vless_131
-  - Russia_vless_141
   - Russia_vless_151
-  - Russia_vless_161
   - Russia_vless_171
-  - Russia_vless_181
   - Russia_vless_191
-  - France_hy_0
   - France_hy_1
-  - United States_hy_2
   - United States_hy_3
-  - United States_hy_4
   - United States_hy_5
-  - United States_hy_6
   - United States_hy_7
-  - France_hy2_0
   - France_hy2_1
-  - United States_hy2_2
   - United States_hy2_3
-  - United States_hy2_4
   - United States_hy2_5
-  - United States_hy2_6
   - United States_hy2_7
-  - United States_reality_0
   - United States_reality_1
-  - United States_reality_2
   - United States_reality_3
 - name: ⚖️ 负载均衡
   type: load-balance
@@ -622,45 +334,25 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 180
   proxies:
-  - United States_hysteria_01
   - United States_hysteria_11
-  - France_hysteria_21
   - France_hysteria_31
-  - Taiwan_hysteria_41
   - Taiwan_hysteria_51
-  - United States_hysteria_61
   - United States_hysteria_71
-  - None_vmess_81
   - None_vmess_91
-  - Taiwan_hysteria_101
   - Taiwan_hysteria_111
-  - Russia_vless_121
   - Russia_vless_131
-  - Russia_vless_141
   - Russia_vless_151
-  - Russia_vless_161
   - Russia_vless_171
-  - Russia_vless_181
   - Russia_vless_191
-  - France_hy_0
   - France_hy_1
-  - United States_hy_2
   - United States_hy_3
-  - United States_hy_4
   - United States_hy_5
-  - United States_hy_6
   - United States_hy_7
-  - France_hy2_0
   - France_hy2_1
-  - United States_hy2_2
   - United States_hy2_3
-  - United States_hy2_4
   - United States_hy2_5
-  - United States_hy2_6
   - United States_hy2_7
-  - United States_reality_0
   - United States_reality_1
-  - United States_reality_2
   - United States_reality_3
 rules:
 - DOMAIN-KEYWORD,youtube,✈️ 出境游
