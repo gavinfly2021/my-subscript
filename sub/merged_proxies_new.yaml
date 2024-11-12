@@ -27,10 +27,10 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: United States_hysteria_01
+- name: France_hysteria_01
   type: hysteria
-  server: 64.42.176.180
-  port: 12345
+  server: 195.154.200.40
+  port: 2345
   auth_str: dongtaiwang.com
   alpn:
   - h3
@@ -38,10 +38,10 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: United States_hysteria_11
+- name: France_hysteria_11
   type: hysteria
-  server: 64.42.176.180
-  port: 12345
+  server: 195.154.200.40
+  port: 2345
   auth_str: dongtaiwang.com
   alpn:
   - h3
@@ -435,18 +435,18 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: United States_hy2_4
+- name: France_hy2_4
   type: hysteria2
-  server: 208.87.243.187
-  port: 22222
+  server: 195.154.33.70
+  port: 42259
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: United States_hy2_5
+- name: France_hy2_5
   type: hysteria2
-  server: 208.87.243.187
-  port: 22222
+  server: 195.154.33.70
+  port: 42259
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -530,8 +530,8 @@ proxy-groups:
   - ⚡ 低延迟
   - ⚖️ 负载均衡
   - DIRECT
-  - United States_hysteria_01
-  - United States_hysteria_11
+  - France_hysteria_01
+  - France_hysteria_11
   - France_hysteria_21
   - France_hysteria_31
   - Taiwan_hysteria_41
@@ -562,8 +562,8 @@ proxy-groups:
   - France_hy2_1
   - United States_hy2_2
   - United States_hy2_3
-  - United States_hy2_4
-  - United States_hy2_5
+  - France_hy2_4
+  - France_hy2_5
   - United States_hy2_6
   - United States_hy2_7
   - United States_reality_0
@@ -576,8 +576,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - United States_hysteria_01
-  - United States_hysteria_11
+  - France_hysteria_01
+  - France_hysteria_11
   - France_hysteria_21
   - France_hysteria_31
   - Taiwan_hysteria_41
@@ -608,8 +608,8 @@ proxy-groups:
   - France_hy2_1
   - United States_hy2_2
   - United States_hy2_3
-  - United States_hy2_4
-  - United States_hy2_5
+  - France_hy2_4
+  - France_hy2_5
   - United States_hy2_6
   - United States_hy2_7
   - United States_reality_0
@@ -622,8 +622,8 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 180
   proxies:
-  - United States_hysteria_01
-  - United States_hysteria_11
+  - France_hysteria_01
+  - France_hysteria_11
   - France_hysteria_21
   - France_hysteria_31
   - Taiwan_hysteria_41
@@ -654,8 +654,8 @@ proxy-groups:
   - France_hy2_1
   - United States_hy2_2
   - United States_hy2_3
-  - United States_hy2_4
-  - United States_hy2_5
+  - France_hy2_4
+  - France_hy2_5
   - United States_hy2_6
   - United States_hy2_7
   - United States_reality_0
