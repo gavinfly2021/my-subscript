@@ -73,106 +73,108 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: Taiwan_hysteria_41
+- name: France_hysteria_41
   type: hysteria
-  server: 2.0035961.xyz
-  port: 19627
-  auth_str: dongtaiwang.com
+  server: 195.154.200.178
+  port: 10312
+  auth-str: dongtaiwang.com
+  obfs: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
   alpn:
   - h3
-  sni: www.bing.com
-  skip-cert-verify: true
+  protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Taiwan_hysteria_51
+- name: France_hysteria_51
   type: hysteria
-  server: 2.0035961.xyz
-  port: 19627
-  auth_str: dongtaiwang.com
+  server: 195.154.200.178
+  port: 10312
+  auth-str: dongtaiwang.com
+  obfs: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
   alpn:
   - h3
-  sni: www.bing.com
-  skip-cert-verify: true
+  protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Taiwan_hysteria_61
+- name: France_hysteria_61
   type: hysteria
-  server: 1.0035961.xyz
-  port: 15806
-  auth_str: dongtaiwang.com
+  server: 195.154.200.178
+  port: 10312
+  auth-str: dongtaiwang.com
+  obfs: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
   alpn:
   - h3
-  sni: www.bing.com
-  skip-cert-verify: true
+  protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Taiwan_hysteria_71
+- name: France_hysteria_71
   type: hysteria
-  server: 1.0035961.xyz
-  port: 15806
-  auth_str: dongtaiwang.com
+  server: 195.154.200.178
+  port: 10312
+  auth-str: dongtaiwang.com
+  obfs: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
   alpn:
   - h3
-  sni: www.bing.com
-  skip-cert-verify: true
+  protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: None_vmess_81
-  type: vmess
-  server: 104.21.238.100
-  port: 443
-  uuid: 2c15ec31-54f6-4cc7-aa9b-e906c6889bab
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: xray2.6016725.xyz
-  network: ws
-  ws-opts:
-    path: github.com/Alvin9999
-    headers:
-      Host: xray2.6016725.xyz
-    early-data-header-name: Sec-WebSocket-Protocol
-    v2ray-http-upgrade: true
-    v2ray-http-upgrade-fast-open: true
-- name: None_vmess_91
-  type: vmess
-  server: 104.21.238.100
-  port: 443
-  uuid: 2c15ec31-54f6-4cc7-aa9b-e906c6889bab
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: xray2.6016725.xyz
-  network: ws
-  ws-opts:
-    path: github.com/Alvin9999
-    headers:
-      Host: xray2.6016725.xyz
-    early-data-header-name: Sec-WebSocket-Protocol
-    v2ray-http-upgrade: true
-    v2ray-http-upgrade-fast-open: true
-- name: Taiwan_hysteria_101
+- name: United States_hysteria_81
   type: hysteria
-  server: 1.0035961.xyz
-  port: 15806
-  auth_str: dongtaiwang.com
+  server: 108.181.24.77
+  port: 35862
+  ports: 40000-50000
+  auth-str: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
   alpn:
   - h3
-  sni: www.bing.com
-  skip-cert-verify: true
+  protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Taiwan_hysteria_111
+- name: United States_hysteria_91
   type: hysteria
-  server: 1.0035961.xyz
-  port: 15806
-  auth_str: dongtaiwang.com
+  server: 108.181.24.77
+  port: 35862
+  ports: 40000-50000
+  auth-str: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
   alpn:
   - h3
-  sni: www.bing.com
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: United States_hysteria_101
+  type: hysteria
+  server: 108.181.24.77
+  port: 35862
+  ports: 40000-50000
+  auth-str: dongtaiwang.com
+  sni: bing.com
   skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: United States_hysteria_111
+  type: hysteria
+  server: 108.181.24.77
+  port: 35862
+  ports: 40000-50000
+  auth-str: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
   up: 11 Mbps
   down: 55 Mbps
 - name: United States_hysteria_121
@@ -486,14 +488,14 @@ proxy-groups:
   - France_hysteria_11
   - France_hysteria_21
   - France_hysteria_31
-  - Taiwan_hysteria_41
-  - Taiwan_hysteria_51
-  - Taiwan_hysteria_61
-  - Taiwan_hysteria_71
-  - None_vmess_81
-  - None_vmess_91
-  - Taiwan_hysteria_101
-  - Taiwan_hysteria_111
+  - France_hysteria_41
+  - France_hysteria_51
+  - France_hysteria_61
+  - France_hysteria_71
+  - United States_hysteria_81
+  - United States_hysteria_91
+  - United States_hysteria_101
+  - United States_hysteria_111
   - United States_hysteria_121
   - United States_hysteria_131
   - United States_hysteria_141
@@ -530,14 +532,14 @@ proxy-groups:
   - France_hysteria_11
   - France_hysteria_21
   - France_hysteria_31
-  - Taiwan_hysteria_41
-  - Taiwan_hysteria_51
-  - Taiwan_hysteria_61
-  - Taiwan_hysteria_71
-  - None_vmess_81
-  - None_vmess_91
-  - Taiwan_hysteria_101
-  - Taiwan_hysteria_111
+  - France_hysteria_41
+  - France_hysteria_51
+  - France_hysteria_61
+  - France_hysteria_71
+  - United States_hysteria_81
+  - United States_hysteria_91
+  - United States_hysteria_101
+  - United States_hysteria_111
   - United States_hysteria_121
   - United States_hysteria_131
   - United States_hysteria_141
@@ -574,14 +576,14 @@ proxy-groups:
   - France_hysteria_11
   - France_hysteria_21
   - France_hysteria_31
-  - Taiwan_hysteria_41
-  - Taiwan_hysteria_51
-  - Taiwan_hysteria_61
-  - Taiwan_hysteria_71
-  - None_vmess_81
-  - None_vmess_91
-  - Taiwan_hysteria_101
-  - Taiwan_hysteria_111
+  - France_hysteria_41
+  - France_hysteria_51
+  - France_hysteria_61
+  - France_hysteria_71
+  - United States_hysteria_81
+  - United States_hysteria_91
+  - United States_hysteria_101
+  - United States_hysteria_111
   - United States_hysteria_121
   - United States_hysteria_131
   - United States_hysteria_141
