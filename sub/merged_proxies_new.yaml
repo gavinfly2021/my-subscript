@@ -261,18 +261,6 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: Germany_hysteria_191
-  type: hysteria
-  server: 146.0.36.114
-  port: 64914
-  ports: 30000-40000
-  auth_str: dongtaiwang.com
-  alpn:
-  - h3
-  sni: www.bing.com
-  skip-cert-verify: true
-  up: 11 Mbps
-  down: 55 Mbps
 - name: France_hy_0
   type: hysteria
   server: 195.154.200.40
@@ -503,7 +491,6 @@ proxy-groups:
   - Germany_hysteria_161
   - Germany_hysteria_171
   - Germany_hysteria_181
-  - Germany_hysteria_191
   - France_hy_0
   - France_hy_1
   - United States_hy_2
@@ -547,7 +534,6 @@ proxy-groups:
   - Germany_hysteria_161
   - Germany_hysteria_171
   - Germany_hysteria_181
-  - Germany_hysteria_191
   - France_hy_0
   - France_hy_1
   - United States_hy_2
@@ -591,7 +577,6 @@ proxy-groups:
   - Germany_hysteria_161
   - Germany_hysteria_171
   - Germany_hysteria_181
-  - Germany_hysteria_191
   - France_hy_0
   - France_hy_1
   - United States_hy_2
