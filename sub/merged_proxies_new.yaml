@@ -477,6 +477,34 @@ proxies:
   reality-opts:
     public-key: YySncDZNohAu8pygK6hAG2OcptADdEJBwArHe4amnm8
     short-id: d019a9ad
+- name: Taiwan_reality_2
+  type: vless
+  server: 36.226.252.19
+  port: 56870
+  uuid: 7c4efc45-42f7-48d8-a741-6093cd2886a7
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: www.yahoo.com
+  reality-opts:
+    public-key: 9J1xcf0tI7OQ8Z6ULcruIIjsM5AK3nZTXdOK6GIhwmA
+    short-id: 239c3cef
+- name: Taiwan_reality_3
+  type: vless
+  server: 36.226.252.19
+  port: 56870
+  uuid: 7c4efc45-42f7-48d8-a741-6093cd2886a7
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: www.yahoo.com
+  reality-opts:
+    public-key: 9J1xcf0tI7OQ8Z6ULcruIIjsM5AK3nZTXdOK6GIhwmA
+    short-id: 239c3cef
 - name: Russia_reality_4
   type: vless
   server: 185.22.155.105
@@ -578,6 +606,8 @@ proxy-groups:
   - United States_hy2_7
   - Russia_reality_0
   - Russia_reality_1
+  - Taiwan_reality_2
+  - Taiwan_reality_3
   - Russia_reality_4
   - Russia_reality_5
   - Russia_reality_6
@@ -626,6 +656,8 @@ proxy-groups:
   - United States_hy2_7
   - Russia_reality_0
   - Russia_reality_1
+  - Taiwan_reality_2
+  - Taiwan_reality_3
   - Russia_reality_4
   - Russia_reality_5
   - Russia_reality_6
@@ -674,6 +706,8 @@ proxy-groups:
   - United States_hy2_7
   - Russia_reality_0
   - Russia_reality_1
+  - Taiwan_reality_2
+  - Taiwan_reality_3
   - Russia_reality_4
   - Russia_reality_5
   - Russia_reality_6
