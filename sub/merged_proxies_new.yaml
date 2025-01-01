@@ -385,18 +385,18 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: France_hy2_0
+- name: United States_hy2_0
   type: hysteria2
-  server: 195.154.33.70
-  port: 42259
+  server: 202.5.31.3
+  port: 38654
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: France_hy2_1
+- name: United States_hy2_1
   type: hysteria2
-  server: 195.154.33.70
-  port: 42259
+  server: 202.5.31.3
+  port: 38654
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -596,8 +596,8 @@ proxy-groups:
   - United States_hy_5
   - United States_hy_6
   - United States_hy_7
-  - France_hy2_0
-  - France_hy2_1
+  - United States_hy2_0
+  - United States_hy2_1
   - United States_hy2_2
   - United States_hy2_3
   - France_hy2_4
@@ -646,8 +646,8 @@ proxy-groups:
   - United States_hy_5
   - United States_hy_6
   - United States_hy_7
-  - France_hy2_0
-  - France_hy2_1
+  - United States_hy2_0
+  - United States_hy2_1
   - United States_hy2_2
   - United States_hy2_3
   - France_hy2_4
@@ -696,8 +696,8 @@ proxy-groups:
   - United States_hy_5
   - United States_hy_6
   - United States_hy_7
-  - France_hy2_0
-  - France_hy2_1
+  - United States_hy2_0
+  - United States_hy2_1
   - United States_hy2_2
   - United States_hy2_3
   - France_hy2_4
