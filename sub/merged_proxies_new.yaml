@@ -449,34 +449,34 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: United States_reality_0
+- name: Russia_reality_0
   type: vless
-  server: 202.5.31.3
-  port: 9160
-  uuid: 86b79227-7943-4a4e-aead-03f7537f5215
+  server: 185.22.153.75
+  port: 21315
+  uuid: 095ad0e3-9ed9-4346-9108-58b40e664f5c
   network: tcp
   tls: true
   udp: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  servername: dash.cloudflare.com
+  servername: www.yahoo.com
   reality-opts:
-    public-key: fdZm7k4wrEvoWimsdcS7IJvMA_8GHHXZokgfmpodx0s
-    short-id: ''
-- name: United States_reality_1
+    public-key: YySncDZNohAu8pygK6hAG2OcptADdEJBwArHe4amnm8
+    short-id: d019a9ad
+- name: Russia_reality_1
   type: vless
-  server: 202.5.31.3
-  port: 9160
-  uuid: 86b79227-7943-4a4e-aead-03f7537f5215
+  server: 185.22.153.75
+  port: 21315
+  uuid: 095ad0e3-9ed9-4346-9108-58b40e664f5c
   network: tcp
   tls: true
   udp: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  servername: dash.cloudflare.com
+  servername: www.yahoo.com
   reality-opts:
-    public-key: fdZm7k4wrEvoWimsdcS7IJvMA_8GHHXZokgfmpodx0s
-    short-id: ''
+    public-key: YySncDZNohAu8pygK6hAG2OcptADdEJBwArHe4amnm8
+    short-id: d019a9ad
 - name: Taiwan_reality_2
   type: vless
   server: 36.226.244.225
@@ -604,8 +604,8 @@ proxy-groups:
   - France_hy2_5
   - United States_hy2_6
   - United States_hy2_7
-  - United States_reality_0
-  - United States_reality_1
+  - Russia_reality_0
+  - Russia_reality_1
   - Taiwan_reality_2
   - Taiwan_reality_3
   - Russia_reality_4
@@ -654,8 +654,8 @@ proxy-groups:
   - France_hy2_5
   - United States_hy2_6
   - United States_hy2_7
-  - United States_reality_0
-  - United States_reality_1
+  - Russia_reality_0
+  - Russia_reality_1
   - Taiwan_reality_2
   - Taiwan_reality_3
   - Russia_reality_4
@@ -704,8 +704,8 @@ proxy-groups:
   - France_hy2_5
   - United States_hy2_6
   - United States_hy2_7
-  - United States_reality_0
-  - United States_reality_1
+  - Russia_reality_0
+  - Russia_reality_1
   - Taiwan_reality_2
   - Taiwan_reality_3
   - Russia_reality_4
