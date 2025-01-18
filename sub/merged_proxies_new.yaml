@@ -64,18 +64,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: United States_ss_31
-  type: ss
-  server: 108.181.24.77
-  port: 33449
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ASXmhqODZasnV777P2m33eQ9mCU5KXY86dXJQTuWFW8=
-  plugin: shadow-tls
-  plugin-opts:
-    host: nijigen-works.jp
-    password: YEudERP9ZstwNZpOWytH3Ds4sSEgj8GVZk7OQEGDEpo=
-    version: 3
-- name: United States_hysteria_32
+- name: United States_hysteria_31
   type: hysteria
   server: 108.181.24.77
   port: 35862
@@ -318,29 +307,29 @@ proxies:
   - h3
 - name: United States_hy_2
   type: hysteria
-  server: 104.192.224.142
-  port: 14747
-  ports: 14747
+  server: 208.87.243.187
+  port: 63721
+  ports: 47000-48000
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
   fast-open: true
   protocol: udp
-  sni: bing.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
 - name: United States_hy_3
   type: hysteria
-  server: 104.192.224.142
-  port: 14747
-  ports: 14747
+  server: 208.87.243.187
+  port: 63721
+  ports: 47000-48000
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
   fast-open: true
   protocol: udp
-  sni: bing.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -374,29 +363,29 @@ proxies:
   - h3
 - name: United States_hy_6
   type: hysteria
-  server: 104.192.224.142
-  port: 14747
-  ports: 14747
+  server: 208.87.243.187
+  port: 63721
+  ports: 47000-48000
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
   fast-open: true
   protocol: udp
-  sni: bing.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
 - name: United States_hy_7
   type: hysteria
-  server: 104.192.224.142
-  port: 14747
-  ports: 14747
+  server: 208.87.243.187
+  port: 63721
+  ports: 47000-48000
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
   fast-open: true
   protocol: udp
-  sni: bing.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -586,8 +575,7 @@ proxy-groups:
   - France_hysteria_01
   - France_hysteria_11
   - United States_hysteria_21
-  - United States_ss_31
-  - United States_hysteria_32
+  - United States_hysteria_31
   - France_hysteria_41
   - France_hysteria_51
   - France_hysteria_61
@@ -637,8 +625,7 @@ proxy-groups:
   - France_hysteria_01
   - France_hysteria_11
   - United States_hysteria_21
-  - United States_ss_31
-  - United States_hysteria_32
+  - United States_hysteria_31
   - France_hysteria_41
   - France_hysteria_51
   - France_hysteria_61
@@ -688,8 +675,7 @@ proxy-groups:
   - France_hysteria_01
   - France_hysteria_11
   - United States_hysteria_21
-  - United States_ss_31
-  - United States_hysteria_32
+  - United States_hysteria_31
   - France_hysteria_41
   - France_hysteria_51
   - France_hysteria_61
