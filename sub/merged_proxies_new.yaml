@@ -27,24 +27,26 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: France_hysteria_01
+- name: United States_hysteria_01
   type: hysteria
-  server: 195.154.200.40
-  port: 15010
-  auth_str: dongtaiwang.com
-  alpn:
-  - h3
+  server: 108.181.24.77
+  port: 11512
+  ports: 20000-30000
+  auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
   up: 11 Mbps
   down: 55 Mbps
 - name: United States_hysteria_11
   type: hysteria
   server: 108.181.24.77
-  port: 35862
-  ports: 40000-50000
+  port: 11512
+  ports: 20000-30000
   auth-str: dongtaiwang.com
-  sni: bing.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -54,10 +56,10 @@ proxies:
 - name: United States_hysteria_21
   type: hysteria
   server: 108.181.24.77
-  port: 35862
-  ports: 40000-50000
+  port: 11512
+  ports: 20000-30000
   auth-str: dongtaiwang.com
-  sni: bing.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -67,10 +69,10 @@ proxies:
 - name: United States_hysteria_31
   type: hysteria
   server: 108.181.24.77
-  port: 35862
-  ports: 40000-50000
+  port: 11512
+  ports: 20000-30000
   auth-str: dongtaiwang.com
-  sni: bing.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -119,10 +121,10 @@ proxies:
 - name: France_hysteria_71
   type: hysteria
   server: 195.154.200.178
-  port: 10312
+  port: 34911
   auth-str: dongtaiwang.com
   obfs: dongtaiwang.com
-  sni: bing.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -132,10 +134,10 @@ proxies:
 - name: United States_hysteria_81
   type: hysteria
   server: 108.181.24.77
-  port: 35862
-  ports: 40000-50000
+  port: 11512
+  ports: 20000-30000
   auth-str: dongtaiwang.com
-  sni: bing.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -145,10 +147,10 @@ proxies:
 - name: United States_hysteria_91
   type: hysteria
   server: 108.181.24.77
-  port: 35862
-  ports: 40000-50000
+  port: 11512
+  ports: 20000-30000
   auth-str: dongtaiwang.com
-  sni: bing.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -158,10 +160,10 @@ proxies:
 - name: United States_hysteria_101
   type: hysteria
   server: 108.181.24.77
-  port: 35862
-  ports: 40000-50000
+  port: 11512
+  ports: 20000-30000
   auth-str: dongtaiwang.com
-  sni: bing.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -171,10 +173,10 @@ proxies:
 - name: United States_hysteria_111
   type: hysteria
   server: 108.181.24.77
-  port: 35862
-  ports: 40000-50000
+  port: 11512
+  ports: 20000-30000
   auth-str: dongtaiwang.com
-  sni: bing.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -235,8 +237,7 @@ proxies:
 - name: United States_hysteria_161
   type: hysteria
   server: 208.87.243.151
-  port: 38670
-  ports: 10000-20000
+  port: 17549
   auth_str: dongtaiwang.com
   alpn:
   - h3
@@ -244,11 +245,10 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: Germany_hysteria_171
+- name: United States_hysteria_171
   type: hysteria
-  server: 146.0.36.114
-  port: 64914
-  ports: 30000-40000
+  server: 208.87.243.151
+  port: 17549
   auth_str: dongtaiwang.com
   alpn:
   - h3
@@ -259,8 +259,7 @@ proxies:
 - name: United States_hysteria_181
   type: hysteria
   server: 208.87.243.151
-  port: 38670
-  ports: 10000-20000
+  port: 17549
   auth_str: dongtaiwang.com
   alpn:
   - h3
@@ -271,8 +270,7 @@ proxies:
 - name: United States_hysteria_191
   type: hysteria
   server: 208.87.243.151
-  port: 38670
-  ports: 10000-20000
+  port: 17549
   auth_str: dongtaiwang.com
   alpn:
   - h3
@@ -339,28 +337,28 @@ proxies:
 - name: United States_hy_4
   type: hysteria
   server: 108.181.24.77
-  port: 35862
-  ports: 40000-50000
-  auth_str: dongtaiwang.com
-  up: 1000
-  down: 1000
-  fast-open: true
-  protocol: udp
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: United States_hy_5
-  type: hysteria
-  server: 104.192.224.138
-  port: 28850
+  port: 11512
   ports: 20000-30000
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
   fast-open: true
   protocol: udp
-  sni: bing.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: United States_hy_5
+  type: hysteria
+  server: 108.181.24.77
+  port: 11512
+  ports: 20000-30000
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -411,18 +409,18 @@ proxies:
 - name: United States_hy2_2
   type: hysteria2
   server: 108.181.5.130
-  port: 7329
+  port: 43836
   password: dongtaiwang.com
   fast-open: true
-  sni: www.bing.com
+  sni: apple.com
   skip-cert-verify: true
 - name: United States_hy2_3
   type: hysteria2
   server: 108.181.5.130
-  port: 7329
+  port: 43836
   password: dongtaiwang.com
   fast-open: true
-  sni: www.bing.com
+  sni: apple.com
   skip-cert-verify: true
 - name: France_hy2_4
   type: hysteria2
@@ -443,18 +441,18 @@ proxies:
 - name: United States_hy2_6
   type: hysteria2
   server: 108.181.5.130
-  port: 7329
+  port: 43836
   password: dongtaiwang.com
   fast-open: true
-  sni: www.bing.com
+  sni: apple.com
   skip-cert-verify: true
 - name: United States_hy2_7
   type: hysteria2
   server: 108.181.5.130
-  port: 7329
+  port: 43836
   password: dongtaiwang.com
   fast-open: true
-  sni: www.bing.com
+  sni: apple.com
   skip-cert-verify: true
 - name: Russia_reality_0
   type: vless
@@ -575,7 +573,7 @@ proxy-groups:
   - ⚡ 低延迟
   - ⚖️ 负载均衡
   - DIRECT
-  - France_hysteria_01
+  - United States_hysteria_01
   - United States_hysteria_11
   - United States_hysteria_21
   - United States_hysteria_31
@@ -592,7 +590,7 @@ proxy-groups:
   - Russia_hysteria_141
   - Russia_hysteria_151
   - United States_hysteria_161
-  - Germany_hysteria_171
+  - United States_hysteria_171
   - United States_hysteria_181
   - United States_hysteria_191
   - France_hy_0
@@ -625,7 +623,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - France_hysteria_01
+  - United States_hysteria_01
   - United States_hysteria_11
   - United States_hysteria_21
   - United States_hysteria_31
@@ -642,7 +640,7 @@ proxy-groups:
   - Russia_hysteria_141
   - Russia_hysteria_151
   - United States_hysteria_161
-  - Germany_hysteria_171
+  - United States_hysteria_171
   - United States_hysteria_181
   - United States_hysteria_191
   - France_hy_0
@@ -675,7 +673,7 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 180
   proxies:
-  - France_hysteria_01
+  - United States_hysteria_01
   - United States_hysteria_11
   - United States_hysteria_21
   - United States_hysteria_31
@@ -692,7 +690,7 @@ proxy-groups:
   - Russia_hysteria_141
   - Russia_hysteria_151
   - United States_hysteria_161
-  - Germany_hysteria_171
+  - United States_hysteria_171
   - United States_hysteria_181
   - United States_hysteria_191
   - France_hy_0
