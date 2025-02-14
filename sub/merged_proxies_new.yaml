@@ -51,32 +51,32 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: United States_hysteria_21
-  type: hysteria
-  server: 108.181.24.77
-  port: 11512
-  ports: 20000-30000
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
+- name: United States_tuic_21
+  server: 108.181.5.131
+  port: 34008
+  type: tuic
+  uuid: f84c91a4-0125-4495-82f3-732cd0a0bba8
+  password: dongtaiwang.com
   alpn:
   - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: United States_hysteria_31
-  type: hysteria
-  server: 108.181.24.77
-  port: 11512
-  ports: 20000-30000
-  auth-str: dongtaiwang.com
-  sni: apple.com
+  sni: bing.com
   skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: United States_tuic_31
+  server: 108.181.5.131
+  port: 34008
+  type: tuic
+  uuid: f84c91a4-0125-4495-82f3-732cd0a0bba8
+  password: dongtaiwang.com
   alpn:
   - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: France_hysteria_41
   type: hysteria
   server: 195.154.200.178
@@ -111,7 +111,8 @@ proxies:
   password: 074f49ce-e698-4eca-9a7f-25b480737c5d
   alpn:
   - h3
-  disable-sni: true
+  sni: www.bing.com
+  skip-cert-verify: true
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
@@ -123,7 +124,8 @@ proxies:
   password: 074f49ce-e698-4eca-9a7f-25b480737c5d
   alpn:
   - h3
-  disable-sni: true
+  sni: www.bing.com
+  skip-cert-verify: true
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
@@ -161,7 +163,8 @@ proxies:
   password: 074f49ce-e698-4eca-9a7f-25b480737c5d
   alpn:
   - h3
-  disable-sni: true
+  sni: www.bing.com
+  skip-cert-verify: true
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
@@ -173,7 +176,8 @@ proxies:
   password: 074f49ce-e698-4eca-9a7f-25b480737c5d
   alpn:
   - h3
-  disable-sni: true
+  sni: www.bing.com
+  skip-cert-verify: true
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
@@ -570,8 +574,8 @@ proxy-groups:
   - DIRECT
   - The Netherlands_hysteria_01
   - The Netherlands_hysteria_11
-  - United States_hysteria_21
-  - United States_hysteria_31
+  - United States_tuic_21
+  - United States_tuic_31
   - France_hysteria_41
   - France_hysteria_51
   - Russia_tuic_61
@@ -620,8 +624,8 @@ proxy-groups:
   proxies:
   - The Netherlands_hysteria_01
   - The Netherlands_hysteria_11
-  - United States_hysteria_21
-  - United States_hysteria_31
+  - United States_tuic_21
+  - United States_tuic_31
   - France_hysteria_41
   - France_hysteria_51
   - Russia_tuic_61
@@ -670,8 +674,8 @@ proxy-groups:
   proxies:
   - The Netherlands_hysteria_01
   - The Netherlands_hysteria_11
-  - United States_hysteria_21
-  - United States_hysteria_31
+  - United States_tuic_21
+  - United States_tuic_31
   - France_hysteria_41
   - France_hysteria_51
   - Russia_tuic_61
