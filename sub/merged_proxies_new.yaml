@@ -30,7 +30,7 @@ proxies:
 - name: The Netherlands_hysteria_01
   type: hysteria
   server: 62.210.10.113
-  port: 11503
+  port: 55690
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -42,7 +42,7 @@ proxies:
 - name: The Netherlands_hysteria_11
   type: hysteria
   server: 62.210.10.113
-  port: 11503
+  port: 55690
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -80,9 +80,8 @@ proxies:
 - name: France_hysteria_41
   type: hysteria
   server: 195.154.200.178
-  port: 34911
+  port: 44557
   auth-str: dongtaiwang.com
-  obfs: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
   alpn:
@@ -93,9 +92,8 @@ proxies:
 - name: France_hysteria_51
   type: hysteria
   server: 195.154.200.178
-  port: 34911
+  port: 44557
   auth-str: dongtaiwang.com
-  obfs: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
   alpn:
@@ -105,26 +103,26 @@ proxies:
   down: 55 Mbps
 - name: Russia_tuic_61
   server: 185.22.152.125
-  port: 59728
+  port: 13457
   type: tuic
-  uuid: 074f49ce-e698-4eca-9a7f-25b480737c5d
-  password: 074f49ce-e698-4eca-9a7f-25b480737c5d
+  uuid: 3d6ce949-101b-4e5d-8be8-a631481a9ebd
+  password: dongtaiwang.com
   alpn:
   - h3
-  sni: www.bing.com
+  sni: bing.com
   skip-cert-verify: true
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
 - name: Russia_tuic_71
   server: 185.22.152.125
-  port: 59728
+  port: 56119
   type: tuic
-  uuid: 074f49ce-e698-4eca-9a7f-25b480737c5d
-  password: 074f49ce-e698-4eca-9a7f-25b480737c5d
+  uuid: 7f372919-7d0c-414e-9da8-999f35326713
+  password: dongtaiwang.com
   alpn:
   - h3
-  sni: www.bing.com
+  sni: bing.com
   skip-cert-verify: true
   reduce-rtt: true
   udp-relay-mode: native
@@ -157,26 +155,26 @@ proxies:
   down: 55 Mbps
 - name: Russia_tuic_101
   server: 185.22.152.125
-  port: 59728
+  port: 13457
   type: tuic
-  uuid: 074f49ce-e698-4eca-9a7f-25b480737c5d
-  password: 074f49ce-e698-4eca-9a7f-25b480737c5d
+  uuid: 3d6ce949-101b-4e5d-8be8-a631481a9ebd
+  password: dongtaiwang.com
   alpn:
   - h3
-  sni: www.bing.com
+  sni: bing.com
   skip-cert-verify: true
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
 - name: Russia_tuic_111
   server: 185.22.152.125
-  port: 59728
+  port: 13457
   type: tuic
-  uuid: 074f49ce-e698-4eca-9a7f-25b480737c5d
-  password: 074f49ce-e698-4eca-9a7f-25b480737c5d
+  uuid: 3d6ce949-101b-4e5d-8be8-a631481a9ebd
+  password: dongtaiwang.com
   alpn:
   - h3
-  sni: www.bing.com
+  sni: bing.com
   skip-cert-verify: true
   reduce-rtt: true
   udp-relay-mode: native
@@ -305,11 +303,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: United States_hy_2
+- name: Russia_hy_2
   type: hysteria
-  server: 208.87.243.187
-  port: 63721
-  ports: 47000-48000
+  server: 185.22.155.71
+  port: 63717
+  ports: 40000-50000
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -319,11 +317,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: United States_hy_3
+- name: Russia_hy_3
   type: hysteria
-  server: 208.87.243.187
-  port: 63721
-  ports: 47000-48000
+  server: 185.22.155.71
+  port: 63717
+  ports: 40000-50000
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -333,11 +331,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: United States_hy_4
+- name: France_hy_4
   type: hysteria
-  server: 108.181.24.77
-  port: 11512
-  ports: 20000-30000
+  server: 51.159.226.1
+  port: 14241
+  ports: 14241
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -347,11 +345,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: United States_hy_5
+- name: France_hy_5
   type: hysteria
-  server: 108.181.24.77
-  port: 11512
-  ports: 20000-30000
+  server: 51.159.226.1
+  port: 14241
+  ports: 14241
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -364,8 +362,8 @@ proxies:
 - name: United States_hy_6
   type: hysteria
   server: 208.87.243.187
-  port: 63721
-  ports: 47000-48000
+  port: 40528
+  ports: 40528
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -378,8 +376,8 @@ proxies:
 - name: United States_hy_7
   type: hysteria
   server: 208.87.243.187
-  port: 63721
-  ports: 47000-48000
+  port: 40528
+  ports: 40528
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -392,7 +390,7 @@ proxies:
 - name: France_hy2_0
   type: hysteria2
   server: 195.154.33.70
-  port: 13861
+  port: 59967
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -400,7 +398,7 @@ proxies:
 - name: France_hy2_1
   type: hysteria2
   server: 195.154.33.70
-  port: 13861
+  port: 59967
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -408,7 +406,7 @@ proxies:
 - name: United States_hy2_2
   type: hysteria2
   server: 108.181.5.130
-  port: 43836
+  port: 15544
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
@@ -423,16 +421,16 @@ proxies:
   skip-cert-verify: true
 - name: France_hy2_4
   type: hysteria2
-  server: 195.154.33.70
-  port: 13861
+  server: 51.159.226.1
+  port: 61770
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
 - name: France_hy2_5
   type: hysteria2
-  server: 195.154.33.70
-  port: 13861
+  server: 51.159.226.1
+  port: 61770
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -440,7 +438,7 @@ proxies:
 - name: United States_hy2_6
   type: hysteria2
   server: 108.181.5.130
-  port: 43836
+  port: 15544
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
@@ -453,34 +451,34 @@ proxies:
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
-- name: France_reality_0
+- name: Russia_reality_0
   type: vless
-  server: 195.154.33.15
-  port: 62075
-  uuid: 1384ac29-65d3-488f-9b7c-e964b777f206
+  server: 185.22.153.75
+  port: 21315
+  uuid: 095ad0e3-9ed9-4346-9108-58b40e664f5c
   network: tcp
   tls: true
   udp: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  servername: dash.cloudflare.com
+  servername: www.yahoo.com
   reality-opts:
-    public-key: MLKLAxXqG39LBE6FFf1PEKkCM_L7suV8YelyLFvm4yg
-    short-id: ''
-- name: France_reality_1
+    public-key: YySncDZNohAu8pygK6hAG2OcptADdEJBwArHe4amnm8
+    short-id: d019a9ad
+- name: Russia_reality_1
   type: vless
-  server: 195.154.33.15
-  port: 62075
-  uuid: 1384ac29-65d3-488f-9b7c-e964b777f206
+  server: 185.22.153.75
+  port: 21315
+  uuid: 095ad0e3-9ed9-4346-9108-58b40e664f5c
   network: tcp
   tls: true
   udp: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  servername: dash.cloudflare.com
+  servername: www.yahoo.com
   reality-opts:
-    public-key: MLKLAxXqG39LBE6FFf1PEKkCM_L7suV8YelyLFvm4yg
-    short-id: ''
+    public-key: YySncDZNohAu8pygK6hAG2OcptADdEJBwArHe4amnm8
+    short-id: d019a9ad
 - name: Russia_reality_2
   type: vless
   server: 185.22.153.75
@@ -594,10 +592,10 @@ proxy-groups:
   - United States_hysteria_191
   - France_hy_0
   - France_hy_1
-  - United States_hy_2
-  - United States_hy_3
-  - United States_hy_4
-  - United States_hy_5
+  - Russia_hy_2
+  - Russia_hy_3
+  - France_hy_4
+  - France_hy_5
   - United States_hy_6
   - United States_hy_7
   - France_hy2_0
@@ -608,8 +606,8 @@ proxy-groups:
   - France_hy2_5
   - United States_hy2_6
   - United States_hy2_7
-  - France_reality_0
-  - France_reality_1
+  - Russia_reality_0
+  - Russia_reality_1
   - Russia_reality_2
   - Russia_reality_3
   - Russia_reality_4
@@ -644,10 +642,10 @@ proxy-groups:
   - United States_hysteria_191
   - France_hy_0
   - France_hy_1
-  - United States_hy_2
-  - United States_hy_3
-  - United States_hy_4
-  - United States_hy_5
+  - Russia_hy_2
+  - Russia_hy_3
+  - France_hy_4
+  - France_hy_5
   - United States_hy_6
   - United States_hy_7
   - France_hy2_0
@@ -658,8 +656,8 @@ proxy-groups:
   - France_hy2_5
   - United States_hy2_6
   - United States_hy2_7
-  - France_reality_0
-  - France_reality_1
+  - Russia_reality_0
+  - Russia_reality_1
   - Russia_reality_2
   - Russia_reality_3
   - Russia_reality_4
@@ -694,10 +692,10 @@ proxy-groups:
   - United States_hysteria_191
   - France_hy_0
   - France_hy_1
-  - United States_hy_2
-  - United States_hy_3
-  - United States_hy_4
-  - United States_hy_5
+  - Russia_hy_2
+  - Russia_hy_3
+  - France_hy_4
+  - France_hy_5
   - United States_hy_6
   - United States_hy_7
   - France_hy2_0
@@ -708,8 +706,8 @@ proxy-groups:
   - France_hy2_5
   - United States_hy2_6
   - United States_hy2_7
-  - France_reality_0
-  - France_reality_1
+  - Russia_reality_0
+  - Russia_reality_1
   - Russia_reality_2
   - Russia_reality_3
   - Russia_reality_4
