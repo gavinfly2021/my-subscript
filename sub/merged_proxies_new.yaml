@@ -179,39 +179,37 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: Russia_hysteria_121
+- name: United States_hysteria_121
   type: hysteria
-  server: 185.22.155.71
-  port: 63717
-  ports: 40000-50000
-  auth_str: dongtaiwang.com
-  obfs: dongtaiwang.com
+  server: 108.181.24.77
+  port: 11512
+  ports: 20000-30000
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
   alpn:
   - h3
-  sni: www.bing.com
-  skip-cert-verify: true
+  protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Russia_hysteria_131
+- name: United States_hysteria_131
   type: hysteria
-  server: 185.22.155.71
-  port: 63717
-  ports: 40000-50000
-  auth_str: dongtaiwang.com
-  obfs: dongtaiwang.com
+  server: 108.181.24.77
+  port: 11512
+  ports: 20000-30000
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
   alpn:
   - h3
-  sni: www.bing.com
-  skip-cert-verify: true
+  protocol: udp
   up: 11 Mbps
   down: 55 Mbps
 - name: Russia_hysteria_141
   type: hysteria
   server: 185.22.155.71
-  port: 63717
-  ports: 40000-50000
+  port: 24342
   auth_str: dongtaiwang.com
-  obfs: dongtaiwang.com
   alpn:
   - h3
   sni: www.bing.com
@@ -221,10 +219,8 @@ proxies:
 - name: Russia_hysteria_151
   type: hysteria
   server: 185.22.155.71
-  port: 63717
-  ports: 40000-50000
+  port: 24342
   auth_str: dongtaiwang.com
-  obfs: dongtaiwang.com
   alpn:
   - h3
   sni: www.bing.com
@@ -306,8 +302,8 @@ proxies:
 - name: Russia_hy_2
   type: hysteria
   server: 185.22.155.71
-  port: 63717
-  ports: 40000-50000
+  port: 24342
+  ports: 24342
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -320,8 +316,8 @@ proxies:
 - name: Russia_hy_3
   type: hysteria
   server: 185.22.155.71
-  port: 63717
-  ports: 40000-50000
+  port: 24342
+  ports: 24342
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -582,8 +578,8 @@ proxy-groups:
   - United States_hysteria_91
   - Russia_tuic_101
   - Russia_tuic_111
-  - Russia_hysteria_121
-  - Russia_hysteria_131
+  - United States_hysteria_121
+  - United States_hysteria_131
   - Russia_hysteria_141
   - Russia_hysteria_151
   - United States_hysteria_161
@@ -632,8 +628,8 @@ proxy-groups:
   - United States_hysteria_91
   - Russia_tuic_101
   - Russia_tuic_111
-  - Russia_hysteria_121
-  - Russia_hysteria_131
+  - United States_hysteria_121
+  - United States_hysteria_131
   - Russia_hysteria_141
   - Russia_hysteria_151
   - United States_hysteria_161
@@ -682,8 +678,8 @@ proxy-groups:
   - United States_hysteria_91
   - Russia_tuic_101
   - Russia_tuic_111
-  - Russia_hysteria_121
-  - Russia_hysteria_131
+  - United States_hysteria_121
+  - United States_hysteria_131
   - Russia_hysteria_141
   - Russia_hysteria_151
   - United States_hysteria_161
