@@ -101,32 +101,30 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Russia_tuic_61
-  server: 46.29.166.207
-  port: 19988
-  type: tuic
-  uuid: c2028608-6993-46eb-8b58-0426c813a7ac
-  password: dongtaiwang.com
-  alpn:
-  - h3
+- name: United States_hysteria_61
+  type: hysteria
+  server: 108.181.24.77
+  port: 11512
+  auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: Russia_tuic_71
-  server: 46.29.166.207
-  port: 19988
-  type: tuic
-  uuid: c2028608-6993-46eb-8b58-0426c813a7ac
-  password: dongtaiwang.com
   alpn:
   - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: United States_hysteria_71
+  type: hysteria
+  server: 108.181.24.77
+  port: 11512
+  auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: United States_hysteria_81
   type: hysteria
   server: 108.181.24.77
@@ -151,32 +149,30 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Russia_tuic_101
-  server: 46.29.166.207
-  port: 19988
-  type: tuic
-  uuid: c2028608-6993-46eb-8b58-0426c813a7ac
-  password: dongtaiwang.com
-  alpn:
-  - h3
+- name: United States_hysteria_101
+  type: hysteria
+  server: 108.181.24.77
+  port: 11512
+  auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: Russia_tuic_111
-  server: 46.29.166.207
-  port: 19988
-  type: tuic
-  uuid: c2028608-6993-46eb-8b58-0426c813a7ac
-  password: dongtaiwang.com
   alpn:
   - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: United States_hysteria_111
+  type: hysteria
+  server: 108.181.24.77
+  port: 11512
+  auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: United States_hysteria_121
   type: hysteria
   server: 108.181.24.77
@@ -568,12 +564,12 @@ proxy-groups:
   - United States_tuic_31
   - France_hysteria_41
   - France_hysteria_51
-  - Russia_tuic_61
-  - Russia_tuic_71
+  - United States_hysteria_61
+  - United States_hysteria_71
   - United States_hysteria_81
   - United States_hysteria_91
-  - Russia_tuic_101
-  - Russia_tuic_111
+  - United States_hysteria_101
+  - United States_hysteria_111
   - United States_hysteria_121
   - United States_hysteria_131
   - Russia_hysteria_141
@@ -618,12 +614,12 @@ proxy-groups:
   - United States_tuic_31
   - France_hysteria_41
   - France_hysteria_51
-  - Russia_tuic_61
-  - Russia_tuic_71
+  - United States_hysteria_61
+  - United States_hysteria_71
   - United States_hysteria_81
   - United States_hysteria_91
-  - Russia_tuic_101
-  - Russia_tuic_111
+  - United States_hysteria_101
+  - United States_hysteria_111
   - United States_hysteria_121
   - United States_hysteria_131
   - Russia_hysteria_141
@@ -668,12 +664,12 @@ proxy-groups:
   - United States_tuic_31
   - France_hysteria_41
   - France_hysteria_51
-  - Russia_tuic_61
-  - Russia_tuic_71
+  - United States_hysteria_61
+  - United States_hysteria_71
   - United States_hysteria_81
   - United States_hysteria_91
-  - Russia_tuic_101
-  - Russia_tuic_111
+  - United States_hysteria_101
+  - United States_hysteria_111
   - United States_hysteria_121
   - United States_hysteria_131
   - Russia_hysteria_141
