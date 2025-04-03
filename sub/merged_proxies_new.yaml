@@ -30,7 +30,7 @@ proxies:
 - name: The Netherlands_hysteria_01
   type: hysteria
   server: 62.210.10.113
-  port: 55690
+  port: 22662
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -42,7 +42,7 @@ proxies:
 - name: The Netherlands_hysteria_11
   type: hysteria
   server: 62.210.10.113
-  port: 55690
+  port: 22662
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -80,7 +80,7 @@ proxies:
 - name: France_hysteria_41
   type: hysteria
   server: 195.154.200.178
-  port: 44557
+  port: 46938
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -92,7 +92,7 @@ proxies:
 - name: France_hysteria_51
   type: hysteria
   server: 195.154.200.178
-  port: 44557
+  port: 46938
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
