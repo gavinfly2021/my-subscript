@@ -402,7 +402,7 @@ proxies:
 - name: United States_hy2_3
   type: hysteria2
   server: 108.181.5.130
-  port: 15544
+  port: 65232
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
