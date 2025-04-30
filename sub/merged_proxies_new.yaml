@@ -149,6 +149,18 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
+- name: United States_hysteria_101
+  type: hysteria
+  server: 108.181.24.77
+  port: 11512
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: United States_hysteria_111
   type: hysteria
   server: 108.181.24.77
@@ -556,6 +568,7 @@ proxy-groups:
   - United States_hysteria_71
   - United States_hysteria_81
   - United States_hysteria_91
+  - United States_hysteria_101
   - United States_hysteria_111
   - United States_hysteria_121
   - United States_hysteria_131
@@ -605,6 +618,7 @@ proxy-groups:
   - United States_hysteria_71
   - United States_hysteria_81
   - United States_hysteria_91
+  - United States_hysteria_101
   - United States_hysteria_111
   - United States_hysteria_121
   - United States_hysteria_131
@@ -654,6 +668,7 @@ proxy-groups:
   - United States_hysteria_71
   - United States_hysteria_81
   - United States_hysteria_91
+  - United States_hysteria_101
   - United States_hysteria_111
   - United States_hysteria_121
   - United States_hysteria_131
