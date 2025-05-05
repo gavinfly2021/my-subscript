@@ -394,7 +394,7 @@ proxies:
 - name: United States_hy2_2
   type: hysteria2
   server: 108.181.5.130
-  port: 65232
+  port: 57773
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
@@ -402,7 +402,7 @@ proxies:
 - name: United States_hy2_3
   type: hysteria2
   server: 108.181.5.130
-  port: 65232
+  port: 57773
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
@@ -410,7 +410,7 @@ proxies:
 - name: France_hy2_4
   type: hysteria2
   server: 51.159.226.1
-  port: 43496
+  port: 44464
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -418,26 +418,10 @@ proxies:
 - name: France_hy2_5
   type: hysteria2
   server: 51.159.226.1
-  port: 43496
+  port: 44464
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
-  skip-cert-verify: true
-- name: Russia_hy2_6
-  type: hysteria2
-  server: 46.17.41.5
-  port: 12904
-  password: dongtaiwang.com
-  fast-open: true
-  sni: apple.com
-  skip-cert-verify: true
-- name: Russia_hy2_7
-  type: hysteria2
-  server: 46.17.41.5
-  port: 12904
-  password: dongtaiwang.com
-  fast-open: true
-  sni: apple.com
   skip-cert-verify: true
 - name: France_reality_0
   type: vless
@@ -592,8 +576,6 @@ proxy-groups:
   - United States_hy2_3
   - France_hy2_4
   - France_hy2_5
-  - Russia_hy2_6
-  - Russia_hy2_7
   - France_reality_0
   - France_reality_1
   - United States_reality_2
@@ -642,8 +624,6 @@ proxy-groups:
   - United States_hy2_3
   - France_hy2_4
   - France_hy2_5
-  - Russia_hy2_6
-  - Russia_hy2_7
   - France_reality_0
   - France_reality_1
   - United States_reality_2
@@ -692,8 +672,6 @@ proxy-groups:
   - United States_hy2_3
   - France_hy2_4
   - France_hy2_5
-  - Russia_hy2_6
-  - Russia_hy2_7
   - France_reality_0
   - France_reality_1
   - United States_reality_2
