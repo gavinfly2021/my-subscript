@@ -377,27 +377,27 @@ proxies:
   - h3
 - name: France_hy2_0
   type: hysteria2
-  server: hy2-1.694463.xyz
-  port: 4489
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: France_hy2_1
-  type: hysteria2
-  server: hy2-1.694463.xyz
-  port: 4489
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: United States_hy2_2
-  type: hysteria2
-  server: 108.181.5.130
-  port: 57773
+  server: 51.159.111.32
+  port: 31180
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
+  skip-cert-verify: true
+- name: France_hy2_1
+  type: hysteria2
+  server: 51.159.111.32
+  port: 31180
+  password: dongtaiwang.com
+  fast-open: true
+  sni: apple.com
+  skip-cert-verify: true
+- name: France_hy2_2
+  type: hysteria2
+  server: hy2-1.694463.xyz
+  port: 4489
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
   skip-cert-verify: true
 - name: United States_hy2_3
   type: hysteria2
@@ -419,6 +419,14 @@ proxies:
   type: hysteria2
   server: 108.181.5.130
   port: 57773
+  password: dongtaiwang.com
+  fast-open: true
+  sni: apple.com
+  skip-cert-verify: true
+- name: Russia_hy2_6
+  type: hysteria2
+  server: 46.17.41.5
+  port: 12904
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
@@ -572,10 +580,11 @@ proxy-groups:
   - United States_hy_7
   - France_hy2_0
   - France_hy2_1
-  - United States_hy2_2
+  - France_hy2_2
   - United States_hy2_3
   - United States_hy2_4
   - United States_hy2_5
+  - Russia_hy2_6
   - France_reality_0
   - France_reality_1
   - United States_reality_2
@@ -620,10 +629,11 @@ proxy-groups:
   - United States_hy_7
   - France_hy2_0
   - France_hy2_1
-  - United States_hy2_2
+  - France_hy2_2
   - United States_hy2_3
   - United States_hy2_4
   - United States_hy2_5
+  - Russia_hy2_6
   - France_reality_0
   - France_reality_1
   - United States_reality_2
@@ -668,10 +678,11 @@ proxy-groups:
   - United States_hy_7
   - France_hy2_0
   - France_hy2_1
-  - United States_hy2_2
+  - France_hy2_2
   - United States_hy2_3
   - United States_hy2_4
   - United States_hy2_5
+  - Russia_hy2_6
   - France_reality_0
   - France_reality_1
   - United States_reality_2
