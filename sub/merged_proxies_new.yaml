@@ -393,7 +393,7 @@ proxies:
   skip-cert-verify: true
 - name: France_hy2_2
   type: hysteria2
-  server: hy2-1.694463.xyz
+  server: hy2-2.694463.xyz
   port: 4489
   password: dongtaiwang.com
   fast-open: true
@@ -401,7 +401,7 @@ proxies:
   skip-cert-verify: true
 - name: France_hy2_3
   type: hysteria2
-  server: hy2-1.694463.xyz
+  server: hy2-2.694463.xyz
   port: 4489
   password: dongtaiwang.com
   fast-open: true
