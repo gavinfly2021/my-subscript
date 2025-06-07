@@ -410,7 +410,7 @@ proxies:
 - name: United States_hy2_4
   type: hysteria2
   server: 108.181.5.130
-  port: 57773
+  port: 4710
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
@@ -418,7 +418,7 @@ proxies:
 - name: United States_hy2_5
   type: hysteria2
   server: 108.181.5.130
-  port: 57773
+  port: 4710
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
