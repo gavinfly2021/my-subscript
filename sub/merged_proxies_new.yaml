@@ -439,33 +439,33 @@ proxies:
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
-- name: Russia_reality_0
+- name: Taiwan_reality_0
   type: vless
-  server: 185.22.155.105
-  port: 62750
-  uuid: fdd2d176-2602-46f2-b694-ce247de88b22
+  server: tw-2.534582.xyz
+  port: 49226
+  uuid: 9244d7a3-6c74-4035-b64f-a90f3ee6e173
   network: tcp
   tls: true
   udp: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  servername: www.paypal.com
+  servername: dash.cloudflare.com
   reality-opts:
-    public-key: _E_YXE_gOkDrffe4t6gcajtnjFZAJ3g7ZwTJbL3IOHA
+    public-key: vyqO2y1XKUzVQNuOAtBpYPaZJWxuvfA9CTVuoF9RClQ
     short-id: ''
-- name: Russia_reality_1
+- name: Taiwan_reality_1
   type: vless
-  server: 185.22.155.105
-  port: 62750
-  uuid: fdd2d176-2602-46f2-b694-ce247de88b22
+  server: tw-2.534582.xyz
+  port: 49226
+  uuid: 9244d7a3-6c74-4035-b64f-a90f3ee6e173
   network: tcp
   tls: true
   udp: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  servername: www.paypal.com
+  servername: dash.cloudflare.com
   reality-opts:
-    public-key: _E_YXE_gOkDrffe4t6gcajtnjFZAJ3g7ZwTJbL3IOHA
+    public-key: vyqO2y1XKUzVQNuOAtBpYPaZJWxuvfA9CTVuoF9RClQ
     short-id: ''
 - name: United States_reality_2
   type: vless
@@ -594,8 +594,8 @@ proxy-groups:
   - United States_hy2_5
   - Russia_hy2_6
   - Russia_hy2_7
-  - Russia_reality_0
-  - Russia_reality_1
+  - Taiwan_reality_0
+  - Taiwan_reality_1
   - United States_reality_2
   - United States_reality_3
   - Russia_reality_4
@@ -644,8 +644,8 @@ proxy-groups:
   - United States_hy2_5
   - Russia_hy2_6
   - Russia_hy2_7
-  - Russia_reality_0
-  - Russia_reality_1
+  - Taiwan_reality_0
+  - Taiwan_reality_1
   - United States_reality_2
   - United States_reality_3
   - Russia_reality_4
@@ -694,8 +694,8 @@ proxy-groups:
   - United States_hy2_5
   - Russia_hy2_6
   - Russia_hy2_7
-  - Russia_reality_0
-  - Russia_reality_1
+  - Taiwan_reality_0
+  - Taiwan_reality_1
   - United States_reality_2
   - United States_reality_3
   - Russia_reality_4
