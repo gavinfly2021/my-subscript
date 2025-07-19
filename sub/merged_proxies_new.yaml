@@ -91,8 +91,8 @@ proxies:
   down: 55 Mbps
 - name: France_hysteria_51
   type: hysteria
-  server: 195.154.200.178
-  port: 46938
+  server: 195.154.33.70
+  port: 15010
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -265,9 +265,9 @@ proxies:
   down: 55 Mbps
 - name: France_hy_0
   type: hysteria
-  server: 51.159.226.1
-  port: 14241
-  ports: 14241
+  server: 195.154.200.40
+  port: 15010
+  ports: 15010
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -279,9 +279,9 @@ proxies:
   - h3
 - name: France_hy_1
   type: hysteria
-  server: 51.159.226.1
-  port: 14241
-  ports: 14241
+  server: 195.154.200.40
+  port: 15010
+  ports: 15010
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -391,18 +391,18 @@ proxies:
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
-- name: France_hy2_2
+- name: United States_hy2_2
   type: hysteria2
-  server: 51.159.226.1
-  port: 35810
+  server: 208.87.243.187
+  port: 22222
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: France_hy2_3
+- name: United States_hy2_3
   type: hysteria2
-  server: 51.159.226.1
-  port: 35810
+  server: 208.87.243.187
+  port: 22222
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -439,33 +439,33 @@ proxies:
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
-- name: Taiwan_reality_0
+- name: Russia_reality_0
   type: vless
-  server: tx-2.756794.xyz
-  port: 49226
-  uuid: 9244d7a3-6c74-4035-b64f-a90f3ee6e173
+  server: 185.22.155.105
+  port: 62750
+  uuid: fdd2d176-2602-46f2-b694-ce247de88b22
   network: tcp
   tls: true
   udp: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  servername: dash.cloudflare.com
+  servername: www.paypal.com
   reality-opts:
-    public-key: vyqO2y1XKUzVQNuOAtBpYPaZJWxuvfA9CTVuoF9RClQ
+    public-key: _E_YXE_gOkDrffe4t6gcajtnjFZAJ3g7ZwTJbL3IOHA
     short-id: ''
-- name: Taiwan_reality_1
+- name: Russia_reality_1
   type: vless
-  server: tx-2.756794.xyz
-  port: 49226
-  uuid: 9244d7a3-6c74-4035-b64f-a90f3ee6e173
+  server: 185.22.155.105
+  port: 62750
+  uuid: fdd2d176-2602-46f2-b694-ce247de88b22
   network: tcp
   tls: true
   udp: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  servername: dash.cloudflare.com
+  servername: www.paypal.com
   reality-opts:
-    public-key: vyqO2y1XKUzVQNuOAtBpYPaZJWxuvfA9CTVuoF9RClQ
+    public-key: _E_YXE_gOkDrffe4t6gcajtnjFZAJ3g7ZwTJbL3IOHA
     short-id: ''
 - name: United States_reality_2
   type: vless
@@ -588,14 +588,14 @@ proxy-groups:
   - United States_hy_7
   - France_hy2_0
   - France_hy2_1
-  - France_hy2_2
-  - France_hy2_3
+  - United States_hy2_2
+  - United States_hy2_3
   - United States_hy2_4
   - United States_hy2_5
   - Russia_hy2_6
   - Russia_hy2_7
-  - Taiwan_reality_0
-  - Taiwan_reality_1
+  - Russia_reality_0
+  - Russia_reality_1
   - United States_reality_2
   - United States_reality_3
   - Russia_reality_4
@@ -638,14 +638,14 @@ proxy-groups:
   - United States_hy_7
   - France_hy2_0
   - France_hy2_1
-  - France_hy2_2
-  - France_hy2_3
+  - United States_hy2_2
+  - United States_hy2_3
   - United States_hy2_4
   - United States_hy2_5
   - Russia_hy2_6
   - Russia_hy2_7
-  - Taiwan_reality_0
-  - Taiwan_reality_1
+  - Russia_reality_0
+  - Russia_reality_1
   - United States_reality_2
   - United States_reality_3
   - Russia_reality_4
@@ -688,14 +688,14 @@ proxy-groups:
   - United States_hy_7
   - France_hy2_0
   - France_hy2_1
-  - France_hy2_2
-  - France_hy2_3
+  - United States_hy2_2
+  - United States_hy2_3
   - United States_hy2_4
   - United States_hy2_5
   - Russia_hy2_6
   - Russia_hy2_7
-  - Taiwan_reality_0
-  - Taiwan_reality_1
+  - Russia_reality_0
+  - Russia_reality_1
   - United States_reality_2
   - United States_reality_3
   - Russia_reality_4
