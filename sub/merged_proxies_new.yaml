@@ -410,7 +410,7 @@ proxies:
 - name: United States_hy2_4
   type: hysteria2
   server: 108.181.5.130
-  port: 4710
+  port: 63015
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
@@ -418,7 +418,7 @@ proxies:
 - name: United States_hy2_5
   type: hysteria2
   server: 108.181.5.130
-  port: 4710
+  port: 63015
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
@@ -483,7 +483,7 @@ proxies:
     short-id: ''
 - name: United States_reality_3
   type: vless
-  server: 108.181.3.68
+  server: 108.181.3.67
   port: 51499
   uuid: c643de0a-9678-4c18-9f55-58620425bac0
   network: tcp
