@@ -77,30 +77,20 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: France_hysteria_41
-  type: hysteria
-  server: 195.154.200.178
-  port: 46938
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: France_hysteria_51
-  type: hysteria
-  server: 195.154.33.70
-  port: 15010
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+- name: United States_mieru_41
+  type: mieru
+  server: 108.181.23.41
+  port: 28676
+  transport: TCP
+  username: dongtaiwang.com
+  password: dongtaiwang.com
+- name: United States_mieru_51
+  type: mieru
+  server: 108.181.23.41
+  port: 28676
+  transport: TCP
+  username: dongtaiwang.com
+  password: dongtaiwang.com
 - name: United States_hysteria_61
   type: hysteria
   server: 108.181.24.77
@@ -562,8 +552,8 @@ proxy-groups:
   - The Netherlands_hysteria_11
   - United States_tuic_21
   - United States_tuic_31
-  - France_hysteria_41
-  - France_hysteria_51
+  - United States_mieru_41
+  - United States_mieru_51
   - United States_hysteria_61
   - United States_hysteria_71
   - United States_hysteria_81
@@ -612,8 +602,8 @@ proxy-groups:
   - The Netherlands_hysteria_11
   - United States_tuic_21
   - United States_tuic_31
-  - France_hysteria_41
-  - France_hysteria_51
+  - United States_mieru_41
+  - United States_mieru_51
   - United States_hysteria_61
   - United States_hysteria_71
   - United States_hysteria_81
@@ -662,8 +652,8 @@ proxy-groups:
   - The Netherlands_hysteria_11
   - United States_tuic_21
   - United States_tuic_31
-  - France_hysteria_41
-  - France_hysteria_51
+  - United States_mieru_41
+  - United States_mieru_51
   - United States_hysteria_61
   - United States_hysteria_71
   - United States_hysteria_81
