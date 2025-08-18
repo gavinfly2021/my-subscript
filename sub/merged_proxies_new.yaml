@@ -77,19 +77,6 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: United States_tuic_41
-  server: 108.181.5.131
-  port: 22998
-  type: tuic
-  uuid: f350ada4-7d6a-46d0-bc44-27f93436286f
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  sni: bing.com
-  skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
 - name: United States_tuic_51
   server: 108.181.5.131
   port: 22998
@@ -103,18 +90,6 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: United States_hysteria_61
-  type: hysteria
-  server: 108.181.24.77
-  port: 37872
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
 - name: United States_hysteria_71
   type: hysteria
   server: 108.181.24.77
@@ -454,9 +429,7 @@ proxy-groups:
   - The Netherlands_hysteria_11
   - United States_tuic_21
   - United States_tuic_31
-  - United States_tuic_41
   - United States_tuic_51
-  - United States_hysteria_61
   - United States_hysteria_71
   - United States_hysteria_81
   - United States_hysteria_91
@@ -496,9 +469,7 @@ proxy-groups:
   - The Netherlands_hysteria_11
   - United States_tuic_21
   - United States_tuic_31
-  - United States_tuic_41
   - United States_tuic_51
-  - United States_hysteria_61
   - United States_hysteria_71
   - United States_hysteria_81
   - United States_hysteria_91
@@ -538,9 +509,7 @@ proxy-groups:
   - The Netherlands_hysteria_11
   - United States_tuic_21
   - United States_tuic_31
-  - United States_tuic_41
   - United States_tuic_51
-  - United States_hysteria_61
   - United States_hysteria_71
   - United States_hysteria_81
   - United States_hysteria_91
