@@ -39,9 +39,105 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
+- name: Unknown_hysteria_02
+  type: hysteria
+  server: 2001:bc8:32d7:306::123
+  port: 13767
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_03
+  type: hysteria
+  server: 2001:bc8:32d7:306::124
+  port: 13767
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_04
+  type: hysteria
+  server: 2001:bc8:32d7:306::125
+  port: 13767
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_05
+  type: hysteria
+  server: 2001:bc8:32d7:306::126
+  port: 13767
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: The Netherlands_hysteria_11
   type: hysteria
   server: 62.210.10.113
+  port: 13767
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_12
+  type: hysteria
+  server: 2001:bc8:32d7:306::123
+  port: 13767
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_13
+  type: hysteria
+  server: 2001:bc8:32d7:306::124
+  port: 13767
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_14
+  type: hysteria
+  server: 2001:bc8:32d7:306::125
+  port: 13767
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_15
+  type: hysteria
+  server: 2001:bc8:32d7:306::126
   port: 13767
   auth-str: dongtaiwang.com
   sni: apple.com
@@ -451,7 +547,15 @@ proxy-groups:
   - ⚖️ 负载均衡
   - DIRECT
   - The Netherlands_hysteria_01
+  - Unknown_hysteria_02
+  - Unknown_hysteria_03
+  - Unknown_hysteria_04
+  - Unknown_hysteria_05
   - The Netherlands_hysteria_11
+  - Unknown_hysteria_12
+  - Unknown_hysteria_13
+  - Unknown_hysteria_14
+  - Unknown_hysteria_15
   - United States_tuic_21
   - United States_tuic_31
   - United States_tuic_41
@@ -493,7 +597,15 @@ proxy-groups:
   tolerance: 50
   proxies:
   - The Netherlands_hysteria_01
+  - Unknown_hysteria_02
+  - Unknown_hysteria_03
+  - Unknown_hysteria_04
+  - Unknown_hysteria_05
   - The Netherlands_hysteria_11
+  - Unknown_hysteria_12
+  - Unknown_hysteria_13
+  - Unknown_hysteria_14
+  - Unknown_hysteria_15
   - United States_tuic_21
   - United States_tuic_31
   - United States_tuic_41
@@ -535,7 +647,15 @@ proxy-groups:
   interval: 180
   proxies:
   - The Netherlands_hysteria_01
+  - Unknown_hysteria_02
+  - Unknown_hysteria_03
+  - Unknown_hysteria_04
+  - Unknown_hysteria_05
   - The Netherlands_hysteria_11
+  - Unknown_hysteria_12
+  - Unknown_hysteria_13
+  - Unknown_hysteria_14
+  - Unknown_hysteria_15
   - United States_tuic_21
   - United States_tuic_31
   - United States_tuic_41
