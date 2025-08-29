@@ -27,10 +27,10 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: The Netherlands_hysteria_01
+- name: France_hysteria_01
   type: hysteria
-  server: 62.210.10.113
-  port: 14801
+  server: 51.159.107.20
+  port: 18899
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -41,8 +41,8 @@ proxies:
   down: 55 Mbps
 - name: Unknown_hysteria_02
   type: hysteria
-  server: 2001:bc8:32d7:306::123
-  port: 14801
+  server: 2001:bc8:1203:25::1
+  port: 18899
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -53,8 +53,8 @@ proxies:
   down: 55 Mbps
 - name: Unknown_hysteria_03
   type: hysteria
-  server: 2001:bc8:32d7:306::124
-  port: 14801
+  server: 2001:bc8:1203:25::2
+  port: 18899
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -65,8 +65,8 @@ proxies:
   down: 55 Mbps
 - name: Unknown_hysteria_04
   type: hysteria
-  server: 2001:bc8:32d7:306::125
-  port: 14801
+  server: 2001:bc8:1203:25::3
+  port: 18899
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -77,8 +77,8 @@ proxies:
   down: 55 Mbps
 - name: Unknown_hysteria_05
   type: hysteria
-  server: 2001:bc8:32d7:306::126
-  port: 14801
+  server: 2001:bc8:1203:25::4
+  port: 18899
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -87,10 +87,10 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: The Netherlands_hysteria_11
+- name: France_hysteria_11
   type: hysteria
-  server: 62.210.10.113
-  port: 14801
+  server: 51.159.107.20
+  port: 18899
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -101,8 +101,8 @@ proxies:
   down: 55 Mbps
 - name: Unknown_hysteria_12
   type: hysteria
-  server: 2001:bc8:32d7:306::123
-  port: 14801
+  server: 2001:bc8:1203:25::1
+  port: 18899
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -113,8 +113,8 @@ proxies:
   down: 55 Mbps
 - name: Unknown_hysteria_13
   type: hysteria
-  server: 2001:bc8:32d7:306::124
-  port: 14801
+  server: 2001:bc8:1203:25::2
+  port: 18899
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -125,8 +125,8 @@ proxies:
   down: 55 Mbps
 - name: Unknown_hysteria_14
   type: hysteria
-  server: 2001:bc8:32d7:306::125
-  port: 14801
+  server: 2001:bc8:1203:25::3
+  port: 18899
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -137,8 +137,8 @@ proxies:
   down: 55 Mbps
 - name: Unknown_hysteria_15
   type: hysteria
-  server: 2001:bc8:32d7:306::126
-  port: 14801
+  server: 2001:bc8:1203:25::4
+  port: 18899
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -798,12 +798,12 @@ proxy-groups:
   - ⚡ 低延迟
   - ⚖️ 负载均衡
   - DIRECT
-  - The Netherlands_hysteria_01
+  - France_hysteria_01
   - Unknown_hysteria_02
   - Unknown_hysteria_03
   - Unknown_hysteria_04
   - Unknown_hysteria_05
-  - The Netherlands_hysteria_11
+  - France_hysteria_11
   - Unknown_hysteria_12
   - Unknown_hysteria_13
   - Unknown_hysteria_14
@@ -868,12 +868,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - The Netherlands_hysteria_01
+  - France_hysteria_01
   - Unknown_hysteria_02
   - Unknown_hysteria_03
   - Unknown_hysteria_04
   - Unknown_hysteria_05
-  - The Netherlands_hysteria_11
+  - France_hysteria_11
   - Unknown_hysteria_12
   - Unknown_hysteria_13
   - Unknown_hysteria_14
@@ -938,12 +938,12 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 180
   proxies:
-  - The Netherlands_hysteria_01
+  - France_hysteria_01
   - Unknown_hysteria_02
   - Unknown_hysteria_03
   - Unknown_hysteria_04
   - Unknown_hysteria_05
-  - The Netherlands_hysteria_11
+  - France_hysteria_11
   - Unknown_hysteria_12
   - Unknown_hysteria_13
   - Unknown_hysteria_14
