@@ -147,11 +147,11 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: United States_tuic_21
-  server: 108.181.5.131
-  port: 22998
+- name: France_tuic_21
+  server: 62.210.10.140
+  port: 23556
   type: tuic
-  uuid: f350ada4-7d6a-46d0-bc44-27f93436286f
+  uuid: e732a82b-612f-415d-a9f8-e4b1df37d066
   password: dongtaiwang.com
   alpn:
   - h3
@@ -160,11 +160,11 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: United States_tuic_31
-  server: 108.181.5.131
-  port: 22998
+- name: France_tuic_31
+  server: 62.210.10.140
+  port: 23556
   type: tuic
-  uuid: f350ada4-7d6a-46d0-bc44-27f93436286f
+  uuid: e732a82b-612f-415d-a9f8-e4b1df37d066
   password: dongtaiwang.com
   alpn:
   - h3
@@ -173,11 +173,11 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: United States_tuic_41
-  server: 108.181.5.131
-  port: 22998
+- name: Unknown_tuic_41
+  server: 2001:bc8:32d7:312::2
+  port: 23556
   type: tuic
-  uuid: f350ada4-7d6a-46d0-bc44-27f93436286f
+  uuid: e732a82b-612f-415d-a9f8-e4b1df37d066
   password: dongtaiwang.com
   alpn:
   - h3
@@ -186,11 +186,11 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: United States_tuic_51
-  server: 108.181.5.131
-  port: 22998
+- name: Unknown_tuic_51
+  server: 2001:bc8:32d7:312::2
+  port: 23556
   type: tuic
-  uuid: f350ada4-7d6a-46d0-bc44-27f93436286f
+  uuid: e732a82b-612f-415d-a9f8-e4b1df37d066
   password: dongtaiwang.com
   alpn:
   - h3
@@ -731,22 +731,6 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: United States_hy2_4
-  type: hysteria2
-  server: 108.181.5.130
-  port: 63015
-  password: dongtaiwang.com
-  fast-open: true
-  sni: apple.com
-  skip-cert-verify: true
-- name: United States_hy2_5
-  type: hysteria2
-  server: 108.181.5.130
-  port: 63015
-  password: dongtaiwang.com
-  fast-open: true
-  sni: apple.com
-  skip-cert-verify: true
 - name: France_hy2_6
   type: hysteria2
   server: 51.158.218.2
@@ -808,10 +792,10 @@ proxy-groups:
   - Unknown_hysteria_13
   - Unknown_hysteria_14
   - Unknown_hysteria_15
-  - United States_tuic_21
-  - United States_tuic_31
-  - United States_tuic_41
-  - United States_tuic_51
+  - France_tuic_21
+  - France_tuic_31
+  - Unknown_tuic_41
+  - Unknown_tuic_51
   - United States_hysteria_61
   - United States_hysteria_71
   - Unknown_tuic_81
@@ -856,8 +840,6 @@ proxy-groups:
   - France_hy2_1
   - United States_hy2_2
   - United States_hy2_3
-  - United States_hy2_4
-  - United States_hy2_5
   - France_hy2_6
   - France_hy2_7
   - Unknown_reality_6
@@ -878,10 +860,10 @@ proxy-groups:
   - Unknown_hysteria_13
   - Unknown_hysteria_14
   - Unknown_hysteria_15
-  - United States_tuic_21
-  - United States_tuic_31
-  - United States_tuic_41
-  - United States_tuic_51
+  - France_tuic_21
+  - France_tuic_31
+  - Unknown_tuic_41
+  - Unknown_tuic_51
   - United States_hysteria_61
   - United States_hysteria_71
   - Unknown_tuic_81
@@ -926,8 +908,6 @@ proxy-groups:
   - France_hy2_1
   - United States_hy2_2
   - United States_hy2_3
-  - United States_hy2_4
-  - United States_hy2_5
   - France_hy2_6
   - France_hy2_7
   - Unknown_reality_6
@@ -948,10 +928,10 @@ proxy-groups:
   - Unknown_hysteria_13
   - Unknown_hysteria_14
   - Unknown_hysteria_15
-  - United States_tuic_21
-  - United States_tuic_31
-  - United States_tuic_41
-  - United States_tuic_51
+  - France_tuic_21
+  - France_tuic_31
+  - Unknown_tuic_41
+  - Unknown_tuic_51
   - United States_hysteria_61
   - United States_hysteria_71
   - Unknown_tuic_81
@@ -996,8 +976,6 @@ proxy-groups:
   - France_hy2_1
   - United States_hy2_2
   - United States_hy2_3
-  - United States_hy2_4
-  - United States_hy2_5
   - France_hy2_6
   - France_hy2_7
   - Unknown_reality_6
