@@ -719,22 +719,6 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: France_hy2_4
-  type: hysteria2
-  server: 62.210.10.140
-  port: 33224
-  password: dongtaiwang.com
-  fast-open: true
-  sni: apple.com
-  skip-cert-verify: true
-- name: France_hy2_5
-  type: hysteria2
-  server: 62.210.10.140
-  port: 33224
-  password: dongtaiwang.com
-  fast-open: true
-  sni: apple.com
-  skip-cert-verify: true
 - name: France_hy2_6
   type: hysteria2
   server: 51.158.218.2
@@ -842,8 +826,6 @@ proxy-groups:
   - France_hy2_1
   - United States_hy2_2
   - United States_hy2_3
-  - France_hy2_4
-  - France_hy2_5
   - France_hy2_6
   - France_hy2_7
   - Unknown_reality_6
@@ -910,8 +892,6 @@ proxy-groups:
   - France_hy2_1
   - United States_hy2_2
   - United States_hy2_3
-  - France_hy2_4
-  - France_hy2_5
   - France_hy2_6
   - France_hy2_7
   - Unknown_reality_6
@@ -978,8 +958,6 @@ proxy-groups:
   - France_hy2_1
   - United States_hy2_2
   - United States_hy2_3
-  - France_hy2_4
-  - France_hy2_5
   - France_hy2_6
   - France_hy2_7
   - Unknown_reality_6
