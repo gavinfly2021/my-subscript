@@ -39,10 +39,10 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_hysteria_02
+- name: France_hysteria_02
   type: hysteria
-  server: 2001:bc8:1203:25::1
-  port: 20001
+  server: 62.210.11.74
+  port: 30011
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -99,10 +99,10 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_hysteria_12
+- name: France_hysteria_12
   type: hysteria
-  server: 2001:bc8:1203:25::1
-  port: 20001
+  server: 62.210.11.74
+  port: 30011
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -771,12 +771,12 @@ proxy-groups:
   - ⚖️ 负载均衡
   - DIRECT
   - France_hysteria_01
-  - Unknown_hysteria_02
+  - France_hysteria_02
   - Unknown_hysteria_03
   - Unknown_hysteria_04
   - Unknown_hysteria_05
   - France_hysteria_11
-  - Unknown_hysteria_12
+  - France_hysteria_12
   - Unknown_hysteria_13
   - Unknown_hysteria_14
   - Unknown_hysteria_15
@@ -837,12 +837,12 @@ proxy-groups:
   tolerance: 50
   proxies:
   - France_hysteria_01
-  - Unknown_hysteria_02
+  - France_hysteria_02
   - Unknown_hysteria_03
   - Unknown_hysteria_04
   - Unknown_hysteria_05
   - France_hysteria_11
-  - Unknown_hysteria_12
+  - France_hysteria_12
   - Unknown_hysteria_13
   - Unknown_hysteria_14
   - Unknown_hysteria_15
@@ -903,12 +903,12 @@ proxy-groups:
   interval: 180
   proxies:
   - France_hysteria_01
-  - Unknown_hysteria_02
+  - France_hysteria_02
   - Unknown_hysteria_03
   - Unknown_hysteria_04
   - Unknown_hysteria_05
   - France_hysteria_11
-  - Unknown_hysteria_12
+  - France_hysteria_12
   - Unknown_hysteria_13
   - Unknown_hysteria_14
   - Unknown_hysteria_15
