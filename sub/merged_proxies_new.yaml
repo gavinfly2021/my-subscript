@@ -659,37 +659,9 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: United States_hy_6
-  type: hysteria
-  server: 208.87.243.187
-  port: 15823
-  ports: 15823
-  auth_str: dongtaiwang.com
-  up: 1000
-  down: 1000
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: United States_hy_7
-  type: hysteria
-  server: 208.87.243.187
-  port: 15823
-  ports: 15823
-  auth_str: dongtaiwang.com
-  up: 1000
-  down: 1000
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
 - name: France_hy2_0
   type: hysteria2
-  server: 51.159.111.32
+  server: 163.172.21.105
   port: 5355
   password: dongtaiwang.com
   fast-open: true
@@ -697,24 +669,8 @@ proxies:
   skip-cert-verify: true
 - name: France_hy2_1
   type: hysteria2
-  server: 51.159.111.32
+  server: 163.172.21.105
   port: 5355
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: United States_hy2_2
-  type: hysteria2
-  server: 208.87.243.187
-  port: 22222
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: United States_hy2_3
-  type: hysteria2
-  server: 208.87.243.187
-  port: 22222
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -820,12 +776,8 @@ proxy-groups:
   - France_hy_3
   - France_hy_4
   - France_hy_5
-  - United States_hy_6
-  - United States_hy_7
   - France_hy2_0
   - France_hy2_1
-  - United States_hy2_2
-  - United States_hy2_3
   - France_hy2_6
   - France_hy2_7
   - Unknown_reality_6
@@ -886,12 +838,8 @@ proxy-groups:
   - France_hy_3
   - France_hy_4
   - France_hy_5
-  - United States_hy_6
-  - United States_hy_7
   - France_hy2_0
   - France_hy2_1
-  - United States_hy2_2
-  - United States_hy2_3
   - France_hy2_6
   - France_hy2_7
   - Unknown_reality_6
@@ -952,12 +900,8 @@ proxy-groups:
   - France_hy_3
   - France_hy_4
   - France_hy_5
-  - United States_hy_6
-  - United States_hy_7
   - France_hy2_0
   - France_hy2_1
-  - United States_hy2_2
-  - United States_hy2_3
   - France_hy2_6
   - France_hy2_7
   - Unknown_reality_6
