@@ -100,18 +100,6 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: France_hysteria_41
-  type: hysteria
-  server: 62.210.10.140
-  port: 42248
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
 - name: France_hysteria_51
   type: hysteria
   server: 62.210.10.140
@@ -140,6 +128,71 @@ proxies:
   grpc-opts:
     grpc-service-name: FhwHiFzK
   client-fingerprint: chrome
+- name: Unknown_tuic_81
+  server: 2001:bc8:1203:106::100
+  port: 55111
+  type: tuic
+  uuid: 5ae31731-78ac-483a-b524-011d05072ef5
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: Unknown_tuic_82
+  server: 2001:bc8:1203:106::101
+  port: 55111
+  type: tuic
+  uuid: 5ae31731-78ac-483a-b524-011d05072ef5
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: Unknown_tuic_83
+  server: 2001:bc8:1203:106::102
+  port: 55111
+  type: tuic
+  uuid: 5ae31731-78ac-483a-b524-011d05072ef5
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: Unknown_tuic_84
+  server: 2001:bc8:1203:106::103
+  port: 55111
+  type: tuic
+  uuid: 5ae31731-78ac-483a-b524-011d05072ef5
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: Unknown_tuic_85
+  server: 2001:bc8:1203:106::104
+  port: 55111
+  type: tuic
+  uuid: 5ae31731-78ac-483a-b524-011d05072ef5
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: Unknown_tuic_91
   server: 2001:bc8:1203:106::100
   port: 55111
@@ -267,7 +320,7 @@ proxies:
   down: 55 Mbps
 - name: France_hysteria_131
   type: hysteria
-  server: 62.210.127.217
+  server: 62.210.10.186
   port: 50011
   auth-str: dongtaiwang.com
   sni: apple.com
@@ -277,9 +330,21 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: France_hysteria_151
+- name: Unknown_hysteria_141
   type: hysteria
-  server: 62.210.127.217
+  server: 2001:bc8:32d7:158::2
+  port: 50011
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_151
+  type: hysteria
+  server: 2001:bc8:32d7:158::2
   port: 50011
   auth-str: dongtaiwang.com
   sni: apple.com
@@ -302,6 +367,18 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
 - name: Unknown_hysteria_171
+  type: hysteria
+  server: 2001:bc8:32d7:158::4
+  port: 50011
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_181
   type: hysteria
   server: 2001:bc8:32d7:158::4
   port: 50011
@@ -341,7 +418,7 @@ proxies:
   - h3
 - name: France_hy_3
   type: hysteria
-  server: 62.210.127.217
+  server: 62.210.10.186
   port: 40099
   ports: 40099
   auth_str: dongtaiwang.com
@@ -375,6 +452,14 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
+- name: France_hy2_6
+  type: hysteria2
+  server: 51.158.218.2
+  port: 50066
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
 - name: France_hy2_7
   type: hysteria2
   server: 51.158.218.2
@@ -383,20 +468,6 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: Unknown_reality_7
-  type: vless
-  server: 2001:bc8:32d7:302::15
-  port: 34324
-  uuid: 26c462ba-a90c-4814-9d7c-a629bc0bdb5c
-  network: tcp
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  servername: dash.cloudflare.com
-  reality-opts:
-    public-key: pHn5CHa2P6-lNBIkTOI3zJQN19jfNFkXxGFuyefpP0M
-    short-id: ''
 proxy-groups:
 - name: ✈️ 出境游
   type: select
@@ -410,9 +481,13 @@ proxy-groups:
   - Unknown_hysteria_14
   - Unknown_hysteria_15
   - France_tuic_31
-  - France_hysteria_41
   - France_hysteria_51
   - Unknown_vless_71
+  - Unknown_tuic_81
+  - Unknown_tuic_82
+  - Unknown_tuic_83
+  - Unknown_tuic_84
+  - Unknown_tuic_85
   - Unknown_tuic_91
   - Unknown_tuic_92
   - Unknown_tuic_93
@@ -424,16 +499,18 @@ proxy-groups:
   - Unknown_hysteria_114
   - Unknown_hysteria_115
   - France_hysteria_131
-  - France_hysteria_151
+  - Unknown_hysteria_141
+  - Unknown_hysteria_151
   - Unknown_hysteria_161
   - Unknown_hysteria_171
+  - Unknown_hysteria_181
   - Unknown_hysteria_191
   - France_hy_1
   - France_hy_3
   - France_hy_5
   - France_hy2_1
+  - France_hy2_6
   - France_hy2_7
-  - Unknown_reality_7
 - name: ⚡ 低延迟
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -446,9 +523,13 @@ proxy-groups:
   - Unknown_hysteria_14
   - Unknown_hysteria_15
   - France_tuic_31
-  - France_hysteria_41
   - France_hysteria_51
   - Unknown_vless_71
+  - Unknown_tuic_81
+  - Unknown_tuic_82
+  - Unknown_tuic_83
+  - Unknown_tuic_84
+  - Unknown_tuic_85
   - Unknown_tuic_91
   - Unknown_tuic_92
   - Unknown_tuic_93
@@ -460,16 +541,18 @@ proxy-groups:
   - Unknown_hysteria_114
   - Unknown_hysteria_115
   - France_hysteria_131
-  - France_hysteria_151
+  - Unknown_hysteria_141
+  - Unknown_hysteria_151
   - Unknown_hysteria_161
   - Unknown_hysteria_171
+  - Unknown_hysteria_181
   - Unknown_hysteria_191
   - France_hy_1
   - France_hy_3
   - France_hy_5
   - France_hy2_1
+  - France_hy2_6
   - France_hy2_7
-  - Unknown_reality_7
 - name: ⚖️ 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -482,9 +565,13 @@ proxy-groups:
   - Unknown_hysteria_14
   - Unknown_hysteria_15
   - France_tuic_31
-  - France_hysteria_41
   - France_hysteria_51
   - Unknown_vless_71
+  - Unknown_tuic_81
+  - Unknown_tuic_82
+  - Unknown_tuic_83
+  - Unknown_tuic_84
+  - Unknown_tuic_85
   - Unknown_tuic_91
   - Unknown_tuic_92
   - Unknown_tuic_93
@@ -496,16 +583,18 @@ proxy-groups:
   - Unknown_hysteria_114
   - Unknown_hysteria_115
   - France_hysteria_131
-  - France_hysteria_151
+  - Unknown_hysteria_141
+  - Unknown_hysteria_151
   - Unknown_hysteria_161
   - Unknown_hysteria_171
+  - Unknown_hysteria_181
   - Unknown_hysteria_191
   - France_hy_1
   - France_hy_3
   - France_hy_5
   - France_hy2_1
+  - France_hy2_6
   - France_hy2_7
-  - Unknown_reality_7
 rules:
 - DOMAIN-KEYWORD,youtube,✈️ 出境游
 - DOMAIN,youtubei.googleapis.com,✈️ 出境游
