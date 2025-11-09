@@ -265,18 +265,6 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_hysteria_141
-  type: hysteria
-  server: 2001:bc8:32d7:158::2
-  port: 50011
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
 - name: Unknown_hysteria_151
   type: hysteria
   server: 2001:bc8:32d7:158::2
@@ -290,18 +278,6 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
 - name: Unknown_hysteria_171
-  type: hysteria
-  server: 2001:bc8:32d7:158::4
-  port: 50011
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: Unknown_hysteria_181
   type: hysteria
   server: 2001:bc8:32d7:158::4
   port: 50011
@@ -339,39 +315,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: France_hy_2
-  type: hysteria
-  server: 62.210.10.186
-  port: 40099
-  ports: 40099
-  auth_str: dongtaiwang.com
-  up: 1000
-  down: 1000
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
 - name: France_hy_3
   type: hysteria
   server: 62.210.10.186
   port: 40099
   ports: 40099
-  auth_str: dongtaiwang.com
-  up: 1000
-  down: 1000
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: France_hy_4
-  type: hysteria
-  server: 51.159.226.1
-  port: 14241
-  ports: 14241
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -395,7 +343,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: France_hy2_0
+- name: France_hy2_1
   type: hysteria2
   server: 163.172.21.105
   port: 5355
@@ -403,10 +351,10 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: France_hy2_1
+- name: France_hy2_6
   type: hysteria2
-  server: 163.172.21.105
-  port: 5355
+  server: 51.158.218.2
+  port: 50066
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -445,18 +393,14 @@ proxy-groups:
   - Unknown_hysteria_114
   - Unknown_hysteria_115
   - France_hysteria_131
-  - Unknown_hysteria_141
   - Unknown_hysteria_151
   - Unknown_hysteria_171
-  - Unknown_hysteria_181
   - Unknown_hysteria_191
   - France_hy_1
-  - France_hy_2
   - France_hy_3
-  - France_hy_4
   - France_hy_5
-  - France_hy2_0
   - France_hy2_1
+  - France_hy2_6
   - France_hy2_7
 - name: ⚡ 低延迟
   type: url-test
@@ -483,18 +427,14 @@ proxy-groups:
   - Unknown_hysteria_114
   - Unknown_hysteria_115
   - France_hysteria_131
-  - Unknown_hysteria_141
   - Unknown_hysteria_151
   - Unknown_hysteria_171
-  - Unknown_hysteria_181
   - Unknown_hysteria_191
   - France_hy_1
-  - France_hy_2
   - France_hy_3
-  - France_hy_4
   - France_hy_5
-  - France_hy2_0
   - France_hy2_1
+  - France_hy2_6
   - France_hy2_7
 - name: ⚖️ 负载均衡
   type: load-balance
@@ -521,18 +461,14 @@ proxy-groups:
   - Unknown_hysteria_114
   - Unknown_hysteria_115
   - France_hysteria_131
-  - Unknown_hysteria_141
   - Unknown_hysteria_151
   - Unknown_hysteria_171
-  - Unknown_hysteria_181
   - Unknown_hysteria_191
   - France_hy_1
-  - France_hy_2
   - France_hy_3
-  - France_hy_4
   - France_hy_5
-  - France_hy2_0
   - France_hy2_1
+  - France_hy2_6
   - France_hy2_7
 rules:
 - DOMAIN-KEYWORD,youtube,✈️ 出境游
