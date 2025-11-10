@@ -277,7 +277,31 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
+- name: Unknown_hysteria_161
+  type: hysteria
+  server: 2001:bc8:32d7:158::4
+  port: 50011
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: Unknown_hysteria_171
+  type: hysteria
+  server: 2001:bc8:32d7:158::4
+  port: 50011
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_181
   type: hysteria
   server: 2001:bc8:32d7:158::4
   port: 50011
@@ -351,14 +375,6 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: France_hy2_6
-  type: hysteria2
-  server: 51.158.218.2
-  port: 50066
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
 - name: France_hy2_7
   type: hysteria2
   server: 51.158.218.2
@@ -394,13 +410,14 @@ proxy-groups:
   - Unknown_hysteria_115
   - France_hysteria_131
   - Unknown_hysteria_151
+  - Unknown_hysteria_161
   - Unknown_hysteria_171
+  - Unknown_hysteria_181
   - Unknown_hysteria_191
   - France_hy_1
   - France_hy_3
   - France_hy_5
   - France_hy2_1
-  - France_hy2_6
   - France_hy2_7
 - name: ⚡ 低延迟
   type: url-test
@@ -428,13 +445,14 @@ proxy-groups:
   - Unknown_hysteria_115
   - France_hysteria_131
   - Unknown_hysteria_151
+  - Unknown_hysteria_161
   - Unknown_hysteria_171
+  - Unknown_hysteria_181
   - Unknown_hysteria_191
   - France_hy_1
   - France_hy_3
   - France_hy_5
   - France_hy2_1
-  - France_hy2_6
   - France_hy2_7
 - name: ⚖️ 负载均衡
   type: load-balance
@@ -462,13 +480,14 @@ proxy-groups:
   - Unknown_hysteria_115
   - France_hysteria_131
   - Unknown_hysteria_151
+  - Unknown_hysteria_161
   - Unknown_hysteria_171
+  - Unknown_hysteria_181
   - Unknown_hysteria_191
   - France_hy_1
   - France_hy_3
   - France_hy_5
   - France_hy2_1
-  - France_hy2_6
   - France_hy2_7
 rules:
 - DOMAIN-KEYWORD,youtube,✈️ 出境游
