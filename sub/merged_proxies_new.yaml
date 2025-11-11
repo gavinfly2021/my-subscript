@@ -112,6 +112,22 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
+- name: Unknown_vless_61
+  type: vless
+  server: 2001:bc8:32d7:158::5
+  port: 10033
+  uuid: 56618bde-5a09-4ef8-ae56-6e7a8d69ec67
+  network: grpc
+  udp: true
+  tls: true
+  flow: null
+  servername: nijigen-works.jp
+  reality-opts:
+    public-key: m1ORavmKKsF8kn6JfNF1m35wRORu8c6YLyxpSfyiYQ0
+    short-id: dfdfb0e2e2d400c4
+  grpc-opts:
+    grpc-service-name: FhwHiFzK
+  client-fingerprint: chrome
 - name: Unknown_vless_71
   type: vless
   server: 2001:bc8:32d7:158::5
@@ -277,31 +293,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_hysteria_161
-  type: hysteria
-  server: 2001:bc8:32d7:158::4
-  port: 50011
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
 - name: Unknown_hysteria_171
-  type: hysteria
-  server: 2001:bc8:32d7:158::4
-  port: 50011
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: Unknown_hysteria_181
   type: hysteria
   server: 2001:bc8:32d7:158::4
   port: 50011
@@ -397,6 +389,7 @@ proxy-groups:
   - Unknown_hysteria_15
   - France_tuic_31
   - France_hysteria_51
+  - Unknown_vless_61
   - Unknown_vless_71
   - Unknown_tuic_91
   - Unknown_tuic_92
@@ -410,9 +403,7 @@ proxy-groups:
   - Unknown_hysteria_115
   - France_hysteria_131
   - Unknown_hysteria_151
-  - Unknown_hysteria_161
   - Unknown_hysteria_171
-  - Unknown_hysteria_181
   - Unknown_hysteria_191
   - France_hy_1
   - France_hy_3
@@ -432,6 +423,7 @@ proxy-groups:
   - Unknown_hysteria_15
   - France_tuic_31
   - France_hysteria_51
+  - Unknown_vless_61
   - Unknown_vless_71
   - Unknown_tuic_91
   - Unknown_tuic_92
@@ -445,9 +437,7 @@ proxy-groups:
   - Unknown_hysteria_115
   - France_hysteria_131
   - Unknown_hysteria_151
-  - Unknown_hysteria_161
   - Unknown_hysteria_171
-  - Unknown_hysteria_181
   - Unknown_hysteria_191
   - France_hy_1
   - France_hy_3
@@ -467,6 +457,7 @@ proxy-groups:
   - Unknown_hysteria_15
   - France_tuic_31
   - France_hysteria_51
+  - Unknown_vless_61
   - Unknown_vless_71
   - Unknown_tuic_91
   - Unknown_tuic_92
@@ -480,9 +471,7 @@ proxy-groups:
   - Unknown_hysteria_115
   - France_hysteria_131
   - Unknown_hysteria_151
-  - Unknown_hysteria_161
   - Unknown_hysteria_171
-  - Unknown_hysteria_181
   - Unknown_hysteria_191
   - France_hy_1
   - France_hy_3
