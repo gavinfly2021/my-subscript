@@ -147,19 +147,6 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: France_tuic_21
-  server: 62.210.10.140
-  port: 23556
-  type: tuic
-  uuid: e732a82b-612f-415d-a9f8-e4b1df37d066
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  sni: bing.com
-  skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
 - name: France_tuic_31
   server: 62.210.10.140
   port: 23556
@@ -391,18 +378,6 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: France_hysteria_121
-  type: hysteria
-  server: 62.210.10.186
-  port: 50011
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
 - name: France_hysteria_131
   type: hysteria
   server: 62.210.10.186
@@ -418,6 +393,18 @@ proxies:
 - name: Unknown_hysteria_151
   type: hysteria
   server: 2001:bc8:32d7:158::2
+  port: 50011
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_161
+  type: hysteria
+  server: 2001:bc8:32d7:158::4
   port: 50011
   auth-str: dongtaiwang.com
   sni: apple.com
@@ -479,39 +466,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: France_hy_2
-  type: hysteria
-  server: 62.210.10.186
-  port: 40099
-  ports: 40099
-  auth_str: dongtaiwang.com
-  up: 1000
-  down: 1000
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
 - name: France_hy_3
   type: hysteria
   server: 62.210.10.186
   port: 40099
   ports: 40099
-  auth_str: dongtaiwang.com
-  up: 1000
-  down: 1000
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: France_hy_4
-  type: hysteria
-  server: 51.159.226.1
-  port: 14241
-  ports: 14241
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -568,7 +527,6 @@ proxy-groups:
   - Unknown_hysteria_13
   - Unknown_hysteria_14
   - Unknown_hysteria_15
-  - France_tuic_21
   - France_tuic_31
   - France_hysteria_51
   - Unknown_vless_71
@@ -587,16 +545,14 @@ proxy-groups:
   - Unknown_hysteria_113
   - Unknown_hysteria_114
   - Unknown_hysteria_115
-  - France_hysteria_121
   - France_hysteria_131
   - Unknown_hysteria_151
+  - Unknown_hysteria_161
   - Unknown_hysteria_171
   - Unknown_hysteria_191
   - France_hy_0
   - France_hy_1
-  - France_hy_2
   - France_hy_3
-  - France_hy_4
   - France_hy_5
   - France_hy2_1
   - France_hy2_7
@@ -616,7 +572,6 @@ proxy-groups:
   - Unknown_hysteria_13
   - Unknown_hysteria_14
   - Unknown_hysteria_15
-  - France_tuic_21
   - France_tuic_31
   - France_hysteria_51
   - Unknown_vless_71
@@ -635,16 +590,14 @@ proxy-groups:
   - Unknown_hysteria_113
   - Unknown_hysteria_114
   - Unknown_hysteria_115
-  - France_hysteria_121
   - France_hysteria_131
   - Unknown_hysteria_151
+  - Unknown_hysteria_161
   - Unknown_hysteria_171
   - Unknown_hysteria_191
   - France_hy_0
   - France_hy_1
-  - France_hy_2
   - France_hy_3
-  - France_hy_4
   - France_hy_5
   - France_hy2_1
   - France_hy2_7
@@ -664,7 +617,6 @@ proxy-groups:
   - Unknown_hysteria_13
   - Unknown_hysteria_14
   - Unknown_hysteria_15
-  - France_tuic_21
   - France_tuic_31
   - France_hysteria_51
   - Unknown_vless_71
@@ -683,16 +635,14 @@ proxy-groups:
   - Unknown_hysteria_113
   - Unknown_hysteria_114
   - Unknown_hysteria_115
-  - France_hysteria_121
   - France_hysteria_131
   - Unknown_hysteria_151
+  - Unknown_hysteria_161
   - Unknown_hysteria_171
   - Unknown_hysteria_191
   - France_hy_0
   - France_hy_1
-  - France_hy_2
   - France_hy_3
-  - France_hy_4
   - France_hy_5
   - France_hy2_1
   - France_hy2_7
