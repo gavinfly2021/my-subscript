@@ -27,11 +27,11 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: France_tuic_11
-  server: 51.159.107.20
-  port: 55255
+- name: Germany_tuic_11
+  server: 89.144.35.230
+  port: 50088
   type: tuic
-  uuid: 79529c4a-4028-4701-a6d6-4e94b78b50fd
+  uuid: 93959440-4f83-4352-b939-906b1fd3fa59
   password: dongtaiwang.com
   alpn:
   - h3
@@ -305,6 +305,20 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
+- name: France_hy_0
+  type: hysteria
+  server: 195.154.200.40
+  port: 15010
+  ports: 15010
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
 - name: France_hy_1
   type: hysteria
   server: 195.154.200.40
@@ -347,7 +361,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: France_hy2_1
+- name: France_hy2_0
   type: hysteria2
   server: 163.172.21.105
   port: 5355
@@ -355,10 +369,10 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: France_hy2_6
+- name: France_hy2_1
   type: hysteria2
-  server: 51.158.218.2
-  port: 50066
+  server: 163.172.21.105
+  port: 5355
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -378,7 +392,7 @@ proxy-groups:
   - ⚡ 低延迟
   - ⚖️ 负载均衡
   - DIRECT
-  - France_tuic_11
+  - Germany_tuic_11
   - France_anytls_12
   - France_hysteria_13
   - Unknown_hysteria_14
@@ -400,11 +414,12 @@ proxy-groups:
   - Unknown_hysteria_151
   - Unknown_hysteria_171
   - Unknown_hysteria_191
+  - France_hy_0
   - France_hy_1
   - France_hy_3
   - France_hy_5
+  - France_hy2_0
   - France_hy2_1
-  - France_hy2_6
   - France_hy2_7
 - name: ⚡ 低延迟
   type: url-test
@@ -412,7 +427,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - France_tuic_11
+  - Germany_tuic_11
   - France_anytls_12
   - France_hysteria_13
   - Unknown_hysteria_14
@@ -434,11 +449,12 @@ proxy-groups:
   - Unknown_hysteria_151
   - Unknown_hysteria_171
   - Unknown_hysteria_191
+  - France_hy_0
   - France_hy_1
   - France_hy_3
   - France_hy_5
+  - France_hy2_0
   - France_hy2_1
-  - France_hy2_6
   - France_hy2_7
 - name: ⚖️ 负载均衡
   type: load-balance
@@ -446,7 +462,7 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 180
   proxies:
-  - France_tuic_11
+  - Germany_tuic_11
   - France_anytls_12
   - France_hysteria_13
   - Unknown_hysteria_14
@@ -468,11 +484,12 @@ proxy-groups:
   - Unknown_hysteria_151
   - Unknown_hysteria_171
   - Unknown_hysteria_191
+  - France_hy_0
   - France_hy_1
   - France_hy_3
   - France_hy_5
+  - France_hy2_0
   - France_hy2_1
-  - France_hy2_6
   - France_hy2_7
 rules:
 - DOMAIN-KEYWORD,youtube,✈️ 出境游
