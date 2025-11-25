@@ -27,8 +27,8 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: Germany_tuic_11
-  server: 89.144.35.230
+- name: France_tuic_11
+  server: 51.158.205.126
   port: 50088
   type: tuic
   uuid: 93959440-4f83-4352-b939-906b1fd3fa59
@@ -90,20 +90,6 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: France_anytls_21
-  type: anytls
-  server: 62.210.10.140
-  port: 8443
-  password: dongtaiwang.com
-  client-fingerprint: chrome
-  udp: true
-  idle-session-check-interval: 30
-  idle-session-timeout: 30
-  min-idle-session: 0
-  alpn:
-  - h2
-  - http/1.1
-  skip-cert-verify: true
 - name: France_anytls_31
   type: anytls
   server: 62.210.10.140
@@ -307,6 +293,18 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
+- name: Unknown_hysteria_161
+  type: hysteria
+  server: 2001:bc8:32d7:158::4
+  port: 50011
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: Unknown_hysteria_171
   type: hysteria
   server: 2001:bc8:32d7:158::4
@@ -331,11 +329,39 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
+- name: France_hy_0
+  type: hysteria
+  server: 195.154.200.40
+  port: 15010
+  ports: 15010
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
 - name: France_hy_1
   type: hysteria
   server: 195.154.200.40
   port: 15010
   ports: 15010
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: France_hy_2
+  type: hysteria
+  server: 62.210.10.186
+  port: 40099
+  ports: 40099
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -359,11 +385,25 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
+- name: France_hy_4
+  type: hysteria
+  server: 51.159.226.1
+  port: 49003
+  ports: 49003
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
 - name: France_hy_5
   type: hysteria
   server: 51.159.226.1
-  port: 14241
-  ports: 14241
+  port: 49003
+  ports: 49003
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -377,14 +417,6 @@ proxies:
   type: hysteria2
   server: 163.172.21.105
   port: 5355
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: France_hy2_6
-  type: hysteria2
-  server: 51.158.218.2
-  port: 50066
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -404,12 +436,11 @@ proxy-groups:
   - ⚡ 低延迟
   - ⚖️ 负载均衡
   - DIRECT
-  - Germany_tuic_11
+  - France_tuic_11
   - France_anytls_12
   - France_hysteria_13
   - Unknown_hysteria_14
   - Unknown_hysteria_15
-  - France_anytls_21
   - France_anytls_31
   - France_hysteria_51
   - Unknown_vless_71
@@ -426,13 +457,16 @@ proxy-groups:
   - France_hysteria_131
   - Unknown_hysteria_141
   - Unknown_hysteria_151
+  - Unknown_hysteria_161
   - Unknown_hysteria_171
   - Unknown_hysteria_191
+  - France_hy_0
   - France_hy_1
+  - France_hy_2
   - France_hy_3
+  - France_hy_4
   - France_hy_5
   - France_hy2_1
-  - France_hy2_6
   - France_hy2_7
 - name: ⚡ 低延迟
   type: url-test
@@ -440,12 +474,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - Germany_tuic_11
+  - France_tuic_11
   - France_anytls_12
   - France_hysteria_13
   - Unknown_hysteria_14
   - Unknown_hysteria_15
-  - France_anytls_21
   - France_anytls_31
   - France_hysteria_51
   - Unknown_vless_71
@@ -462,13 +495,16 @@ proxy-groups:
   - France_hysteria_131
   - Unknown_hysteria_141
   - Unknown_hysteria_151
+  - Unknown_hysteria_161
   - Unknown_hysteria_171
   - Unknown_hysteria_191
+  - France_hy_0
   - France_hy_1
+  - France_hy_2
   - France_hy_3
+  - France_hy_4
   - France_hy_5
   - France_hy2_1
-  - France_hy2_6
   - France_hy2_7
 - name: ⚖️ 负载均衡
   type: load-balance
@@ -476,12 +512,11 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 180
   proxies:
-  - Germany_tuic_11
+  - France_tuic_11
   - France_anytls_12
   - France_hysteria_13
   - Unknown_hysteria_14
   - Unknown_hysteria_15
-  - France_anytls_21
   - France_anytls_31
   - France_hysteria_51
   - Unknown_vless_71
@@ -498,13 +533,16 @@ proxy-groups:
   - France_hysteria_131
   - Unknown_hysteria_141
   - Unknown_hysteria_151
+  - Unknown_hysteria_161
   - Unknown_hysteria_171
   - Unknown_hysteria_191
+  - France_hy_0
   - France_hy_1
+  - France_hy_2
   - France_hy_3
+  - France_hy_4
   - France_hy_5
   - France_hy2_1
-  - France_hy2_6
   - France_hy2_7
 rules:
 - DOMAIN-KEYWORD,youtube,✈️ 出境游
