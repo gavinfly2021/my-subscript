@@ -27,8 +27,71 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
+- name: France_tuic_01
+  server: ipv4.758733.xyz
+  port: 50088
+  type: tuic
+  uuid: 93959440-4f83-4352-b939-906b1fd3fa59
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: France_anytls_02
+  type: anytls
+  server: 62.210.11.74
+  port: 8443
+  password: dongtaiwang.com
+  client-fingerprint: chrome
+  udp: true
+  idle-session-check-interval: 30
+  idle-session-timeout: 30
+  min-idle-session: 0
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: France_hysteria_03
+  type: hysteria
+  server: ipv4.758733.xyz
+  port: 20001
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_04
+  type: hysteria
+  server: 2001:bc8:32d7:402::3
+  port: 20001
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_05
+  type: hysteria
+  server: 2001:bc8:32d7:402::4
+  port: 20001
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: France_tuic_11
-  server: 51.158.205.126
+  server: ipv4.758733.xyz
   port: 50088
   type: tuic
   uuid: 93959440-4f83-4352-b939-906b1fd3fa59
@@ -56,7 +119,7 @@ proxies:
   skip-cert-verify: true
 - name: France_hysteria_13
   type: hysteria
-  server: 51.159.107.20
+  server: ipv4.758733.xyz
   port: 20001
   auth-str: dongtaiwang.com
   sni: apple.com
@@ -68,7 +131,7 @@ proxies:
   down: 55 Mbps
 - name: Unknown_hysteria_14
   type: hysteria
-  server: 2001:bc8:1203:25::3
+  server: 2001:bc8:32d7:402::3
   port: 20001
   auth-str: dongtaiwang.com
   sni: apple.com
@@ -80,7 +143,7 @@ proxies:
   down: 55 Mbps
 - name: Unknown_hysteria_15
   type: hysteria
-  server: 2001:bc8:1203:25::4
+  server: 2001:bc8:32d7:402::4
   port: 20001
   auth-str: dongtaiwang.com
   sni: apple.com
@@ -90,6 +153,20 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
+- name: France_anytls_21
+  type: anytls
+  server: 62.210.10.140
+  port: 8443
+  password: dongtaiwang.com
+  client-fingerprint: chrome
+  udp: true
+  idle-session-check-interval: 30
+  idle-session-timeout: 30
+  min-idle-session: 0
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
 - name: France_anytls_31
   type: anytls
   server: 62.210.10.140
@@ -144,6 +221,131 @@ proxies:
   grpc-opts:
     grpc-service-name: FhwHiFzK
   client-fingerprint: chrome
+- name: Unknown_tuic_91
+  server: 2001:bc8:1203:106::100
+  port: 55111
+  type: tuic
+  uuid: 5ae31731-78ac-483a-b524-011d05072ef5
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: Unknown_tuic_92
+  server: 2001:bc8:1203:106::101
+  port: 55111
+  type: tuic
+  uuid: 5ae31731-78ac-483a-b524-011d05072ef5
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: Unknown_tuic_93
+  server: 2001:bc8:1203:106::102
+  port: 55111
+  type: tuic
+  uuid: 5ae31731-78ac-483a-b524-011d05072ef5
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: Unknown_tuic_94
+  server: 2001:bc8:1203:106::103
+  port: 55111
+  type: tuic
+  uuid: 5ae31731-78ac-483a-b524-011d05072ef5
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: Unknown_tuic_95
+  server: 2001:bc8:1203:106::104
+  port: 55111
+  type: tuic
+  uuid: 5ae31731-78ac-483a-b524-011d05072ef5
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: Unknown_hysteria_101
+  type: hysteria
+  server: 2001:bc8:1203:106::200
+  port: 47821
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_102
+  type: hysteria
+  server: 2001:bc8:1203:106::201
+  port: 47821
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_103
+  type: hysteria
+  server: 2001:bc8:1203:106::202
+  port: 47821
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_104
+  type: hysteria
+  server: 2001:bc8:1203:106::203
+  port: 47821
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_105
+  type: hysteria
+  server: 2001:bc8:1203:106::204
+  port: 47821
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: Unknown_hysteria_111
   type: hysteria
   server: 2001:bc8:1203:106::200
@@ -252,6 +454,20 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
+- name: France_hy_0
+  type: hysteria
+  server: 195.154.200.40
+  port: 15010
+  ports: 15010
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
 - name: France_hy_1
   type: hysteria
   server: 195.154.200.40
@@ -317,15 +533,31 @@ proxy-groups:
   - ⚡ 低延迟
   - ⚖️ 负载均衡
   - DIRECT
+  - France_tuic_01
+  - France_anytls_02
+  - France_hysteria_03
+  - Unknown_hysteria_04
+  - Unknown_hysteria_05
   - France_tuic_11
   - France_anytls_12
   - France_hysteria_13
   - Unknown_hysteria_14
   - Unknown_hysteria_15
+  - France_anytls_21
   - France_anytls_31
   - France_hysteria_41
   - France_hysteria_51
   - Unknown_vless_71
+  - Unknown_tuic_91
+  - Unknown_tuic_92
+  - Unknown_tuic_93
+  - Unknown_tuic_94
+  - Unknown_tuic_95
+  - Unknown_hysteria_101
+  - Unknown_hysteria_102
+  - Unknown_hysteria_103
+  - Unknown_hysteria_104
+  - Unknown_hysteria_105
   - Unknown_hysteria_111
   - Unknown_hysteria_112
   - Unknown_hysteria_113
@@ -335,6 +567,7 @@ proxy-groups:
   - Unknown_hysteria_151
   - Unknown_hysteria_171
   - Unknown_hysteria_191
+  - France_hy_0
   - France_hy_1
   - France_hy_3
   - France_hy_5
@@ -346,15 +579,31 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - France_tuic_01
+  - France_anytls_02
+  - France_hysteria_03
+  - Unknown_hysteria_04
+  - Unknown_hysteria_05
   - France_tuic_11
   - France_anytls_12
   - France_hysteria_13
   - Unknown_hysteria_14
   - Unknown_hysteria_15
+  - France_anytls_21
   - France_anytls_31
   - France_hysteria_41
   - France_hysteria_51
   - Unknown_vless_71
+  - Unknown_tuic_91
+  - Unknown_tuic_92
+  - Unknown_tuic_93
+  - Unknown_tuic_94
+  - Unknown_tuic_95
+  - Unknown_hysteria_101
+  - Unknown_hysteria_102
+  - Unknown_hysteria_103
+  - Unknown_hysteria_104
+  - Unknown_hysteria_105
   - Unknown_hysteria_111
   - Unknown_hysteria_112
   - Unknown_hysteria_113
@@ -364,6 +613,7 @@ proxy-groups:
   - Unknown_hysteria_151
   - Unknown_hysteria_171
   - Unknown_hysteria_191
+  - France_hy_0
   - France_hy_1
   - France_hy_3
   - France_hy_5
@@ -375,15 +625,31 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 180
   proxies:
+  - France_tuic_01
+  - France_anytls_02
+  - France_hysteria_03
+  - Unknown_hysteria_04
+  - Unknown_hysteria_05
   - France_tuic_11
   - France_anytls_12
   - France_hysteria_13
   - Unknown_hysteria_14
   - Unknown_hysteria_15
+  - France_anytls_21
   - France_anytls_31
   - France_hysteria_41
   - France_hysteria_51
   - Unknown_vless_71
+  - Unknown_tuic_91
+  - Unknown_tuic_92
+  - Unknown_tuic_93
+  - Unknown_tuic_94
+  - Unknown_tuic_95
+  - Unknown_hysteria_101
+  - Unknown_hysteria_102
+  - Unknown_hysteria_103
+  - Unknown_hysteria_104
+  - Unknown_hysteria_105
   - Unknown_hysteria_111
   - Unknown_hysteria_112
   - Unknown_hysteria_113
@@ -393,6 +659,7 @@ proxy-groups:
   - Unknown_hysteria_151
   - Unknown_hysteria_171
   - Unknown_hysteria_191
+  - France_hy_0
   - France_hy_1
   - France_hy_3
   - France_hy_5
