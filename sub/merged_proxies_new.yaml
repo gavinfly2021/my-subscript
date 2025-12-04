@@ -116,6 +116,71 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
+- name: Unknown_tuic_81
+  server: 2001:bc8:1203:106::100
+  port: 55111
+  type: tuic
+  uuid: 5ae31731-78ac-483a-b524-011d05072ef5
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: Unknown_tuic_82
+  server: 2001:bc8:1203:106::101
+  port: 55111
+  type: tuic
+  uuid: 5ae31731-78ac-483a-b524-011d05072ef5
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: Unknown_tuic_83
+  server: 2001:bc8:1203:106::102
+  port: 55111
+  type: tuic
+  uuid: 5ae31731-78ac-483a-b524-011d05072ef5
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: Unknown_tuic_84
+  server: 2001:bc8:1203:106::103
+  port: 55111
+  type: tuic
+  uuid: 5ae31731-78ac-483a-b524-011d05072ef5
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: Unknown_tuic_85
+  server: 2001:bc8:1203:106::104
+  port: 55111
+  type: tuic
+  uuid: 5ae31731-78ac-483a-b524-011d05072ef5
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: Unknown_tuic_91
   server: 2001:bc8:1203:106::100
   port: 55111
@@ -361,6 +426,11 @@ proxy-groups:
   - Unknown_hysteria_15
   - Türkiye_anytls_31
   - France_hysteria_51
+  - Unknown_tuic_81
+  - Unknown_tuic_82
+  - Unknown_tuic_83
+  - Unknown_tuic_84
+  - Unknown_tuic_85
   - Unknown_tuic_91
   - Unknown_tuic_92
   - Unknown_tuic_93
@@ -393,6 +463,11 @@ proxy-groups:
   - Unknown_hysteria_15
   - Türkiye_anytls_31
   - France_hysteria_51
+  - Unknown_tuic_81
+  - Unknown_tuic_82
+  - Unknown_tuic_83
+  - Unknown_tuic_84
+  - Unknown_tuic_85
   - Unknown_tuic_91
   - Unknown_tuic_92
   - Unknown_tuic_93
@@ -425,6 +500,11 @@ proxy-groups:
   - Unknown_hysteria_15
   - Türkiye_anytls_31
   - France_hysteria_51
+  - Unknown_tuic_81
+  - Unknown_tuic_82
+  - Unknown_tuic_83
+  - Unknown_tuic_84
+  - Unknown_tuic_85
   - Unknown_tuic_91
   - Unknown_tuic_92
   - Unknown_tuic_93
