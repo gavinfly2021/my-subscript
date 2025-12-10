@@ -176,71 +176,6 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: The Netherlands_tuic_91
-  server: 51.158.194.63
-  port: 29522
-  type: tuic
-  uuid: b7dd1167-c5d9-45b9-ab75-83cd9e635537
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: Unknown_tuic_92
-  server: 2001:bc8:1203:106::101
-  port: 55111
-  type: tuic
-  uuid: 5ae31731-78ac-483a-b524-011d05072ef5
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  sni: bing.com
-  skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: Unknown_tuic_93
-  server: 2001:bc8:1203:106::102
-  port: 55111
-  type: tuic
-  uuid: 5ae31731-78ac-483a-b524-011d05072ef5
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  sni: bing.com
-  skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: Unknown_tuic_94
-  server: 2001:bc8:1203:106::103
-  port: 55111
-  type: tuic
-  uuid: 5ae31731-78ac-483a-b524-011d05072ef5
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  sni: bing.com
-  skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: Unknown_tuic_95
-  server: 2001:bc8:1203:106::104
-  port: 55111
-  type: tuic
-  uuid: 5ae31731-78ac-483a-b524-011d05072ef5
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  sni: bing.com
-  skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
 - name: Unknown_hysteria_111
   type: hysteria
   server: 2001:bc8:1203:106::200
@@ -337,18 +272,6 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_hysteria_181
-  type: hysteria
-  server: 2001:bc8:32d7:158::4
-  port: 50011
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
 - name: Unknown_hysteria_191
   type: hysteria
   server: 2001:bc8:32d7:158::4
@@ -361,20 +284,6 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: France_hy_0
-  type: hysteria
-  server: 62.210.10.186
-  port: 40099
-  ports: 40099
-  auth_str: dongtaiwang.com
-  up: 1000
-  down: 1000
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
 - name: France_hy_1
   type: hysteria
   server: 62.210.10.186
@@ -463,11 +372,6 @@ proxy-groups:
   - France_vless_51
   - Unknown_vless_52
   - Unknown_vless_53
-  - The Netherlands_tuic_91
-  - Unknown_tuic_92
-  - Unknown_tuic_93
-  - Unknown_tuic_94
-  - Unknown_tuic_95
   - Unknown_hysteria_111
   - Unknown_hysteria_112
   - Unknown_hysteria_113
@@ -476,9 +380,7 @@ proxy-groups:
   - France_hysteria_131
   - Unknown_hysteria_151
   - Unknown_hysteria_171
-  - Unknown_hysteria_181
   - Unknown_hysteria_191
-  - France_hy_0
   - France_hy_1
   - France_hy_3
   - France_hy_4
@@ -500,11 +402,6 @@ proxy-groups:
   - France_vless_51
   - Unknown_vless_52
   - Unknown_vless_53
-  - The Netherlands_tuic_91
-  - Unknown_tuic_92
-  - Unknown_tuic_93
-  - Unknown_tuic_94
-  - Unknown_tuic_95
   - Unknown_hysteria_111
   - Unknown_hysteria_112
   - Unknown_hysteria_113
@@ -513,9 +410,7 @@ proxy-groups:
   - France_hysteria_131
   - Unknown_hysteria_151
   - Unknown_hysteria_171
-  - Unknown_hysteria_181
   - Unknown_hysteria_191
-  - France_hy_0
   - France_hy_1
   - France_hy_3
   - France_hy_4
@@ -537,11 +432,6 @@ proxy-groups:
   - France_vless_51
   - Unknown_vless_52
   - Unknown_vless_53
-  - The Netherlands_tuic_91
-  - Unknown_tuic_92
-  - Unknown_tuic_93
-  - Unknown_tuic_94
-  - Unknown_tuic_95
   - Unknown_hysteria_111
   - Unknown_hysteria_112
   - Unknown_hysteria_113
@@ -550,9 +440,7 @@ proxy-groups:
   - France_hysteria_131
   - Unknown_hysteria_151
   - Unknown_hysteria_171
-  - Unknown_hysteria_181
   - Unknown_hysteria_191
-  - France_hy_0
   - France_hy_1
   - France_hy_3
   - France_hy_4
