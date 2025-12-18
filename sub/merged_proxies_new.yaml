@@ -99,20 +99,6 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Türkiye_anytls_21
-  type: anytls
-  server: 45.221.98.14
-  port: 59901
-  password: dongtaiwang.com
-  client-fingerprint: chrome
-  udp: true
-  idle-session-check-interval: 30
-  idle-session-timeout: 30
-  min-idle-session: 0
-  alpn:
-  - h2
-  - http/1.1
-  skip-cert-verify: true
 - name: Türkiye_anytls_31
   type: anytls
   server: 45.221.98.14
@@ -127,78 +113,6 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: France_vless_41
-  type: vless
-  server: 195.154.200.13
-  port: 17401
-  uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
-  network: tcp
-  udp: true
-  tls: true
-  flow: null
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
-    short-id: 8ef4455ba637425b
-  smux:
-    enabled: true
-    protocol: h2mux
-    max-connections: 1
-    min-streams: 4
-    padding: true
-    brutal-opts:
-      enabled: true
-      up: 50
-      down: 100
-- name: Unknown_vless_42
-  type: vless
-  server: 2001:bc8:32d7:181::2
-  port: 17401
-  uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
-  network: tcp
-  udp: true
-  tls: true
-  flow: null
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
-    short-id: 8ef4455ba637425b
-  smux:
-    enabled: true
-    protocol: h2mux
-    max-connections: 1
-    min-streams: 4
-    padding: true
-    brutal-opts:
-      enabled: true
-      up: 50
-      down: 100
-- name: Unknown_vless_43
-  type: vless
-  server: 2001:bc8:32d7:181::3
-  port: 17401
-  uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
-  network: tcp
-  udp: true
-  tls: true
-  flow: null
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
-    short-id: 8ef4455ba637425b
-  smux:
-    enabled: true
-    protocol: h2mux
-    max-connections: 1
-    min-streams: 4
-    padding: true
-    brutal-opts:
-      enabled: true
-      up: 50
-      down: 100
 - name: France_vless_51
   type: vless
   server: 195.154.200.13
@@ -331,18 +245,6 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_hysteria_161
-  type: hysteria
-  server: 2001:bc8:32d7:902::3
-  port: 26691
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
 - name: Unknown_hysteria_171
   type: hysteria
   server: 2001:bc8:32d7:902::3
@@ -381,34 +283,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: Germany_hy_3
-  type: hysteria
-  server: 89.144.35.231
-  port: 18899
-  ports: 18899
-  auth_str: dongtaiwang.com
-  up: 1000
-  down: 1000
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: France_hy_4
-  type: hysteria
-  server: 62.210.127.177
-  port: 23880
-  ports: 23880
-  auth_str: dongtaiwang.com
-  up: 1000
-  down: 1000
-  fast-open: true
-  protocol: udp
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
 - name: France_hy_5
   type: hysteria
   server: 62.210.127.177
@@ -431,14 +305,6 @@ proxies:
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
-- name: The Netherlands_hy2_6
-  type: hysteria2
-  server: 51.158.194.63
-  port: 32952
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.microsoft.com
-  skip-cert-verify: true
 - name: The Netherlands_hy2_7
   type: hysteria2
   server: 51.158.194.63
@@ -459,11 +325,7 @@ proxy-groups:
   - France_hysteria_13
   - Unknown_hysteria_14
   - Unknown_hysteria_15
-  - Türkiye_anytls_21
   - Türkiye_anytls_31
-  - France_vless_41
-  - Unknown_vless_42
-  - Unknown_vless_43
   - France_vless_51
   - Unknown_vless_52
   - Unknown_vless_53
@@ -471,15 +333,11 @@ proxy-groups:
   - Unknown_hysteria_111
   - France_hysteria_131
   - France_hysteria_151
-  - Unknown_hysteria_161
   - Unknown_hysteria_171
   - Unknown_hysteria_191
   - Germany_hy_1
-  - Germany_hy_3
-  - France_hy_4
   - France_hy_5
   - United Kingdom_hy2_1
-  - The Netherlands_hy2_6
   - The Netherlands_hy2_7
 - name: ⚡ 低延迟
   type: url-test
@@ -492,11 +350,7 @@ proxy-groups:
   - France_hysteria_13
   - Unknown_hysteria_14
   - Unknown_hysteria_15
-  - Türkiye_anytls_21
   - Türkiye_anytls_31
-  - France_vless_41
-  - Unknown_vless_42
-  - Unknown_vless_43
   - France_vless_51
   - Unknown_vless_52
   - Unknown_vless_53
@@ -504,15 +358,11 @@ proxy-groups:
   - Unknown_hysteria_111
   - France_hysteria_131
   - France_hysteria_151
-  - Unknown_hysteria_161
   - Unknown_hysteria_171
   - Unknown_hysteria_191
   - Germany_hy_1
-  - Germany_hy_3
-  - France_hy_4
   - France_hy_5
   - United Kingdom_hy2_1
-  - The Netherlands_hy2_6
   - The Netherlands_hy2_7
 - name: ⚖️ 负载均衡
   type: load-balance
@@ -525,11 +375,7 @@ proxy-groups:
   - France_hysteria_13
   - Unknown_hysteria_14
   - Unknown_hysteria_15
-  - Türkiye_anytls_21
   - Türkiye_anytls_31
-  - France_vless_41
-  - Unknown_vless_42
-  - Unknown_vless_43
   - France_vless_51
   - Unknown_vless_52
   - Unknown_vless_53
@@ -537,15 +383,11 @@ proxy-groups:
   - Unknown_hysteria_111
   - France_hysteria_131
   - France_hysteria_151
-  - Unknown_hysteria_161
   - Unknown_hysteria_171
   - Unknown_hysteria_191
   - Germany_hy_1
-  - Germany_hy_3
-  - France_hy_4
   - France_hy_5
   - United Kingdom_hy2_1
-  - The Netherlands_hy2_6
   - The Netherlands_hy2_7
 rules:
 - DOMAIN-KEYWORD,youtube,✈️ 出境游
