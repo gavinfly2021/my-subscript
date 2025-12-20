@@ -195,11 +195,11 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Germany_hy_1
+- name: Canada_hy_1
   type: hysteria
-  server: 89.144.35.231
-  port: 10023
-  ports: 10023
+  server: 98.142.247.21
+  port: 39228
+  ports: 39228
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -256,7 +256,7 @@ proxy-groups:
   - Unknown_vless_53
   - France_hysteria_131
   - Unknown_hysteria_171
-  - Germany_hy_1
+  - Canada_hy_1
   - France_hy_5
   - United States_hy2_1
   - United Kingdom_hy2_5
@@ -276,7 +276,7 @@ proxy-groups:
   - Unknown_vless_53
   - France_hysteria_131
   - Unknown_hysteria_171
-  - Germany_hy_1
+  - Canada_hy_1
   - France_hy_5
   - United States_hy2_1
   - United Kingdom_hy2_5
@@ -296,7 +296,7 @@ proxy-groups:
   - Unknown_vless_53
   - France_hysteria_131
   - Unknown_hysteria_171
-  - Germany_hy_1
+  - Canada_hy_1
   - France_hy_5
   - United States_hy2_1
   - United Kingdom_hy2_5
