@@ -171,6 +171,18 @@ proxies:
       enabled: true
       up: 50
       down: 100
+- name: France_hysteria_121
+  type: hysteria
+  server: 62.210.196.68
+  port: 26691
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: France_hysteria_131
   type: hysteria
   server: 62.210.196.68
@@ -183,7 +195,43 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
+- name: France_hysteria_141
+  type: hysteria
+  server: 62.210.196.68
+  port: 26691
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_161
+  type: hysteria
+  server: 2001:bc8:32d7:902::3
+  port: 26691
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: Unknown_hysteria_171
+  type: hysteria
+  server: 2001:bc8:32d7:902::3
+  port: 26691
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_181
   type: hysteria
   server: 2001:bc8:32d7:902::3
   port: 26691
@@ -254,8 +302,12 @@ proxy-groups:
   - France_vless_51
   - Unknown_vless_52
   - Unknown_vless_53
+  - France_hysteria_121
   - France_hysteria_131
+  - France_hysteria_141
+  - Unknown_hysteria_161
   - Unknown_hysteria_171
+  - Unknown_hysteria_181
   - Canada_hy_1
   - France_hy_5
   - United States_hy2_1
@@ -274,8 +326,12 @@ proxy-groups:
   - France_vless_51
   - Unknown_vless_52
   - Unknown_vless_53
+  - France_hysteria_121
   - France_hysteria_131
+  - France_hysteria_141
+  - Unknown_hysteria_161
   - Unknown_hysteria_171
+  - Unknown_hysteria_181
   - Canada_hy_1
   - France_hy_5
   - United States_hy2_1
@@ -294,8 +350,12 @@ proxy-groups:
   - France_vless_51
   - Unknown_vless_52
   - Unknown_vless_53
+  - France_hysteria_121
   - France_hysteria_131
+  - France_hysteria_141
+  - Unknown_hysteria_161
   - Unknown_hysteria_171
+  - Unknown_hysteria_181
   - Canada_hy_1
   - France_hy_5
   - United States_hy2_1
