@@ -243,9 +243,9 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Canada_hy_1
+- name: United Kingdom_hy_1
   type: hysteria
-  server: 98.142.247.21
+  server: 5.178.101.106
   port: 39228
   ports: 39228
   auth_str: dongtaiwang.com
@@ -308,7 +308,7 @@ proxy-groups:
   - Unknown_hysteria_161
   - Unknown_hysteria_171
   - Unknown_hysteria_181
-  - Canada_hy_1
+  - United Kingdom_hy_1
   - France_hy_5
   - United States_hy2_1
   - France_hy2_5
@@ -332,7 +332,7 @@ proxy-groups:
   - Unknown_hysteria_161
   - Unknown_hysteria_171
   - Unknown_hysteria_181
-  - Canada_hy_1
+  - United Kingdom_hy_1
   - France_hy_5
   - United States_hy2_1
   - France_hy2_5
@@ -356,7 +356,7 @@ proxy-groups:
   - Unknown_hysteria_161
   - Unknown_hysteria_171
   - Unknown_hysteria_181
-  - Canada_hy_1
+  - United Kingdom_hy_1
   - France_hy_5
   - United States_hy2_1
   - France_hy2_5
