@@ -27,6 +27,78 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
+- name: United Kingdom_hysteria_01
+  type: hysteria
+  server: 5.178.101.33
+  port: 23008
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: France_vless_02
+  type: vless
+  server: 195.154.200.13
+  port: 17401
+  uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
+  network: tcp
+  udp: true
+  tls: true
+  flow: null
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
+    short-id: 8ef4455ba637425b
+  smux:
+    enabled: true
+    protocol: h2mux
+    max-connections: 1
+    min-streams: 4
+    padding: true
+    brutal-opts:
+      enabled: true
+      up: 50
+      down: 100
+- name: France_hysteria_03
+  type: hysteria
+  server: ipv4.758733.xyz
+  port: 20001
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_04
+  type: hysteria
+  server: 2001:bc8:32d7:402::3
+  port: 20001
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_05
+  type: hysteria
+  server: 2001:bc8:32d7:402::4
+  port: 20001
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: United Kingdom_hysteria_11
   type: hysteria
   server: 5.178.101.33
@@ -99,6 +171,92 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
+- name: Türkiye_anytls_21
+  type: anytls
+  server: 45.221.98.14
+  port: 59901
+  password: dongtaiwang.com
+  client-fingerprint: chrome
+  udp: true
+  idle-session-check-interval: 30
+  idle-session-timeout: 30
+  min-idle-session: 0
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: France_vless_41
+  type: vless
+  server: 195.154.200.13
+  port: 17401
+  uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
+  network: tcp
+  udp: true
+  tls: true
+  flow: null
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
+    short-id: 8ef4455ba637425b
+  smux:
+    enabled: true
+    protocol: h2mux
+    max-connections: 1
+    min-streams: 4
+    padding: true
+    brutal-opts:
+      enabled: true
+      up: 50
+      down: 100
+- name: Unknown_vless_42
+  type: vless
+  server: 2001:bc8:32d7:181::2
+  port: 17401
+  uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
+  network: tcp
+  udp: true
+  tls: true
+  flow: null
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
+    short-id: 8ef4455ba637425b
+  smux:
+    enabled: true
+    protocol: h2mux
+    max-connections: 1
+    min-streams: 4
+    padding: true
+    brutal-opts:
+      enabled: true
+      up: 50
+      down: 100
+- name: Unknown_vless_43
+  type: vless
+  server: 2001:bc8:32d7:181::3
+  port: 17401
+  uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
+  network: tcp
+  udp: true
+  tls: true
+  flow: null
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
+    short-id: 8ef4455ba637425b
+  smux:
+    enabled: true
+    protocol: h2mux
+    max-connections: 1
+    min-streams: 4
+    padding: true
+    brutal-opts:
+      enabled: true
+      up: 50
+      down: 100
 - name: France_vless_51
   type: vless
   server: 195.154.200.13
@@ -171,6 +329,25 @@ proxies:
       enabled: true
       up: 50
       down: 100
+- name: United States_mieru_61
+  type: mieru
+  server: 157.254.223.48
+  port: 33990
+  transport: TCP
+  username: dongtaiwang.com
+  password: dongtaiwang.com
+- name: Unknown_hysteria_101
+  type: hysteria
+  server: 2001:bc8:32d7:14f::4
+  port: 23880
+  auth-str: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: France_hysteria_121
   type: hysteria
   server: 62.210.196.68
@@ -243,6 +420,20 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
+- name: United Kingdom_hy_0
+  type: hysteria
+  server: 5.178.101.106
+  port: 39228
+  ports: 39228
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
 - name: United Kingdom_hy_1
   type: hysteria
   server: 5.178.101.106
@@ -254,6 +445,34 @@ proxies:
   fast-open: true
   protocol: udp
   sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: Canada_hy_2
+  type: hysteria
+  server: 98.142.247.21
+  port: 39228
+  ports: 39228
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: France_hy_4
+  type: hysteria
+  server: 62.210.127.177
+  port: 23880
+  ports: 23880
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: bing.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -271,6 +490,28 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
+- name: Germany_hy_6
+  type: hysteria
+  server: 89.144.35.231
+  port: 18899
+  ports: 18899
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: United States_hy2_0
+  type: hysteria2
+  server: 157.254.223.43
+  port: 27921
+  password: dongtaiwang.com
+  fast-open: true
+  sni: apple.com
+  skip-cert-verify: true
 - name: United States_hy2_1
   type: hysteria2
   server: 157.254.223.43
@@ -279,10 +520,34 @@ proxies:
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
+- name: United States_hy2_2
+  type: hysteria2
+  server: 157.254.223.43
+  port: 27921
+  password: dongtaiwang.com
+  fast-open: true
+  sni: apple.com
+  skip-cert-verify: true
+- name: France_hy2_4
+  type: hysteria2
+  server: 62.210.124.146
+  port: 22000
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.microsoft.com
+  skip-cert-verify: true
 - name: France_hy2_5
   type: hysteria2
   server: 62.210.124.146
   port: 22000
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.microsoft.com
+  skip-cert-verify: true
+- name: The Netherlands_hy2_6
+  type: hysteria2
+  server: 51.158.194.63
+  port: 32952
   password: dongtaiwang.com
   fast-open: true
   sni: www.microsoft.com
@@ -294,72 +559,129 @@ proxy-groups:
   - ⚡ 低延迟
   - ⚖️ 负载均衡
   - DIRECT
+  - United Kingdom_hysteria_01
+  - France_vless_02
+  - France_hysteria_03
+  - Unknown_hysteria_04
+  - Unknown_hysteria_05
   - United Kingdom_hysteria_11
   - France_vless_12
   - France_hysteria_13
   - Unknown_hysteria_14
   - Unknown_hysteria_15
+  - Türkiye_anytls_21
+  - France_vless_41
+  - Unknown_vless_42
+  - Unknown_vless_43
   - France_vless_51
   - Unknown_vless_52
   - Unknown_vless_53
+  - United States_mieru_61
+  - Unknown_hysteria_101
   - France_hysteria_121
   - France_hysteria_131
   - France_hysteria_141
   - Unknown_hysteria_161
   - Unknown_hysteria_171
   - Unknown_hysteria_181
+  - United Kingdom_hy_0
   - United Kingdom_hy_1
+  - Canada_hy_2
+  - France_hy_4
   - France_hy_5
+  - Germany_hy_6
+  - United States_hy2_0
   - United States_hy2_1
+  - United States_hy2_2
+  - France_hy2_4
   - France_hy2_5
+  - The Netherlands_hy2_6
 - name: ⚡ 低延迟
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - United Kingdom_hysteria_01
+  - France_vless_02
+  - France_hysteria_03
+  - Unknown_hysteria_04
+  - Unknown_hysteria_05
   - United Kingdom_hysteria_11
   - France_vless_12
   - France_hysteria_13
   - Unknown_hysteria_14
   - Unknown_hysteria_15
+  - Türkiye_anytls_21
+  - France_vless_41
+  - Unknown_vless_42
+  - Unknown_vless_43
   - France_vless_51
   - Unknown_vless_52
   - Unknown_vless_53
+  - United States_mieru_61
+  - Unknown_hysteria_101
   - France_hysteria_121
   - France_hysteria_131
   - France_hysteria_141
   - Unknown_hysteria_161
   - Unknown_hysteria_171
   - Unknown_hysteria_181
+  - United Kingdom_hy_0
   - United Kingdom_hy_1
+  - Canada_hy_2
+  - France_hy_4
   - France_hy_5
+  - Germany_hy_6
+  - United States_hy2_0
   - United States_hy2_1
+  - United States_hy2_2
+  - France_hy2_4
   - France_hy2_5
+  - The Netherlands_hy2_6
 - name: ⚖️ 负载均衡
   type: load-balance
   strategy: consistent-hashing
   url: http://www.gstatic.com/generate_204
   interval: 180
   proxies:
+  - United Kingdom_hysteria_01
+  - France_vless_02
+  - France_hysteria_03
+  - Unknown_hysteria_04
+  - Unknown_hysteria_05
   - United Kingdom_hysteria_11
   - France_vless_12
   - France_hysteria_13
   - Unknown_hysteria_14
   - Unknown_hysteria_15
+  - Türkiye_anytls_21
+  - France_vless_41
+  - Unknown_vless_42
+  - Unknown_vless_43
   - France_vless_51
   - Unknown_vless_52
   - Unknown_vless_53
+  - United States_mieru_61
+  - Unknown_hysteria_101
   - France_hysteria_121
   - France_hysteria_131
   - France_hysteria_141
   - Unknown_hysteria_161
   - Unknown_hysteria_171
   - Unknown_hysteria_181
+  - United Kingdom_hy_0
   - United Kingdom_hy_1
+  - Canada_hy_2
+  - France_hy_4
   - France_hy_5
+  - Germany_hy_6
+  - United States_hy2_0
   - United States_hy2_1
+  - United States_hy2_2
+  - France_hy2_4
   - France_hy2_5
+  - The Netherlands_hy2_6
 rules:
 - DOMAIN-KEYWORD,youtube,✈️ 出境游
 - DOMAIN,youtubei.googleapis.com,✈️ 出境游
