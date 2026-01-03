@@ -27,7 +27,19 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: United Kingdom_hysteria_01
+- name: Germany_hysteria_01
+  type: hysteria
+  server: 89.144.35.30
+  port: 23008
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: United Kingdom_hysteria_02
   type: hysteria
   server: 5.178.101.33
   port: 23008
@@ -39,7 +51,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: France_vless_02
+- name: France_vless_03
   type: vless
   server: 195.154.200.13
   port: 17401
@@ -63,18 +75,6 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: France_hysteria_03
-  type: hysteria
-  server: ipv4.758733.xyz
-  port: 20001
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
 - name: Unknown_hysteria_04
   type: hysteria
   server: 2001:bc8:32d7:402::3
@@ -99,7 +99,19 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: United Kingdom_hysteria_11
+- name: Germany_hysteria_11
+  type: hysteria
+  server: 89.144.35.30
+  port: 23008
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: United Kingdom_hysteria_12
   type: hysteria
   server: 5.178.101.33
   port: 23008
@@ -111,7 +123,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: France_vless_12
+- name: France_vless_13
   type: vless
   server: 195.154.200.13
   port: 17401
@@ -135,18 +147,6 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: France_hysteria_13
-  type: hysteria
-  server: ipv4.758733.xyz
-  port: 20001
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
 - name: Unknown_hysteria_14
   type: hysteria
   server: 2001:bc8:32d7:402::3
@@ -559,14 +559,14 @@ proxy-groups:
   - ⚡ 低延迟
   - ⚖️ 负载均衡
   - DIRECT
-  - United Kingdom_hysteria_01
-  - France_vless_02
-  - France_hysteria_03
+  - Germany_hysteria_01
+  - United Kingdom_hysteria_02
+  - France_vless_03
   - Unknown_hysteria_04
   - Unknown_hysteria_05
-  - United Kingdom_hysteria_11
-  - France_vless_12
-  - France_hysteria_13
+  - Germany_hysteria_11
+  - United Kingdom_hysteria_12
+  - France_vless_13
   - Unknown_hysteria_14
   - Unknown_hysteria_15
   - Türkiye_anytls_21
@@ -602,14 +602,14 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - United Kingdom_hysteria_01
-  - France_vless_02
-  - France_hysteria_03
+  - Germany_hysteria_01
+  - United Kingdom_hysteria_02
+  - France_vless_03
   - Unknown_hysteria_04
   - Unknown_hysteria_05
-  - United Kingdom_hysteria_11
-  - France_vless_12
-  - France_hysteria_13
+  - Germany_hysteria_11
+  - United Kingdom_hysteria_12
+  - France_vless_13
   - Unknown_hysteria_14
   - Unknown_hysteria_15
   - Türkiye_anytls_21
@@ -645,14 +645,14 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 180
   proxies:
-  - United Kingdom_hysteria_01
-  - France_vless_02
-  - France_hysteria_03
+  - Germany_hysteria_01
+  - United Kingdom_hysteria_02
+  - France_vless_03
   - Unknown_hysteria_04
   - Unknown_hysteria_05
-  - United Kingdom_hysteria_11
-  - France_vless_12
-  - France_hysteria_13
+  - Germany_hysteria_11
+  - United Kingdom_hysteria_12
+  - France_vless_13
   - Unknown_hysteria_14
   - Unknown_hysteria_15
   - Türkiye_anytls_21
