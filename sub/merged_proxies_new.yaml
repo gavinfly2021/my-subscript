@@ -420,9 +420,9 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: United Kingdom_hy_0
+- name: Germany_hy_0
   type: hysteria
-  server: 5.178.101.106
+  server: 89.144.35.34
   port: 39228
   ports: 39228
   auth_str: dongtaiwang.com
@@ -434,9 +434,9 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: United Kingdom_hy_1
+- name: Germany_hy_1
   type: hysteria
-  server: 5.178.101.106
+  server: 89.144.35.34
   port: 39228
   ports: 39228
   auth_str: dongtaiwang.com
@@ -584,8 +584,8 @@ proxy-groups:
   - Unknown_hysteria_161
   - Unknown_hysteria_171
   - Unknown_hysteria_181
-  - United Kingdom_hy_0
-  - United Kingdom_hy_1
+  - Germany_hy_0
+  - Germany_hy_1
   - Canada_hy_2
   - France_hy_4
   - France_hy_5
@@ -627,8 +627,8 @@ proxy-groups:
   - Unknown_hysteria_161
   - Unknown_hysteria_171
   - Unknown_hysteria_181
-  - United Kingdom_hy_0
-  - United Kingdom_hy_1
+  - Germany_hy_0
+  - Germany_hy_1
   - Canada_hy_2
   - France_hy_4
   - France_hy_5
@@ -670,8 +670,8 @@ proxy-groups:
   - Unknown_hysteria_161
   - Unknown_hysteria_171
   - Unknown_hysteria_181
-  - United Kingdom_hy_0
-  - United Kingdom_hy_1
+  - Germany_hy_0
+  - Germany_hy_1
   - Canada_hy_2
   - France_hy_4
   - France_hy_5
