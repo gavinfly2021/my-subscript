@@ -336,9 +336,9 @@ proxies:
   transport: TCP
   username: dongtaiwang.com
   password: dongtaiwang.com
-- name: France_hysteria_121
+- name: Germany_hysteria_121
   type: hysteria
-  server: 62.210.196.68
+  server: 5.83.129.143
   port: 26691
   auth-str: dongtaiwang.com
   sni: apple.com
@@ -348,9 +348,9 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: France_hysteria_131
+- name: Germany_hysteria_131
   type: hysteria
-  server: 62.210.196.68
+  server: 5.83.129.143
   port: 26691
   auth-str: dongtaiwang.com
   sni: apple.com
@@ -360,45 +360,9 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: France_hysteria_141
+- name: Germany_hysteria_141
   type: hysteria
-  server: 62.210.196.68
-  port: 26691
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: Unknown_hysteria_161
-  type: hysteria
-  server: 2001:bc8:32d7:902::3
-  port: 26691
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: Unknown_hysteria_171
-  type: hysteria
-  server: 2001:bc8:32d7:902::3
-  port: 26691
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: Unknown_hysteria_181
-  type: hysteria
-  server: 2001:bc8:32d7:902::3
+  server: 5.83.129.143
   port: 26691
   auth-str: dongtaiwang.com
   sni: apple.com
@@ -565,12 +529,9 @@ proxy-groups:
   - Unknown_vless_52
   - Unknown_vless_53
   - United States_mieru_61
-  - France_hysteria_121
-  - France_hysteria_131
-  - France_hysteria_141
-  - Unknown_hysteria_161
-  - Unknown_hysteria_171
-  - Unknown_hysteria_181
+  - Germany_hysteria_121
+  - Germany_hysteria_131
+  - Germany_hysteria_141
   - Germany_hy_0
   - Germany_hy_1
   - Canada_hy_2
@@ -607,12 +568,9 @@ proxy-groups:
   - Unknown_vless_52
   - Unknown_vless_53
   - United States_mieru_61
-  - France_hysteria_121
-  - France_hysteria_131
-  - France_hysteria_141
-  - Unknown_hysteria_161
-  - Unknown_hysteria_171
-  - Unknown_hysteria_181
+  - Germany_hysteria_121
+  - Germany_hysteria_131
+  - Germany_hysteria_141
   - Germany_hy_0
   - Germany_hy_1
   - Canada_hy_2
@@ -649,12 +607,9 @@ proxy-groups:
   - Unknown_vless_52
   - Unknown_vless_53
   - United States_mieru_61
-  - France_hysteria_121
-  - France_hysteria_131
-  - France_hysteria_141
-  - Unknown_hysteria_161
-  - Unknown_hysteria_171
-  - Unknown_hysteria_181
+  - Germany_hysteria_121
+  - Germany_hysteria_131
+  - Germany_hysteria_141
   - Germany_hy_0
   - Germany_hy_1
   - Canada_hy_2
