@@ -496,14 +496,6 @@ proxies:
   fast-open: true
   sni: www.microsoft.com
   skip-cert-verify: true
-- name: The Netherlands_hy2_6
-  type: hysteria2
-  server: 51.158.194.63
-  port: 32952
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.microsoft.com
-  skip-cert-verify: true
 proxy-groups:
 - name: ✈️ 出境游
   type: select
@@ -543,7 +535,6 @@ proxy-groups:
   - United States_hy2_2
   - France_hy2_4
   - France_hy2_5
-  - The Netherlands_hy2_6
 - name: ⚡ 低延迟
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -582,7 +573,6 @@ proxy-groups:
   - United States_hy2_2
   - France_hy2_4
   - France_hy2_5
-  - The Netherlands_hy2_6
 - name: ⚖️ 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -621,7 +611,6 @@ proxy-groups:
   - United States_hy2_2
   - France_hy2_4
   - France_hy2_5
-  - The Netherlands_hy2_6
 rules:
 - DOMAIN-KEYWORD,youtube,✈️ 出境游
 - DOMAIN,youtubei.googleapis.com,✈️ 出境游
