@@ -374,9 +374,9 @@ proxies:
   down: 55 Mbps
 - name: Germany_hy_0
   type: hysteria
-  server: 89.144.35.34
-  port: 39228
-  ports: 39228
+  server: 5.83.129.153
+  port: 20088
+  ports: 20088
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -388,9 +388,9 @@ proxies:
   - h3
 - name: Germany_hy_1
   type: hysteria
-  server: 89.144.35.34
-  port: 39228
-  ports: 39228
+  server: 5.83.129.153
+  port: 20088
+  ports: 20088
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -474,9 +474,9 @@ proxies:
   skip-cert-verify: true
 - name: United States_hy2_2
   type: hysteria2
-  server: 157.254.223.43
-  port: 27921
-  password: dongtaiwang.com
+  server: 157.254.223.24
+  port: 30088
+  password: alvin9999.com
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
