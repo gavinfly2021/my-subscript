@@ -400,11 +400,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: Canada_hy_2
+- name: Germany_hy_2
   type: hysteria
-  server: 98.142.247.21
-  port: 39228
-  ports: 39228
+  server: 5.83.129.153
+  port: 20088
+  ports: 20088
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -526,7 +526,7 @@ proxy-groups:
   - Germany_hysteria_141
   - Germany_hy_0
   - Germany_hy_1
-  - Canada_hy_2
+  - Germany_hy_2
   - Germany_hy_4
   - Germany_hy_5
   - Germany_hy_6
@@ -564,7 +564,7 @@ proxy-groups:
   - Germany_hysteria_141
   - Germany_hy_0
   - Germany_hy_1
-  - Canada_hy_2
+  - Germany_hy_2
   - Germany_hy_4
   - Germany_hy_5
   - Germany_hy_6
@@ -602,7 +602,7 @@ proxy-groups:
   - Germany_hysteria_141
   - Germany_hy_0
   - Germany_hy_1
-  - Canada_hy_2
+  - Germany_hy_2
   - Germany_hy_4
   - Germany_hy_5
   - Germany_hy_6
