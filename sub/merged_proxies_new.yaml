@@ -456,18 +456,18 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: United States_hy2_0
+- name: Germany_hy2_0
   type: hysteria2
-  server: 157.254.223.43
-  port: 27921
+  server: 89.144.35.34
+  port: 50022
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
-- name: United States_hy2_1
+- name: Germany_hy2_1
   type: hysteria2
-  server: 157.254.223.43
-  port: 27921
+  server: 89.144.35.34
+  port: 50022
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
@@ -530,8 +530,8 @@ proxy-groups:
   - Germany_hy_4
   - Germany_hy_5
   - Germany_hy_6
-  - United States_hy2_0
-  - United States_hy2_1
+  - Germany_hy2_0
+  - Germany_hy2_1
   - United States_hy2_2
   - France_hy2_4
   - France_hy2_5
@@ -568,8 +568,8 @@ proxy-groups:
   - Germany_hy_4
   - Germany_hy_5
   - Germany_hy_6
-  - United States_hy2_0
-  - United States_hy2_1
+  - Germany_hy2_0
+  - Germany_hy2_1
   - United States_hy2_2
   - France_hy2_4
   - France_hy2_5
@@ -606,8 +606,8 @@ proxy-groups:
   - Germany_hy_4
   - Germany_hy_5
   - Germany_hy_6
-  - United States_hy2_0
-  - United States_hy2_1
+  - Germany_hy2_0
+  - Germany_hy2_1
   - United States_hy2_2
   - France_hy2_4
   - France_hy2_5
