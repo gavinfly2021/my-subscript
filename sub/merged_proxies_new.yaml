@@ -391,13 +391,19 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: United States_mieru_61
-  type: mieru
+- name: United States_tuic_61
   server: 157.254.223.48
-  port: 33990
-  transport: TCP
-  username: dongtaiwang.com
-  password: dongtaiwang.com
+  port: 11540
+  type: tuic
+  uuid: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
+  password: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
+  sni: www.microsoft.com
+  alpn:
+  - h3
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: true
+  congestion-controller: bbr
 - name: Germany_hysteria_121
   type: hysteria
   server: 5.83.129.143
@@ -518,21 +524,21 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: Germany_hy2_0
+- name: United States_hy2_0
   type: hysteria2
-  server: 89.144.35.34
-  port: 43608
+  server: 157.254.223.43
+  port: 27921
   password: dongtaiwang.com
   fast-open: true
-  sni: apple.com
+  sni: www.bing.com
   skip-cert-verify: true
-- name: Germany_hy2_1
+- name: United States_hy2_1
   type: hysteria2
-  server: 89.144.35.34
-  port: 43608
+  server: 157.254.223.43
+  port: 27921
   password: dongtaiwang.com
   fast-open: true
-  sni: apple.com
+  sni: www.bing.com
   skip-cert-verify: true
 - name: United States_hy2_2
   type: hysteria2
@@ -541,22 +547,6 @@ proxies:
   password: alvin9999.com
   fast-open: true
   sni: apple.com
-  skip-cert-verify: true
-- name: France_hy2_4
-  type: hysteria2
-  server: 62.210.124.146
-  port: 22000
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: France_hy2_5
-  type: hysteria2
-  server: 62.210.124.146
-  port: 22000
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.microsoft.com
   skip-cert-verify: true
 proxy-groups:
 - name: ✈️ 出境游
@@ -582,7 +572,7 @@ proxy-groups:
   - Unknown_vless_51
   - Unknown_vless_52
   - Unknown_vless_53
-  - United States_mieru_61
+  - United States_tuic_61
   - Germany_hysteria_121
   - Germany_hysteria_131
   - Germany_hysteria_141
@@ -592,11 +582,9 @@ proxy-groups:
   - Germany_hy_4
   - Germany_hy_5
   - Germany_hy_6
-  - Germany_hy2_0
-  - Germany_hy2_1
+  - United States_hy2_0
+  - United States_hy2_1
   - United States_hy2_2
-  - France_hy2_4
-  - France_hy2_5
 - name: ⚡ 低延迟
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -620,7 +608,7 @@ proxy-groups:
   - Unknown_vless_51
   - Unknown_vless_52
   - Unknown_vless_53
-  - United States_mieru_61
+  - United States_tuic_61
   - Germany_hysteria_121
   - Germany_hysteria_131
   - Germany_hysteria_141
@@ -630,11 +618,9 @@ proxy-groups:
   - Germany_hy_4
   - Germany_hy_5
   - Germany_hy_6
-  - Germany_hy2_0
-  - Germany_hy2_1
+  - United States_hy2_0
+  - United States_hy2_1
   - United States_hy2_2
-  - France_hy2_4
-  - France_hy2_5
 - name: ⚖️ 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -658,7 +644,7 @@ proxy-groups:
   - Unknown_vless_51
   - Unknown_vless_52
   - Unknown_vless_53
-  - United States_mieru_61
+  - United States_tuic_61
   - Germany_hysteria_121
   - Germany_hysteria_131
   - Germany_hysteria_141
@@ -668,11 +654,9 @@ proxy-groups:
   - Germany_hy_4
   - Germany_hy_5
   - Germany_hy_6
-  - Germany_hy2_0
-  - Germany_hy2_1
+  - United States_hy2_0
+  - United States_hy2_1
   - United States_hy2_2
-  - France_hy2_4
-  - France_hy2_5
 rules:
 - DOMAIN-KEYWORD,youtube,✈️ 出境游
 - DOMAIN,youtubei.googleapis.com,✈️ 出境游
