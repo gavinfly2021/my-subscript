@@ -233,20 +233,19 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: Türkiye_anytls_21
-  type: anytls
-  server: 45.221.98.14
-  port: 59901
-  password: dongtaiwang.com
-  client-fingerprint: chrome
-  udp: true
-  idle-session-check-interval: 30
-  idle-session-timeout: 30
-  min-idle-session: 0
+- name: United States_tuic_21
+  server: 157.254.223.24
+  port: 41122
+  type: tuic
+  uuid: 2aec7bfd-4178-4ee5-9bc5-fe4c241fdc15
+  password: 2aec7bfd-4178-4ee5-9bc5-fe4c241fdc15
+  sni: www.microsoft.com
   alpn:
-  - h2
-  - http/1.1
+  - h3
+  request-timeout: 8000
+  udp-relay-mode: native
   skip-cert-verify: true
+  congestion-controller: bbr
 - name: Unknown_vless_41
   type: vless
   server: 2001:bc8:32d7:181::3
@@ -557,7 +556,7 @@ proxy-groups:
   - Unknown_vless_13
   - Unknown_vless_14
   - Unknown_vless_15
-  - Türkiye_anytls_21
+  - United States_tuic_21
   - Unknown_vless_41
   - Unknown_vless_42
   - Unknown_vless_43
@@ -592,7 +591,7 @@ proxy-groups:
   - Unknown_vless_13
   - Unknown_vless_14
   - Unknown_vless_15
-  - Türkiye_anytls_21
+  - United States_tuic_21
   - Unknown_vless_41
   - Unknown_vless_42
   - Unknown_vless_43
@@ -627,7 +626,7 @@ proxy-groups:
   - Unknown_vless_13
   - Unknown_vless_14
   - Unknown_vless_15
-  - Türkiye_anytls_21
+  - United States_tuic_21
   - Unknown_vless_41
   - Unknown_vless_42
   - Unknown_vless_43
