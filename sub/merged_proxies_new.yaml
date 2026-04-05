@@ -66,12 +66,12 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: United States_tuic_41
-  server: 157.254.223.24
-  port: 41122
+- name: Germany_tuic_41
+  server: 178.18.147.199
+  port: 42487
   type: tuic
-  uuid: 2aec7bfd-4178-4ee5-9bc5-fe4c241fdc15
-  password: 2aec7bfd-4178-4ee5-9bc5-fe4c241fdc15
+  uuid: b35b50d1-7830-4a68-94db-349c2d2f8e43
+  password: b35b50d1-7830-4a68-94db-349c2d2f8e43
   sni: www.microsoft.com
   alpn:
   - h3
@@ -79,12 +79,12 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: United States_tuic_51
-  server: 157.254.223.24
-  port: 41122
+- name: Germany_tuic_51
+  server: 178.18.147.199
+  port: 42487
   type: tuic
-  uuid: 2aec7bfd-4178-4ee5-9bc5-fe4c241fdc15
-  password: 2aec7bfd-4178-4ee5-9bc5-fe4c241fdc15
+  uuid: b35b50d1-7830-4a68-94db-349c2d2f8e43
+  password: b35b50d1-7830-4a68-94db-349c2d2f8e43
   sni: www.microsoft.com
   alpn:
   - h3
@@ -251,8 +251,8 @@ proxy-groups:
   - Germany_tuic_01
   - Germany_tuic_11
   - France_tuic_21
-  - United States_tuic_41
-  - United States_tuic_51
+  - Germany_tuic_41
+  - Germany_tuic_51
   - United Kingdom_tuic_61
   - Germany_hysteria_121
   - Germany_hysteria_131
@@ -274,8 +274,8 @@ proxy-groups:
   - Germany_tuic_01
   - Germany_tuic_11
   - France_tuic_21
-  - United States_tuic_41
-  - United States_tuic_51
+  - Germany_tuic_41
+  - Germany_tuic_51
   - United Kingdom_tuic_61
   - Germany_hysteria_121
   - Germany_hysteria_131
@@ -297,8 +297,8 @@ proxy-groups:
   - Germany_tuic_01
   - Germany_tuic_11
   - France_tuic_21
-  - United States_tuic_41
-  - United States_tuic_51
+  - Germany_tuic_41
+  - Germany_tuic_51
   - United Kingdom_tuic_61
   - Germany_hysteria_121
   - Germany_hysteria_131
