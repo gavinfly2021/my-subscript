@@ -27,7 +27,7 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: Germany_tuic_01
+- name: France_tuic_01
   server: ip1.758733.xyz
   port: 10088
   type: tuic
@@ -40,7 +40,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: Germany_tuic_11
+- name: France_tuic_11
   server: ip1.758733.xyz
   port: 10088
   type: tuic
@@ -248,8 +248,8 @@ proxy-groups:
   - ⚡ 低延迟
   - ⚖️ 负载均衡
   - DIRECT
-  - Germany_tuic_01
-  - Germany_tuic_11
+  - France_tuic_01
+  - France_tuic_11
   - France_tuic_21
   - Germany_tuic_41
   - Germany_tuic_51
@@ -271,8 +271,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - Germany_tuic_01
-  - Germany_tuic_11
+  - France_tuic_01
+  - France_tuic_11
   - France_tuic_21
   - Germany_tuic_41
   - Germany_tuic_51
@@ -294,8 +294,8 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 180
   proxies:
-  - Germany_tuic_01
-  - Germany_tuic_11
+  - France_tuic_01
+  - France_tuic_11
   - France_tuic_21
   - Germany_tuic_41
   - Germany_tuic_51
