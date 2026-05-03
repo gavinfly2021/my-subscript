@@ -66,12 +66,12 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: Germany_tuic_41
-  server: 178.18.147.199
-  port: 42487
+- name: United Kingdom_tuic_41
+  server: 5.178.101.117
+  port: 30006
   type: tuic
-  uuid: b35b50d1-7830-4a68-94db-349c2d2f8e43
-  password: b35b50d1-7830-4a68-94db-349c2d2f8e43
+  uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92
+  password: dongtaiwang.com
   sni: www.microsoft.com
   alpn:
   - h3
@@ -79,12 +79,12 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: Germany_tuic_51
-  server: 178.18.147.199
-  port: 42487
+- name: United Kingdom_tuic_51
+  server: 5.178.101.117
+  port: 30006
   type: tuic
-  uuid: b35b50d1-7830-4a68-94db-349c2d2f8e43
-  password: b35b50d1-7830-4a68-94db-349c2d2f8e43
+  uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92
+  password: dongtaiwang.com
   sni: www.microsoft.com
   alpn:
   - h3
@@ -241,6 +241,14 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
+- name: United States_hy2_2
+  type: hysteria2
+  server: 157.254.223.43
+  port: 27921
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
 proxy-groups:
 - name: ✈️ 出境游
   type: select
@@ -251,8 +259,8 @@ proxy-groups:
   - France_tuic_01
   - France_tuic_11
   - France_tuic_21
-  - Germany_tuic_41
-  - Germany_tuic_51
+  - United Kingdom_tuic_41
+  - United Kingdom_tuic_51
   - United Kingdom_tuic_61
   - Germany_hysteria_121
   - Germany_hysteria_131
@@ -265,6 +273,7 @@ proxy-groups:
   - Germany_hy_6
   - United States_hy2_0
   - United States_hy2_1
+  - United States_hy2_2
 - name: ⚡ 低延迟
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -274,8 +283,8 @@ proxy-groups:
   - France_tuic_01
   - France_tuic_11
   - France_tuic_21
-  - Germany_tuic_41
-  - Germany_tuic_51
+  - United Kingdom_tuic_41
+  - United Kingdom_tuic_51
   - United Kingdom_tuic_61
   - Germany_hysteria_121
   - Germany_hysteria_131
@@ -288,6 +297,7 @@ proxy-groups:
   - Germany_hy_6
   - United States_hy2_0
   - United States_hy2_1
+  - United States_hy2_2
 - name: ⚖️ 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -297,8 +307,8 @@ proxy-groups:
   - France_tuic_01
   - France_tuic_11
   - France_tuic_21
-  - Germany_tuic_41
-  - Germany_tuic_51
+  - United Kingdom_tuic_41
+  - United Kingdom_tuic_51
   - United Kingdom_tuic_61
   - Germany_hysteria_121
   - Germany_hysteria_131
@@ -311,6 +321,7 @@ proxy-groups:
   - Germany_hy_6
   - United States_hy2_0
   - United States_hy2_1
+  - United States_hy2_2
 rules:
 - DOMAIN-KEYWORD,youtube,✈️ 出境游
 - DOMAIN,youtubei.googleapis.com,✈️ 出境游
