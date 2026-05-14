@@ -53,19 +53,18 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: France_tuic_21
-  server: 163.172.116.154
-  port: 33887
-  type: tuic
-  uuid: 9adb384a-0f16-4501-a8f3-b6b2556fce87
-  password: dongtaiwang.com
+- name: France_hysteria_21
+  type: hysteria
+  server: 163.172.117.163
+  port: 36699
+  auth-str: dongtaiwang.com
   sni: bing.com
+  skip-cert-verify: true
   alpn:
   - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  skip-cert-verify: true
-  congestion-controller: bbr
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: United Kingdom_tuic_41
   server: 5.178.101.117
   port: 30006
@@ -258,7 +257,7 @@ proxy-groups:
   - DIRECT
   - France_tuic_01
   - France_tuic_11
-  - France_tuic_21
+  - France_hysteria_21
   - United Kingdom_tuic_41
   - United Kingdom_tuic_51
   - United Kingdom_tuic_61
@@ -282,7 +281,7 @@ proxy-groups:
   proxies:
   - France_tuic_01
   - France_tuic_11
-  - France_tuic_21
+  - France_hysteria_21
   - United Kingdom_tuic_41
   - United Kingdom_tuic_51
   - United Kingdom_tuic_61
@@ -306,7 +305,7 @@ proxy-groups:
   proxies:
   - France_tuic_01
   - France_tuic_11
-  - France_tuic_21
+  - France_hysteria_21
   - United Kingdom_tuic_41
   - United Kingdom_tuic_51
   - United Kingdom_tuic_61
