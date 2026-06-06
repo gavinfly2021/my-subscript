@@ -163,14 +163,14 @@ proxies:
 - name: Germany_hy_2
   type: hysteria
   server: 5.83.129.153
-  port: 20088
-  ports: 20088
-  auth_str: dongtaiwang.com
+  port: 27626
+  ports: 27626
+  auth_str: github.com/Alvin9999-newpac/fanqiang
   up: 1000
   down: 1000
   fast-open: true
   protocol: udp
-  sni: apple.com
+  sni: bing.com
   skip-cert-verify: true
   alpn:
   - h3
