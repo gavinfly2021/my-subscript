@@ -218,20 +218,20 @@ proxies:
   - h3
 - name: France_hy2_0
   type: hysteria2
-  server: 62.210.10.108
-  port: 22000
+  server: www.838491.xyz
+  port: 13377
   password: dongtaiwang.com
   fast-open: true
-  sni: www.microsoft.com
-  skip-cert-verify: true
+  sni: www.838491.xyz
+  skip-cert-verify: false
 - name: France_hy2_1
   type: hysteria2
-  server: 62.210.10.108
-  port: 22000
+  server: www.838491.xyz
+  port: 13377
   password: dongtaiwang.com
   fast-open: true
-  sni: www.microsoft.com
-  skip-cert-verify: true
+  sni: www.838491.xyz
+  skip-cert-verify: false
 - name: France_hy2_2
   type: hysteria2
   server: 62.210.147.2
