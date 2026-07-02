@@ -27,22 +27,28 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: France_hysteria2_01
-  type: hysteria2
-  server: clash-ip1.934618.xyz
-  port: 18271
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: clash-ip1.934618.xyz
-  skip-cert-verify: false
+- name: France_hysteria_01
+  type: hysteria
+  server: 62.210.70.191
+  port: 23556
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: France_hysteria2_11
-  type: hysteria2
-  server: clash-ip1.934618.xyz
-  port: 18271
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: clash-ip1.934618.xyz
-  skip-cert-verify: false
+- name: France_hysteria_11
+  type: hysteria
+  server: 62.210.70.191
+  port: 23556
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
   up: 11 Mbps
   down: 55 Mbps
 - name: France_hysteria_21
@@ -148,9 +154,9 @@ proxies:
   - h3
 - name: Germany_hy_1
   type: hysteria
-  server: 5.83.129.153
-  port: 20088
-  ports: 20088
+  server: 5.83.129.90
+  port: 54177
+  ports: 54177
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -218,20 +224,20 @@ proxies:
   - h3
 - name: France_hy2_0
   type: hysteria2
-  server: www.838491.xyz
-  port: 13377
-  password: dongtaiwang.com
+  server: 62.210.27.216
+  port: 60111
+  password: github.com/Alvin9999-newpac/fanqiang
   fast-open: true
-  sni: www.838491.xyz
-  skip-cert-verify: false
+  sni: bing.com
+  skip-cert-verify: true
 - name: France_hy2_1
   type: hysteria2
-  server: www.838491.xyz
-  port: 13377
-  password: dongtaiwang.com
+  server: 62.210.27.216
+  port: 60111
+  password: github.com/Alvin9999-newpac/fanqiang
   fast-open: true
-  sni: www.838491.xyz
-  skip-cert-verify: false
+  sni: bing.com
+  skip-cert-verify: true
 - name: France_hy2_2
   type: hysteria2
   server: 62.210.147.2
@@ -247,8 +253,8 @@ proxy-groups:
   - ⚡ 低延迟
   - ⚖️ 负载均衡
   - DIRECT
-  - France_hysteria2_01
-  - France_hysteria2_11
+  - France_hysteria_01
+  - France_hysteria_11
   - France_hysteria_21
   - United Kingdom_tuic_41
   - United Kingdom_tuic_51
@@ -271,8 +277,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - France_hysteria2_01
-  - France_hysteria2_11
+  - France_hysteria_01
+  - France_hysteria_11
   - France_hysteria_21
   - United Kingdom_tuic_41
   - United Kingdom_tuic_51
@@ -295,8 +301,8 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 180
   proxies:
-  - France_hysteria2_01
-  - France_hysteria2_11
+  - France_hysteria_01
+  - France_hysteria_11
   - France_hysteria_21
   - United Kingdom_tuic_41
   - United Kingdom_tuic_51
