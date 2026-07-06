@@ -27,30 +27,34 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: France_hysteria_01
-  type: hysteria
-  server: 62.210.70.191
-  port: 23556
-  auth-str: github.com/Alvin9999-newpac/fanqiang
+- name: United States_anytls_01
+  type: anytls
+  server: 198.200.57.154
+  port: 22556
+  password: github.com/Alvin9999-newpac/fanqiang
+  udp: true
+  idle-session-check-interval: 30
+  idle-session-timeout: 30
+  min-idle-session: 5
   sni: bing.com
-  skip-cert-verify: true
   alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: France_hysteria_11
-  type: hysteria
-  server: 62.210.70.191
-  port: 23556
-  auth-str: github.com/Alvin9999-newpac/fanqiang
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: United States_anytls_11
+  type: anytls
+  server: 198.200.57.154
+  port: 22556
+  password: github.com/Alvin9999-newpac/fanqiang
+  udp: true
+  idle-session-check-interval: 30
+  idle-session-timeout: 30
+  min-idle-session: 5
   sni: bing.com
-  skip-cert-verify: true
   alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+  - h2
+  - http/1.1
+  skip-cert-verify: true
 - name: France_hysteria_21
   type: hysteria
   server: 163.172.117.163
@@ -63,45 +67,42 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: United Kingdom_tuic_41
-  server: 5.178.101.117
-  port: 30006
-  type: tuic
-  uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92
-  password: dongtaiwang.com
-  sni: www.microsoft.com
+- name: France_hysteria_41
+  type: hysteria
+  server: 62.210.70.191
+  port: 23556
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
+  skip-cert-verify: true
   alpn:
   - h3
-  request-timeout: 8000
-  udp-relay-mode: native
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: France_hysteria_51
+  type: hysteria
+  server: 62.210.70.191
+  port: 23556
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
   skip-cert-verify: true
-  congestion-controller: bbr
-- name: United Kingdom_tuic_51
-  server: 5.178.101.117
-  port: 30006
-  type: tuic
-  uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92
-  password: dongtaiwang.com
-  sni: www.microsoft.com
   alpn:
   - h3
-  request-timeout: 8000
-  udp-relay-mode: native
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: France_hysteria_61
+  type: hysteria
+  server: 62.210.70.191
+  port: 23556
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
   skip-cert-verify: true
-  congestion-controller: bbr
-- name: United Kingdom_tuic_61
-  server: 5.178.101.117
-  port: 30006
-  type: tuic
-  uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92
-  password: dongtaiwang.com
-  sni: www.microsoft.com
   alpn:
   - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  skip-cert-verify: true
-  congestion-controller: bbr
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: Germany_hysteria_121
   type: hysteria
   server: 5.83.129.143
@@ -152,17 +153,17 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: Germany_hy_1
+- name: France_hy_1
   type: hysteria
-  server: 5.83.129.90
-  port: 54177
-  ports: 54177
-  auth_str: dongtaiwang.com
+  server: 62.210.70.191
+  port: 23556
+  ports: 23556
+  auth_str: github.com/Alvin9999-newpac/fanqiang
   up: 1000
   down: 1000
   fast-open: true
   protocol: udp
-  sni: apple.com
+  sni: bing.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -253,17 +254,17 @@ proxy-groups:
   - ⚡ 低延迟
   - ⚖️ 负载均衡
   - DIRECT
-  - France_hysteria_01
-  - France_hysteria_11
+  - United States_anytls_01
+  - United States_anytls_11
   - France_hysteria_21
-  - United Kingdom_tuic_41
-  - United Kingdom_tuic_51
-  - United Kingdom_tuic_61
+  - France_hysteria_41
+  - France_hysteria_51
+  - France_hysteria_61
   - Germany_hysteria_121
   - Germany_hysteria_131
   - Germany_hysteria_141
   - Germany_hy_0
-  - Germany_hy_1
+  - France_hy_1
   - Germany_hy_2
   - Germany_hy_4
   - Germany_hy_5
@@ -277,17 +278,17 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - France_hysteria_01
-  - France_hysteria_11
+  - United States_anytls_01
+  - United States_anytls_11
   - France_hysteria_21
-  - United Kingdom_tuic_41
-  - United Kingdom_tuic_51
-  - United Kingdom_tuic_61
+  - France_hysteria_41
+  - France_hysteria_51
+  - France_hysteria_61
   - Germany_hysteria_121
   - Germany_hysteria_131
   - Germany_hysteria_141
   - Germany_hy_0
-  - Germany_hy_1
+  - France_hy_1
   - Germany_hy_2
   - Germany_hy_4
   - Germany_hy_5
@@ -301,17 +302,17 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 180
   proxies:
-  - France_hysteria_01
-  - France_hysteria_11
+  - United States_anytls_01
+  - United States_anytls_11
   - France_hysteria_21
-  - United Kingdom_tuic_41
-  - United Kingdom_tuic_51
-  - United Kingdom_tuic_61
+  - France_hysteria_41
+  - France_hysteria_51
+  - France_hysteria_61
   - Germany_hysteria_121
   - Germany_hysteria_131
   - Germany_hysteria_141
   - Germany_hy_0
-  - Germany_hy_1
+  - France_hy_1
   - Germany_hy_2
   - Germany_hy_4
   - Germany_hy_5
