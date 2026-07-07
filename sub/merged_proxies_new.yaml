@@ -27,34 +27,30 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: United States_anytls_01
-  type: anytls
-  server: 198.200.57.154
-  port: 22556
-  password: github.com/Alvin9999-newpac/fanqiang
-  udp: true
-  idle-session-check-interval: 30
-  idle-session-timeout: 30
-  min-idle-session: 5
+- name: France_hysteria_01
+  type: hysteria
+  server: 62.210.70.191
+  port: 23556
+  auth-str: github.com/Alvin9999-newpac/fanqiang
   sni: bing.com
-  alpn:
-  - h2
-  - http/1.1
   skip-cert-verify: true
-- name: United States_anytls_11
-  type: anytls
-  server: 198.200.57.154
-  port: 22556
-  password: github.com/Alvin9999-newpac/fanqiang
-  udp: true
-  idle-session-check-interval: 30
-  idle-session-timeout: 30
-  min-idle-session: 5
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: France_hysteria_11
+  type: hysteria
+  server: 62.210.70.191
+  port: 23556
+  auth-str: github.com/Alvin9999-newpac/fanqiang
   sni: bing.com
-  alpn:
-  - h2
-  - http/1.1
   skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: France_hysteria_21
   type: hysteria
   server: 163.172.117.163
@@ -254,8 +250,8 @@ proxy-groups:
   - ⚡ 低延迟
   - ⚖️ 负载均衡
   - DIRECT
-  - United States_anytls_01
-  - United States_anytls_11
+  - France_hysteria_01
+  - France_hysteria_11
   - France_hysteria_21
   - France_hysteria_41
   - France_hysteria_51
@@ -278,8 +274,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - United States_anytls_01
-  - United States_anytls_11
+  - France_hysteria_01
+  - France_hysteria_11
   - France_hysteria_21
   - France_hysteria_41
   - France_hysteria_51
@@ -302,8 +298,8 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 180
   proxies:
-  - United States_anytls_01
-  - United States_anytls_11
+  - France_hysteria_01
+  - France_hysteria_11
   - France_hysteria_21
   - France_hysteria_41
   - France_hysteria_51
