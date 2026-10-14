@@ -135,45 +135,45 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Germany_hy_0
+- name: United States_hy_0
   type: hysteria
-  server: 5.83.129.153
-  port: 20088
-  ports: 20088
+  server: 107.149.207.185
+  port: 443
+  ports: 443
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
   fast-open: true
   protocol: udp
-  sni: apple.com
+  sni: www.bing.com
   skip-cert-verify: true
   alpn:
   - h3
-- name: France_hy_1
+- name: United States_hy_1
   type: hysteria
-  server: 62.210.70.191
-  port: 23556
-  ports: 23556
-  auth_str: github.com/Alvin9999-newpac/fanqiang
+  server: 107.149.207.185
+  port: 443
+  ports: 443
+  auth_str: dongtaiwang.com
   up: 1000
   down: 1000
   fast-open: true
   protocol: udp
-  sni: bing.com
+  sni: www.bing.com
   skip-cert-verify: true
   alpn:
   - h3
-- name: Germany_hy_2
+- name: United States_hy_2
   type: hysteria
-  server: 5.83.129.153
-  port: 27626
-  ports: 27626
-  auth_str: github.com/Alvin9999-newpac/fanqiang
+  server: 107.149.207.185
+  port: 443
+  ports: 443
+  auth_str: dongtaiwang.com
   up: 1000
   down: 1000
   fast-open: true
   protocol: udp
-  sni: bing.com
+  sni: www.bing.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -235,9 +235,9 @@ proxy-groups:
   - Germany_hysteria_121
   - Germany_hysteria_131
   - Germany_hysteria_141
-  - Germany_hy_0
-  - France_hy_1
-  - Germany_hy_2
+  - United States_hy_0
+  - United States_hy_1
+  - United States_hy_2
   - Germany_hy_4
   - Germany_hy_5
   - Germany_hy_6
@@ -256,9 +256,9 @@ proxy-groups:
   - Germany_hysteria_121
   - Germany_hysteria_131
   - Germany_hysteria_141
-  - Germany_hy_0
-  - France_hy_1
-  - Germany_hy_2
+  - United States_hy_0
+  - United States_hy_1
+  - United States_hy_2
   - Germany_hy_4
   - Germany_hy_5
   - Germany_hy_6
@@ -277,9 +277,9 @@ proxy-groups:
   - Germany_hysteria_121
   - Germany_hysteria_131
   - Germany_hysteria_141
-  - Germany_hy_0
-  - France_hy_1
-  - Germany_hy_2
+  - United States_hy_0
+  - United States_hy_1
+  - United States_hy_2
   - Germany_hy_4
   - Germany_hy_5
   - Germany_hy_6
