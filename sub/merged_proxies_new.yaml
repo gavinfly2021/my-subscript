@@ -29,7 +29,7 @@ dns:
 proxies:
 - name: France_hysteria_01
   type: hysteria
-  server: 62.210.70.191
+  server: 62.210.28.175
   port: 24667
   auth-str: dongtaiwang.com
   sni: bing.com
@@ -41,7 +41,7 @@ proxies:
   down: 55 Mbps
 - name: France_hysteria_11
   type: hysteria
-  server: 62.210.70.191
+  server: 62.210.28.175
   port: 24667
   auth-str: dongtaiwang.com
   sni: bing.com
