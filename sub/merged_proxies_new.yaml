@@ -137,7 +137,7 @@ proxies:
   down: 55 Mbps
 - name: United States_hy_0
   type: hysteria
-  server: 137.175.82.44
+  server: 137.175.82.42
   port: 20022
   ports: 20022
   auth_str: dongtaiwang.com
@@ -151,7 +151,7 @@ proxies:
   - h3
 - name: United States_hy_1
   type: hysteria
-  server: 137.175.82.44
+  server: 137.175.82.42
   port: 20022
   ports: 20022
   auth_str: dongtaiwang.com
@@ -165,15 +165,15 @@ proxies:
   - h3
 - name: United States_hy_2
   type: hysteria
-  server: 107.149.207.185
-  port: 443
-  ports: 443
+  server: 137.175.82.42
+  port: 20022
+  ports: 20022
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
   fast-open: true
   protocol: udp
-  sni: www.bing.com
+  sni: bing.com
   skip-cert-verify: true
   alpn:
   - h3
