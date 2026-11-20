@@ -137,7 +137,7 @@ proxies:
   down: 55 Mbps
 - name: United States_hy_0
   type: hysteria
-  server: 137.175.82.42
+  server: 137.175.82.41
   port: 20022
   ports: 20022
   auth_str: dongtaiwang.com
@@ -151,7 +151,7 @@ proxies:
   - h3
 - name: United States_hy_1
   type: hysteria
-  server: 137.175.82.42
+  server: 137.175.82.41
   port: 20022
   ports: 20022
   auth_str: dongtaiwang.com
@@ -165,7 +165,7 @@ proxies:
   - h3
 - name: United States_hy_2
   type: hysteria
-  server: 137.175.82.42
+  server: 137.175.82.41
   port: 20022
   ports: 20022
   auth_str: dongtaiwang.com
@@ -177,17 +177,17 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: Germany_hy_4
+- name: United States_hy_4
   type: hysteria
-  server: 5.83.129.90
-  port: 54177
-  ports: 54177
+  server: 137.175.82.41
+  port: 20022
+  ports: 20022
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
   fast-open: true
   protocol: udp
-  sni: apple.com
+  sni: bing.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -205,17 +205,17 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: Germany_hy_6
+- name: United States_hy_6
   type: hysteria
-  server: 5.83.129.90
-  port: 54177
-  ports: 54177
+  server: 137.175.82.41
+  port: 20022
+  ports: 20022
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
   fast-open: true
   protocol: udp
-  sni: apple.com
+  sni: bing.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -238,9 +238,9 @@ proxy-groups:
   - United States_hy_0
   - United States_hy_1
   - United States_hy_2
-  - Germany_hy_4
+  - United States_hy_4
   - Germany_hy_5
-  - Germany_hy_6
+  - United States_hy_6
 - name: ⚡ 低延迟
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -259,9 +259,9 @@ proxy-groups:
   - United States_hy_0
   - United States_hy_1
   - United States_hy_2
-  - Germany_hy_4
+  - United States_hy_4
   - Germany_hy_5
-  - Germany_hy_6
+  - United States_hy_6
 - name: ⚖️ 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -280,9 +280,9 @@ proxy-groups:
   - United States_hy_0
   - United States_hy_1
   - United States_hy_2
-  - Germany_hy_4
+  - United States_hy_4
   - Germany_hy_5
-  - Germany_hy_6
+  - United States_hy_6
 rules:
 - DOMAIN-KEYWORD,youtube,✈️ 出境游
 - DOMAIN,youtubei.googleapis.com,✈️ 出境游
